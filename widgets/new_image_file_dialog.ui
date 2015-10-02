@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>New_Image_File_Dialog</class>
- <widget class="QDialog" name="New_Image_File_Dialog">
+ <class>NewImageFileDialog</class>
+ <widget class="QDialog" name="NewImageFileDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -21,15 +21,10 @@
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <widget class="QComboBox" name="comboBox">
+       <widget class="QComboBox" name="preset_comboBox">
         <item>
          <property name="text">
           <string>custom</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>256x256</string>
          </property>
         </item>
        </widget>
@@ -37,10 +32,24 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QSpinBox" name="spinBox"/>
+         <widget class="QSpinBox" name="width_spinBox">
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>9999</number>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="spinBox_2"/>
+         <widget class="QSpinBox" name="height_spinBox">
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>9999</number>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -54,7 +63,7 @@
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
-       <widget class="QComboBox" name="comboBox_2">
+       <widget class="QComboBox" name="format_comboBox">
         <item>
          <property name="text">
           <string>32 bit</string>
@@ -90,7 +99,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>New_Image_File_Dialog</receiver>
+   <receiver>NewImageFileDialog</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -106,7 +115,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>New_Image_File_Dialog</receiver>
+   <receiver>NewImageFileDialog</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">

@@ -4,7 +4,7 @@
 #include <QDialog>
 
 namespace Ui {
-class New_Image_File_Dialog;
+class NewImageFileDialog;
 }
 
 class NewImageFileDialog : public QDialog
@@ -16,7 +16,14 @@ public:
   ~NewImageFileDialog();
 
 private:
-  Ui::New_Image_File_Dialog *ui;
+  Ui::NewImageFileDialog *ui;
+
+  QSize selected_size_;
+  int selected_format_;
+private slots:
+  void UpdatePresetValues(int index);
+  void UpdateWidthValue(int w);
+  void UpdateHeightValue(int h);
 };
 
 #endif // NEW_IMAGE_FILE_DIALOG_H
