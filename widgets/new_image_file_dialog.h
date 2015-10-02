@@ -15,15 +15,19 @@ public:
   explicit NewImageFileDialog(QWidget *parent = 0);
   ~NewImageFileDialog();
 
+  QSize selected_size() const;
+  QImage::Format selected_format() const;
+
 private:
   Ui::NewImageFileDialog *ui;
 
   QSize selected_size_;
-  int selected_format_;
+  QImage::Format selected_format_;
 private slots:
   void UpdatePresetValues(int index);
   void UpdateWidthValue(int w);
   void UpdateHeightValue(int h);
+  void UpdateFormatValue(int f);
 };
 
 #endif // NEW_IMAGE_FILE_DIALOG_H

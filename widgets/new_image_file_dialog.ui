@@ -63,18 +63,7 @@
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
-       <widget class="QComboBox" name="format_comboBox">
-        <item>
-         <property name="text">
-          <string>32 bit</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>8 bit indexed</string>
-         </property>
-        </item>
-       </widget>
+       <widget class="QComboBox" name="format_comboBox"/>
       </item>
      </layout>
     </widget>
