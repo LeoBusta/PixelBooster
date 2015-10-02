@@ -21,12 +21,12 @@
         <file>tile_size.png</file>
         <file>undo.png</file>
         <file>zoom_tool.png</file>
-        <file>app_icon.svg</file>
-    </qresource>
-    <qresource prefix="/">
         <file>move_down.png</file>
         <file>move_left.png</file>
         <file>move_right.png</file>
         <file>move_up.png</file>
+    </qresource>
+    <qresource prefix="/app_icon">
+        <file>app_icon.svg</file>
     </qresource>
 </RCC>

@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="../resources/icons/icons.qrc">
-    <normaloff>:/icons/app_icon.svg</normaloff>:/icons/app_icon.svg</iconset>
+    <normaloff>:/app_icon/app_icon.svg</normaloff>:/app_icon/app_icon.svg</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -231,7 +231,7 @@
   </widget>
   <action name="actionNew">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="icon">
     <iconset resource="../resources/icons/icons.qrc">

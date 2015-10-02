@@ -3,12 +3,13 @@
 
 #include <QMainWindow>
 
+#include "logic/action_handler.h"
+
 namespace Ui {
 class MainWindow;
 }
 
-class MainWindow : public QMainWindow
-{
+class MainWindow : public QMainWindow {
   Q_OBJECT
 
 public:
@@ -17,6 +18,10 @@ public:
 
 private:
   Ui::MainWindow *ui;
+
+  ActionHandler * action_handler_;
+
+  void ConnectActions();
 };
 
 #endif // MAINWINDOW_H

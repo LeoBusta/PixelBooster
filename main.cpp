@@ -1,11 +1,8 @@
-#include "widgets/mainwindow.h"
-#include <QApplication>
+#include "application/pixel_booster.h"
 
-int main(int argc, char *argv[])
-{
-  QApplication a(argc, argv);
-  MainWindow w;
-  w.show();
+#include "utils/debug.h"
 
+int main(int argc, char ** argv) {
+  PixelBooster a(argc,argv);
   return a.exec();
 }
