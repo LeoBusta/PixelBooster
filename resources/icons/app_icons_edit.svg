@@ -1,0 +1,1926 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="1000"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="app_icons_edit.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Sstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Sstart"
+       style="overflow:visible">
+      <path
+         id="path4897"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.2) translate(6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         id="path4891"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Send"
+       style="overflow:visible;">
+      <path
+         id="path4918"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.3) rotate(180) translate(-2.3,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Sstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Sstart"
+       style="overflow:visible">
+      <path
+         id="path4915"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.3) translate(-2.3,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;">
+      <path
+         id="path4912"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path4906"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mstart"
+       style="overflow:visible">
+      <path
+         id="path4909"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) translate(0,0)" />
+    </marker>
+    <linearGradient
+       id="linearGradient4405">
+      <stop
+         style="stop-color:#656565;stop-opacity:1;"
+         offset="0"
+         id="stop4407" />
+      <stop
+         style="stop-color:#afafaf;stop-opacity:1;"
+         offset="1"
+         id="stop4409" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4397">
+      <stop
+         style="stop-color:#808080;stop-opacity:1;"
+         offset="0"
+         id="stop4399" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop4401" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4182">
+      <stop
+         style="stop-color:#ffb380;stop-opacity:1;"
+         offset="0"
+         id="stop4184" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop4186" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4133">
+      <stop
+         style="stop-color:#ca5100;stop-opacity:1;"
+         offset="0"
+         id="stop4135" />
+      <stop
+         style="stop-color:#ffea00;stop-opacity:1;"
+         offset="1"
+         id="stop4137" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3923">
+      <stop
+         style="stop-color:#afe9dd;stop-opacity:0.78378379;"
+         offset="0"
+         id="stop3925" />
+      <stop
+         style="stop-color:#afe9dd;stop-opacity:0;"
+         offset="1"
+         id="stop3927" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3911">
+      <stop
+         style="stop-color:#9468d5;stop-opacity:1;"
+         offset="0"
+         id="stop3913" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3915" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3903">
+      <stop
+         style="stop-color:#56d0b7;stop-opacity:1;"
+         offset="0"
+         id="stop3905" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3907" />
+    </linearGradient>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path4332"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-6"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4332-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3923-2"
+       id="linearGradient3944-5"
+       gradientUnits="userSpaceOnUse"
+       x1="149.77393"
+       y1="881.02118"
+       x2="142.10889"
+       y2="888.68622" />
+    <linearGradient
+       id="linearGradient3923-2">
+      <stop
+         style="stop-color:#afe9dd;stop-opacity:0.78378379;"
+         offset="0"
+         id="stop3925-3" />
+      <stop
+         style="stop-color:#afe9dd;stop-opacity:0;"
+         offset="1"
+         id="stop3927-1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3911-8"
+       id="linearGradient3917-6"
+       x1="234.98213"
+       y1="80.362183"
+       x2="249.98213"
+       y2="80.362183"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-3,-9)" />
+    <linearGradient
+       id="linearGradient3911-8">
+      <stop
+         style="stop-color:#9468d5;stop-opacity:1;"
+         offset="0"
+         id="stop3913-8" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3915-2" />
+    </linearGradient>
+    <linearGradient
+       y2="80.362183"
+       x2="249.98213"
+       y1="80.362183"
+       x1="234.98213"
+       gradientTransform="translate(115.69531,-780.96874)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4027"
+       xlink:href="#linearGradient3911-8"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3903-7"
+       id="linearGradient3909-7"
+       x1="143.84821"
+       y1="910.5"
+       x2="152.15179"
+       y2="910.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient3903-7">
+      <stop
+         style="stop-color:#56d0b7;stop-opacity:1;"
+         offset="0"
+         id="stop3905-1" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3907-2" />
+    </linearGradient>
+    <linearGradient
+       y2="910.5"
+       x2="152.15179"
+       y1="910.5"
+       x1="143.84821"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4061"
+       xlink:href="#linearGradient3903-7"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4133-0">
+      <stop
+         style="stop-color:#ca5100;stop-opacity:1;"
+         offset="0"
+         id="stop4135-2" />
+      <stop
+         style="stop-color:#ffea00;stop-opacity:1;"
+         offset="1"
+         id="stop4137-4" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4182-0">
+      <stop
+         style="stop-color:#ffb380;stop-opacity:1;"
+         offset="0"
+         id="stop4184-3" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop4186-7" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4133-0"
+       id="linearGradient4380"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.29502335,0.17033487,-0.17033181,0.29502864,295.43207,656.70849)"
+       x1="198.5625"
+       y1="862.78125"
+       x2="212.625"
+       y2="862.78125" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4182-0"
+       id="linearGradient4382"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.29502335,0.17033487,-0.17033181,0.29502864,436.35964,-984.60723)"
+       x1="217.0625"
+       y1="860.89062"
+       x2="231.125"
+       y2="860.89062" />
+    <linearGradient
+       id="linearGradient4397-3">
+      <stop
+         style="stop-color:#808080;stop-opacity:1;"
+         offset="0"
+         id="stop4399-2" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop4401-5" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4405-8">
+      <stop
+         style="stop-color:#656565;stop-opacity:1;"
+         offset="0"
+         id="stop4407-3" />
+      <stop
+         style="stop-color:#afafaf;stop-opacity:1;"
+         offset="1"
+         id="stop4409-2" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4"
+     inkscape:cx="133.14485"
+     inkscape:cy="105.45883"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="1432"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-67.85714,827.63781)">
+    <g
+       id="g3768"
+       transform="matrix(1.2273973,0,0,1.2273973,-90.71272,95.08751)">
+      <rect
+         rx="13.254536"
+         ry="13.254536"
+         y="-737.92352"
+         x="143.85713"
+         height="104.28571"
+         width="104.28571"
+         id="rect3757"
+         style="fill:#00008f;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect3759"
+         width="18.497507"
+         height="18.497507"
+         x="196.52496"
+         y="-684.54144"
+         ry="2.3510017"
+         rx="2.3510017" />
+      <rect
+         rx="2.3510017"
+         ry="2.3510017"
+         y="-684.54144"
+         x="174.4189"
+         height="18.497507"
+         width="18.497507"
+         id="rect3761"
+         style="fill:#008000;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect3763"
+         width="18.497507"
+         height="18.497507"
+         x="174.4189"
+         y="-706.64746"
+         ry="2.3510017"
+         rx="2.3510017" />
+      <rect
+         rx="2.3510017"
+         ry="2.3510017"
+         y="-662.43536"
+         x="174.4189"
+         height="18.497507"
+         width="18.497507"
+         id="rect3765"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect3767"
+         width="18.497507"
+         height="18.497507"
+         x="196.52496"
+         y="-662.43536"
+         ry="2.3510017"
+         rx="2.3510017" />
+      <rect
+         rx="2.3510017"
+         ry="2.3510017"
+         y="-662.43536"
+         x="218.63098"
+         height="18.497507"
+         width="18.497507"
+         id="rect3769"
+         style="fill:#008000;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#008000;fill-opacity:1;stroke:none"
+         id="rect3771"
+         width="18.497507"
+         height="18.497507"
+         x="218.63098"
+         y="-684.54144"
+         ry="2.3510017"
+         rx="2.3510017" />
+      <rect
+         rx="2.3510017"
+         ry="2.3510017"
+         y="-706.64746"
+         x="218.63098"
+         height="18.497507"
+         width="18.497507"
+         id="rect3773"
+         style="fill:#008000;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect3775"
+         width="18.497507"
+         height="18.497507"
+         x="196.52496"
+         y="-706.64746"
+         ry="2.3510017"
+         rx="2.3510017" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect3777"
+         width="18.497507"
+         height="18.497507"
+         x="152.58578"
+         y="-684.54144"
+         ry="2.3510017"
+         rx="2.3510017" />
+      <rect
+         rx="2.3510017"
+         ry="2.3510017"
+         y="-706.64746"
+         x="152.58578"
+         height="18.497507"
+         width="18.497507"
+         id="rect3779"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect3781"
+         width="18.497507"
+         height="18.497507"
+         x="152.58578"
+         y="-662.43536"
+         ry="2.3510017"
+         rx="2.3510017" />
+      <rect
+         rx="2.3510017"
+         ry="2.3510017"
+         y="-728.48059"
+         x="174.4189"
+         height="18.497507"
+         width="18.497507"
+         id="rect3783"
+         style="fill:#008000;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#008000;fill-opacity:1;stroke:none"
+         id="rect3785"
+         width="18.497507"
+         height="18.497507"
+         x="218.63098"
+         y="-728.48059"
+         ry="2.3510017"
+         rx="2.3510017" />
+      <rect
+         rx="2.3510017"
+         ry="2.3510017"
+         y="-728.48059"
+         x="196.52496"
+         height="18.497507"
+         width="18.497507"
+         id="rect3787"
+         style="fill:#008000;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect3789"
+         width="18.497507"
+         height="18.497507"
+         x="152.58578"
+         y="-728.48059"
+         ry="2.3510017"
+         rx="2.3510017" />
+    </g>
+    <g
+       id="g3823"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\new_file.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="translate(-282.11932,844.63572)">
+      <rect
+         y="-707.63782"
+         x="349.73215"
+         height="16"
+         width="16"
+         id="rect3810"
+         style="fill:#2a7fff;fill-opacity:0;stroke:none" />
+      <path
+         id="rect3798"
+         d="m 281.875,120 0,15 8.125,0 5.875,-5.875 0,-9.125 -14,0 z"
+         style="fill:#80b3ff;fill-opacity:1;stroke:none"
+         transform="translate(67.85714,-827.63781)"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="rect3802"
+         d="m 357.85714,-692.63781 5.875,-5.875 -5.875,0 0,5.875 z"
+         style="fill:#2a7fff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g3836"
+       transform="translate(18.875,0)" />
+    <g
+       id="g3846"
+       transform="matrix(1.00625,0,0,1,37.75715,-19.36428)"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\open_file.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         style="fill:#2a7fff;fill-opacity:0;stroke:none"
+         id="rect3848"
+         width="16"
+         height="16"
+         x="49.10714"
+         y="156.36218"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\open_file.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <g
+         id="g3884"
+         transform="translate(-307.125,861.87499)"
+         style="fill:#ffcc00"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\open_file.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <rect
+           y="-701.51282"
+           x="356.23215"
+           height="10"
+           width="13.086329"
+           id="rect3854"
+           style="fill:#ffcc00;fill-opacity:1;stroke:none" />
+        <rect
+           style="fill:#ffcc00;fill-opacity:1;stroke:none"
+           id="rect3856"
+           width="7"
+           height="10"
+           x="356.23215"
+           y="-703.51282" />
+        <rect
+           transform="matrix(1,0,-0.36302817,0.93177816,0,0)"
+           style="fill:#ffe680;fill-opacity:1;stroke:none"
+           id="rect3858"
+           width="13.086329"
+           height="6.439301"
+           x="87.38929"
+           y="-748.58246" />
+      </g>
+    </g>
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+       id="g3794"
+       transform="translate(-0.24431598,0.07309797)">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         style="fill:#000000;fill-opacity:0.58823529;stroke:none"
+         id="rect3014"
+         width="15"
+         height="15"
+         x="68.85714"
+         y="157.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         y="156.36218"
+         x="67.85714"
+         height="15"
+         width="15"
+         id="rect3012"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         style="fill:#442178;fill-opacity:1;stroke:none"
+         id="rect3788"
+         width="13"
+         height="13"
+         x="68.85714"
+         y="157.36218" />
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         xml:space="preserve"
+         style="font-size:10.78543854px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#b380ff;fill-opacity:1;stroke:none;font-family:Sans"
+         x="70.148743"
+         y="167.79613"
+         id="text3790"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3792"
+           x="70.148743"
+           y="167.79613"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#b380ff;font-family:Tahoma;-inkscape-font-specification:Tahoma">x1</tspan></text>
+    </g>
+    <g
+       transform="translate(19.364069,0.07309797)"
+       id="g3801"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="157.36218"
+         x="68.85714"
+         height="15"
+         width="15"
+         id="rect3803"
+         style="fill:#000000;fill-opacity:0.58823529;stroke:none"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect3805"
+         width="15"
+         height="15"
+         x="67.85714"
+         y="156.36218"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="157.36218"
+         x="68.85714"
+         height="13"
+         width="13"
+         id="rect3807"
+         style="fill:#442178;fill-opacity:1;stroke:none"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3809"
+         y="167.79613"
+         x="70.148743"
+         style="font-size:10.78543854px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#b380ff;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#b380ff;font-family:Tahoma;-inkscape-font-specification:Tahoma"
+           y="167.79613"
+           x="70.148743"
+           id="tspan3811"
+           sodipodi:role="line">x2</tspan></text>
+    </g>
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x4.png"
+       id="g3813"
+       transform="translate(38.972452,0.07309797)">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         style="fill:#000000;fill-opacity:0.58823529;stroke:none"
+         id="rect3815"
+         width="15"
+         height="15"
+         x="68.85714"
+         y="157.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         y="156.36218"
+         x="67.85714"
+         height="15"
+         width="15"
+         id="rect3817"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         style="fill:#442178;fill-opacity:1;stroke:none"
+         id="rect3819"
+         width="13"
+         height="13"
+         x="68.85714"
+         y="157.36218" />
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         xml:space="preserve"
+         style="font-size:10.78543854px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#b380ff;fill-opacity:1;stroke:none;font-family:Sans"
+         x="70.148743"
+         y="167.79613"
+         id="text3821"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3823"
+           x="70.148743"
+           y="167.79613"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#b380ff;font-family:Tahoma;-inkscape-font-specification:Tahoma">x4</tspan></text>
+    </g>
+    <g
+       transform="translate(58.580838,0.07309797)"
+       id="g3825"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x8.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="157.36218"
+         x="68.85714"
+         height="15"
+         width="15"
+         id="rect3827"
+         style="fill:#000000;fill-opacity:0.58823529;stroke:none"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect3829"
+         width="15"
+         height="15"
+         x="67.85714"
+         y="156.36218"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="157.36218"
+         x="68.85714"
+         height="13"
+         width="13"
+         id="rect3831"
+         style="fill:#442178;fill-opacity:1;stroke:none"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3833"
+         y="167.79613"
+         x="70.148743"
+         style="font-size:10.78543854px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#b380ff;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#b380ff;font-family:Tahoma;-inkscape-font-specification:Tahoma"
+           y="167.79613"
+           x="70.148743"
+           id="tspan3835"
+           sodipodi:role="line">x8</tspan></text>
+    </g>
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+       id="g3837"
+       transform="translate(78.211356,0.07309797)" />
+    <g
+       transform="translate(78.169879,0.07309797)"
+       id="g3905"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       transform="translate(78.189223,0.07309797)"
+       id="g3921"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x12.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="157.36218"
+         x="68.85714"
+         height="15"
+         width="15"
+         id="rect3923"
+         style="fill:#000000;fill-opacity:0.58823529;stroke:none"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect3925"
+         width="15"
+         height="15"
+         x="67.85714"
+         y="156.36218"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="157.36218"
+         x="68.85714"
+         height="13"
+         width="13"
+         id="rect3927"
+         style="fill:#442178;fill-opacity:1;stroke:none"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <text
+         transform="scale(0.78789006,1.2692126)"
+         sodipodi:linespacing="125%"
+         id="text3929"
+         y="132.2049"
+         x="89.059013"
+         style="font-size:8.49773979px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#b380ff;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#b380ff;font-family:Tahoma;-inkscape-font-specification:Tahoma"
+           y="132.2049"
+           x="89.059013"
+           id="tspan3931"
+           sodipodi:role="line">x12</tspan></text>
+    </g>
+    <g
+       transform="translate(38.972452,-19.36428)"
+       id="g3933"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x6.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="157.36218"
+         x="68.85714"
+         height="15"
+         width="15"
+         id="rect3935"
+         style="fill:#000000;fill-opacity:0.58823529;stroke:none"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect3937"
+         width="15"
+         height="15"
+         x="67.85714"
+         y="156.36218"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="157.36218"
+         x="68.85714"
+         height="13"
+         width="13"
+         id="rect3939"
+         style="fill:#442178;fill-opacity:1;stroke:none"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3941"
+         y="167.79613"
+         x="70.148743"
+         style="font-size:10.78543854px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#b380ff;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#b380ff;font-family:Tahoma;-inkscape-font-specification:Tahoma"
+           y="167.79613"
+           x="70.148743"
+           id="tspan3943"
+           sodipodi:role="line">x6</tspan></text>
+    </g>
+    <g
+       transform="translate(-282.11932,828.32335)"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\save_file.png"
+       id="g3978">
+      <rect
+         style="fill:#2a7fff;fill-opacity:0;stroke:none"
+         id="rect3980"
+         width="16"
+         height="16"
+         x="349.73215"
+         y="-710.76282" />
+      <g
+         id="g4018"
+         transform="translate(-7.1249928,0)">
+        <path
+           id="rect3945"
+           d="m 356.85714,-710.76281 0,14 1,0 0,1 14,0 0,-15 -15,0 z"
+           style="fill:#6f7c91;fill-opacity:1;stroke:none"
+           inkscape:connector-curvature="0" />
+        <path
+           id="rect3947"
+           d="m 359.85714,-700.76281 0,5 9,0 0,-5 -9,0 z m 1,1 2,0 0,3 -2,0 0,-3 z"
+           style="fill:#b7bec8;fill-opacity:1;stroke:none"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="g3861"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\edit_mode_img.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="translate(-223.65792,828.01085)">
+      <rect
+         y="-710.45032"
+         x="349.73215"
+         height="16"
+         width="16"
+         id="rect3863"
+         style="fill:#2a7fff;fill-opacity:0;stroke:none" />
+      <rect
+         style="fill:#87de87;fill-opacity:1;stroke:none"
+         id="rect3828"
+         width="14"
+         height="14"
+         x="350.73215"
+         y="-709.45032" />
+    </g>
+    <g
+       transform="translate(-203.68579,847.44822)"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\edit_mode_grid.png"
+       id="g3891">
+      <rect
+         style="fill:#2a7fff;fill-opacity:0;stroke:none"
+         id="rect3893"
+         width="16"
+         height="16"
+         x="349.73215"
+         y="-710.45032" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#87aade;fill-opacity:1;stroke:none"
+         d="m 350.73215,-709.45032 0,4 4,0 0,-4 -4,0 z m 5,0 0,4 4,0 0,-4 -4,0 z m 5,0 0,4 4,0 0,-4 -4,0 z m -10,5 0,4 4,0 0,-4 -4,0 z m 5,0 0,4 4,0 0,-4 -4,0 z m 5,0 0,4 4,0 0,-4 -4,0 z m -10,5 0,4 4,0 0,-4 -4,0 z m 5,0 0,4 4,0 0,-4 -4,0 z m 5,0 0,4 4,0 0,-4 -4,0 z"
+         id="rect3830" />
+    </g>
+    <g
+       id="g3897"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\edit_mode_voxel.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="translate(-185.24097,826.6671)">
+      <rect
+         y="-709.10657"
+         x="350.67746"
+         height="16"
+         width="16"
+         id="rect3899"
+         style="fill:#2a7fff;fill-opacity:0;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#80e5ff;fill-opacity:1;stroke:none"
+         d="m 358.66187,-708.10656 -5.71875,3.2812 5.71875,3.3125 5.6875,-3.3125 -5.6875,-3.2812 z m -6.125,4.125 0,6.5937 5.6875,3.2813 0.0312,-6.5938 -5.71875,-3.2812 z m 12.28125,0 -5.6875,3.2812 0,6.5938 5.6875,-3.2813 0,-6.5937 z"
+         id="rect3851" />
+    </g>
+    <g
+       transform="translate(-203.97679,827.95104)"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\edit_mode_img.png"
+       id="g3943">
+      <rect
+         style="fill:#2a7fff;fill-opacity:0;stroke:none"
+         id="rect3946"
+         width="16"
+         height="16"
+         x="349.73215"
+         y="-710.3905"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\text_edit.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <text
+         xml:space="preserve"
+         style="font-size:21.33333397px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times new roman;-inkscape-font-specification:Times new roman"
+         x="349.56549"
+         y="-695.16656"
+         id="text3939"
+         sodipodi:linespacing="125%"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\text_edit.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90"><tspan
+           sodipodi:role="line"
+           id="tspan3941"
+           x="349.56549"
+           y="-695.16656">A</tspan></text>
+    </g>
+    <g
+       id="g4006"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\undo.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="translate(-164.46901,866.5994)">
+      <rect
+         y="-710.16412"
+         x="349.73215"
+         height="16"
+         width="16"
+         id="rect4008"
+         style="fill:#2a7fff;fill-opacity:0;stroke:none" />
+      <path
+         style="fill:#c83737;fill-opacity:1;stroke:none"
+         d="m 358.26297,-709.16412 -4.14384,2.6455 4.14384,2.6456 0,-1.5583 c 2.21364,0.259 3.9298,2.134 3.9298,4.4179 0,2.4613 -1.99076,4.4606 -4.45206,4.4606 -2.4613,0 -4.46062,-1.9993 -4.46062,-4.4606 l -2.39726,0 c 0,3.7837 3.0741,6.8493 6.85788,6.8493 3.78379,0 6.84076,-3.0656 6.84076,-6.8493 0,-3.608 -2.77974,-6.5654 -6.3185,-6.8322 z"
+         id="path3989"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccssccsscc" />
+    </g>
+    <g
+       transform="matrix(-1,0,0,1,570.60367,847.16202)"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\redo.png"
+       id="g4030">
+      <rect
+         style="fill:#2a7fff;fill-opacity:0;stroke:none"
+         id="rect4032"
+         width="16"
+         height="16"
+         x="349.73215"
+         y="-710.16412" />
+      <path
+         sodipodi:nodetypes="ccccssccsscc"
+         inkscape:connector-curvature="0"
+         id="path4034"
+         d="m 358.26297,-709.16412 -4.14384,2.6455 4.14384,2.6456 0,-1.5583 c 2.21364,0.259 3.9298,2.134 3.9298,4.4179 0,2.4613 -1.99076,4.4606 -4.45206,4.4606 -2.4613,0 -4.46062,-1.9993 -4.46062,-4.4606 l -2.39726,0 c 0,3.7837 3.0741,6.8493 6.85788,6.8493 3.78379,0 6.84076,-3.0656 6.84076,-6.8493 0,-3.608 -2.77974,-6.5654 -6.3185,-6.8322 z"
+         style="fill:#8dd35f;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       transform="translate(-144.93338,824.84153)"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\help.png"
+       id="g4040">
+      <rect
+         style="fill:#2a7fff;fill-opacity:0;stroke:none"
+         id="rect4042"
+         width="16"
+         height="16"
+         x="349.73215"
+         y="-707.28101" />
+      <text
+         xml:space="preserve"
+         style="font-size:31.31498528px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffd42a;fill-opacity:1;stroke:none;font-family:Aharoni;-inkscape-font-specification:Aharoni Bold"
+         x="351.09607"
+         y="-691.58679"
+         id="text4036"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4038"
+           x="351.09607"
+           y="-691.58679">?</tspan></text>
+    </g>
+    <g
+       id="g4070"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\animation.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="translate(-184.0774,843.10251)">
+      <rect
+         y="-706.10461"
+         x="349.73215"
+         height="16"
+         width="16"
+         id="rect4072"
+         style="fill:#2a7fff;fill-opacity:0;stroke:none" />
+      <path
+         style="fill:#55d400;fill-opacity:1;stroke:none"
+         d="m 352.23215,-705.10461 0,15 11,-7.5 z"
+         id="rect4067"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <g
+       transform="translate(-222.86003,847.44822)"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\cut.png"
+       id="g4166">
+      <rect
+         style="fill:#2a7fff;fill-opacity:0;stroke:none"
+         id="rect4168"
+         width="16"
+         height="16"
+         x="349.298"
+         y="-710.45032" />
+      <g
+         transform="translate(164.92052,-849.51959)"
+         id="g4158">
+        <path
+           inkscape:connector-curvature="0"
+           id="path4098"
+           d="m 193.35782,147.57871 c -0.4931,-1.15958 -2.69623,-1.58434 -5.06955,-0.94841 -2.37186,0.63554 -4.0518,2.10191 -3.90144,3.35218 l 8.97099,-2.40377 z"
+           style="fill:#ac9393;fill-opacity:1;stroke:none" />
+        <path
+           inkscape:connector-curvature="0"
+           id="rect4107"
+           d="m 195.95893,148.60762 c -0.96787,-0.83273 -2.5513,-1.14824 -4.15058,-0.71972 -0.17048,0.0457 -0.3136,0.11197 -0.47401,0.17225 l -0.0791,-0.29541 1.43484,-0.38447 -0.11308,-0.42201 c 0.68032,0.10369 1.40802,0.075 2.15984,-0.12642 0.23079,-0.0618 0.47223,-0.14194 0.68502,-0.22878 l 0.53712,2.00456 z"
+           style="fill:#ac9393;fill-opacity:1;stroke:none" />
+        <path
+           id="path4132"
+           d="m 199.29802,146.48459 c -0.33099,-1.23528 -1.60071,-1.96835 -2.83598,-1.63736 -1.23528,0.331 -1.96835,1.60071 -1.63736,2.83599 0.33099,1.23527 1.60071,1.96834 2.83598,1.63735 1.23528,-0.33099 1.96835,-1.60071 1.63736,-2.83598 z m -0.88623,0.23746 c 0.19851,0.74086 -0.24773,1.51378 -0.98859,1.71229 -0.74086,0.19852 -1.51378,-0.24773 -1.71229,-0.98859 -0.19851,-0.74086 0.24773,-1.51378 0.98859,-1.71229 0.74086,-0.19851 1.51378,0.24773 1.71229,0.98859 z"
+           style="fill:#a02c2c;fill-opacity:1;stroke:none"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#ac9393;fill-opacity:1;stroke:none"
+           d="m 191.86805,146.08895 c 1.15958,0.49309 1.58434,2.69622 0.94841,5.06955 -0.63554,2.37185 -2.10191,4.0518 -3.35218,3.90143 l 2.40377,-8.97098 z"
+           id="path4146"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#ac9393;fill-opacity:1;stroke:none"
+           d="m 190.83914,143.48784 c 0.83273,0.96787 1.14824,2.5513 0.71972,4.15058 -0.0457,0.17048 -0.11197,0.3136 -0.17224,0.474 l 0.2954,0.0792 0.38447,-1.43485 0.42201,0.11308 c -0.10369,-0.68031 -0.075,-1.40801 0.12642,-2.15984 0.0618,-0.23078 0.14194,-0.47222 0.22878,-0.68501 l -2.00456,-0.53712 z"
+           id="path4148"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#a02c2c;fill-opacity:1;stroke:none"
+           d="m 192.96218,140.14875 c 1.23528,0.33099 1.96835,1.60071 1.63736,2.83598 -0.331,1.23528 -1.60071,1.96835 -2.83599,1.63736 -1.23527,-0.33099 -1.96834,-1.60071 -1.63735,-2.83598 0.33099,-1.23528 1.60071,-1.96835 2.83598,-1.63736 z m -0.23746,0.88623 c -0.74086,-0.19851 -1.51378,0.24773 -1.71229,0.98859 -0.19852,0.74086 0.24773,1.51378 0.98859,1.71229 0.74086,0.19851 1.51378,-0.24773 1.71229,-0.98859 0.19851,-0.74086 -0.24773,-1.51378 -0.98859,-1.71229 z"
+           id="path4150"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="g4227"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\paste.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="translate(-242.90491,829.49382)">
+      <rect
+         y="-711.93329"
+         x="349.298"
+         height="16"
+         width="16"
+         id="rect4229"
+         style="fill:#2a7fff;fill-opacity:0;stroke:none" />
+      <g
+         transform="translate(129.63419,-840.35254)"
+         id="g4251">
+        <rect
+           y="130.41948"
+           x="222.66382"
+           height="13"
+           width="10"
+           id="rect4208"
+           style="fill:#ac9393;fill-opacity:1;stroke:none" />
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:none"
+           id="rect4212"
+           width="8"
+           height="10"
+           x="223.66382"
+           y="131.91948" />
+        <rect
+           style="fill:#6c5353;fill-opacity:1;stroke:none"
+           id="rect4210"
+           width="4"
+           height="3"
+           x="225.66382"
+           y="129.41899" />
+      </g>
+    </g>
+    <g
+       transform="translate(-183.64326,868.36857)"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\copy.png"
+       id="g4283">
+      <rect
+         style="fill:#2a7fff;fill-opacity:0;stroke:none"
+         id="rect4285"
+         width="16"
+         height="16"
+         x="349.298"
+         y="-711.93329" />
+      <g
+         id="g4223"
+         transform="translate(150.90805,-859.70721)">
+        <rect
+           y="149.77393"
+           x="201.38995"
+           height="10"
+           width="8"
+           id="rect4219"
+           style="fill:#b3b3b3;fill-opacity:1;stroke:none" />
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:none"
+           id="rect4221"
+           width="8"
+           height="10"
+           x="203.38995"
+           y="151.77393" />
+      </g>
+    </g>
+    <g
+       transform="translate(-262.58604,829.30583)"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\resize.png"
+       id="g5315">
+      <rect
+         style="fill:#2a7fff;fill-opacity:0;stroke:none"
+         id="rect5317"
+         width="16"
+         height="16"
+         x="349.298"
+         y="-711.7453" />
+      <g
+         id="g5357"
+         transform="translate(-0.8916626,-0.18798828)">
+        <rect
+           style="fill:#b3b3b3;fill-opacity:1;stroke:none"
+           id="rect4321"
+           width="15"
+           height="15"
+           x="350.18967"
+           y="-710.55731" />
+        <rect
+           y="-710.55731"
+           x="350.18967"
+           height="8"
+           width="8"
+           id="rect4319"
+           style="fill:#ffffff;fill-opacity:1;stroke:none" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path4323"
+           d="m 358.1446,-702.46889 6.49655,6.4966"
+           style="fill:none;stroke:#000000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow1Lend)" />
+      </g>
+    </g>
+    <g
+       transform="translate(-126.19757,826.6671)"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_tool.png"
+       id="g3946">
+      <rect
+         style="fill:#2a7fff;fill-opacity:0;stroke:none"
+         id="rect3948"
+         width="16"
+         height="16"
+         x="350.67746"
+         y="-709.10657" />
+      <g
+         id="g3940"
+         transform="matrix(0.99989855,0,0,0.99989855,115.71922,-750.96445)">
+        <path
+           transform="matrix(0.90509664,0,0,0.90509664,108.92213,-753.17448)"
+           d="m 150.87892,885.5813 a 5.524272,5.524272 0 0 1 -5.52428,5.52427 5.524272,5.524272 0 0 1 -5.52427,-5.52427 5.524272,5.524272 0 0 1 5.52427,-5.52427 5.524272,5.524272 0 0 1 5.52428,5.52427 z"
+           sodipodi:ry="5.524272"
+           sodipodi:rx="5.524272"
+           sodipodi:cy="885.5813"
+           sodipodi:cx="145.35464"
+           id="path3919"
+           style="fill:url(#linearGradient3944-5);fill-opacity:1;stroke:#000000;stroke-width:1.1049664;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           sodipodi:type="arc" />
+        <path
+           id="rect3931"
+           transform="translate(67.85714,-827.63781)"
+           d="m 176.875,878.59375 c -0.41145,0.66855 -0.9877,1.2448 -1.65625,1.65625 l 4.40625,4.40625 c 0.46035,0.46035 1.1959,0.46035 1.65625,0 0.46035,-0.46035 0.46035,-1.1959 0,-1.65625 l -4.40625,-4.40625 z"
+           style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:1.00010145;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="g3988"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\rectangle_tool.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="translate(-165.41433,846.10447)">
+      <rect
+         y="-709.10657"
+         x="350.67746"
+         height="16"
+         width="16"
+         id="rect3990"
+         style="fill:#2a7fff;fill-opacity:0;stroke:none" />
+      <rect
+         style="fill:url(#linearGradient4027);fill-opacity:1;stroke:#000000;stroke-width:1"
+         id="rect3111"
+         width="13.999999"
+         height="13.999999"
+         x="351.17746"
+         y="-707.60657" />
+    </g>
+    <g
+       transform="translate(-145.80595,865.54185)"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\elipse_tool.png"
+       id="g4000">
+      <rect
+         style="fill:#2a7fff;fill-opacity:0;stroke:none"
+         id="rect4002"
+         width="16"
+         height="16"
+         x="350.67746"
+         y="-709.10657" />
+      <path
+         sodipodi:type="arc"
+         style="fill:url(#linearGradient4061);fill-opacity:1;stroke:#000000;stroke-width:0.55357146;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path3113"
+         sodipodi:cx="148"
+         sodipodi:cy="910.5"
+         sodipodi:rx="3.8750002"
+         sodipodi:ry="3.8750002"
+         d="M 151.875,910.5 A 3.8750002,3.8750002 0 0 1 148,914.375 3.8750002,3.8750002 0 0 1 144.125,910.5 3.8750002,3.8750002 0 0 1 148,906.625 3.8750002,3.8750002 0 0 1 151.875,910.5 Z"
+         transform="matrix(1.8064515,0,0,1.8064515,90.822638,-2345.3807)" />
+    </g>
+    <g
+       transform="translate(-126.19756,846.10447)"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\line_tool.png"
+       id="g4080">
+      <rect
+         style="fill:#2a7fff;fill-opacity:0;stroke:none"
+         id="rect4082"
+         width="16"
+         height="16"
+         x="350.67746"
+         y="-709.10657" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 351.17746,-707.60657 14,14"
+         id="path4088"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="translate(-177.14894,828.28978)"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\selection_tool.png"
+       id="g4108">
+      <rect
+         style="fill:#2a7fff;fill-opacity:0;stroke:none"
+         id="rect4110"
+         width="16"
+         height="16"
+         x="362.26657"
+         y="-710.72925" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2, 1;stroke-dashoffset:0.5"
+         id="rect4090"
+         width="12"
+         height="12"
+         x="362.76657"
+         y="-710.22925" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.99999994;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 376.76707,-700.22906 -4,0 0,4 z"
+         id="rect4092"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <g
+       transform="translate(-131.90514,864.66891)"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\rectangle_tool.png"
+       id="g4203">
+      <g
+         id="g4353"
+         transform="matrix(0.96679047,0,0,0.96805948,22.961486,-26.099628)">
+        <path
+           inkscape:connector-curvature="0"
+           id="path4159"
+           transform="translate(148.17398,-1641.2623)"
+           d="m 211.75,937.28125 -4.625,8.03125 -1.0625,6.28125 4.90625,-4.0625 2,-3.46875 0,-6.78125 -1.21875,0 z"
+           style="fill:url(#linearGradient4380);fill-opacity:1;stroke:none" />
+        <path
+           id="path4145"
+           d="m 357.49031,-695.18742 c -0.69737,-0.40264 -1.43971,-0.65935 -2.18978,-0.78488 l -0.0106,0.0184 -1.05393,6.2755 4.90768,-4.0505 0.0319,-0.0553 c -0.46736,-0.54333 -1.02943,-1.0246 -1.68525,-1.40325 z"
+           style="fill:url(#linearGradient4382);fill-opacity:1;stroke:#000000;stroke-width:1.03367221;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0.5"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path4155"
+           d="m 355.13551,-691.23648 c -0.19276,-0.11129 -0.39434,-0.19447 -0.60107,-0.2364 l -0.29849,1.79452 1.40483,-1.15576 c -0.13968,-0.15808 -0.31251,-0.29106 -0.50527,-0.40236 z"
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.03367221;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0.5"
+           inkscape:connector-curvature="0" />
+        <path
+           sodipodi:nodetypes="csc"
+           inkscape:connector-curvature="0"
+           id="path4201"
+           d="m 345.62735,-698.88088 c 2.64015,-0.68134 6.64295,-0.17033 3.83246,5.70622 -1.83762,3.84239 2.55498,6.13206 4.68414,3.6622"
+           style="fill:none;stroke:#000000;stroke-width:1.03367221;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+        <path
+           transform="translate(148.17398,-1641.2623)"
+           sodipodi:nodetypes="ccccc"
+           inkscape:connector-curvature="0"
+           id="path4298"
+           d="m 211.75,937.28125 -4.625,8.03125 -1.0625,6.28125 4.90625,-4.0625 2,-3.46875"
+           style="fill:none;stroke:#000000;stroke-width:1.03367221;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0.5" />
+      </g>
+    </g>
+    <g
+       id="g4440"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\fill_tool.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="translate(-144.93338,807.07547)">
+      <rect
+         y="-707.73309"
+         x="352.81421"
+         height="16"
+         width="16"
+         id="rect4442"
+         style="fill:#2a7fff;fill-opacity:0;stroke:none" />
+      <g
+         id="g4431"
+         transform="matrix(1.0021942,0,0,1.0021942,178.69703,-802.64441)">
+        <path
+           sodipodi:nodetypes="sccsccs"
+           inkscape:connector-curvature="0"
+           id="path4384"
+           d="m 178.25372,98.660297 c -1.25727,2.177663 -1.14486,4.596353 0.25107,5.402293 l 6.44767,2.37454 c 1.03801,0.59928 2.62829,-0.23283 3.56319,-1.8521 0.93489,-1.61929 0.86038,-3.41257 -0.17763,-4.01186 l -5.28024,-4.396586 c -1.39593,-0.805945 -3.54678,0.30605 -4.80406,2.483713 z"
+           style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:0.9978106" />
+        <path
+           sodipodi:nodetypes="sssss"
+           inkscape:connector-curvature="0"
+           style="fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.9978106"
+           d="m 178.25372,98.660297 c -1.25727,2.177663 -1.14486,4.596353 0.25107,5.402293 1.39595,0.80594 3.5468,-0.30605 4.80407,-2.4837 1.25728,-2.177672 1.14487,-4.596362 -0.25108,-5.402306 -1.39593,-0.805945 -3.54678,0.30605 -4.80406,2.483713 z"
+           id="path4392" />
+        <path
+           sodipodi:nodetypes="cccczccczcccsc"
+           inkscape:connector-curvature="0"
+           id="path4413"
+           d="m 182.12969,100.68871 c -0.2989,-0.005 -0.62174,-0.007 -0.93394,0.0291 -1.64239,0.19189 -2.98395,0.93546 -3.67742,1.8679 -0.007,0.0106 -0.0215,0.0185 -0.0291,0.0291 0,0 0.14484,4.76927 -0.17976,4.5816 -0.3246,-0.18767 -2.64449,-1.52601 -3.04225,1.65918 0.10388,0.96065 3.40767,1.27083 3.67795,1.28165 1.48989,-0.24446 4.74606,-0.23768 3.2797,-2.59166 -0.57661,-0.85215 -1.55785,-0.55121 -1.90594,-0.55705 -0.34809,-0.006 -0.13683,-2.71013 -0.13683,-2.71013 1.34474,0.21753 3.04476,-0.83104 4.1152,-2.6851 0.13094,-0.2268 0.24891,-0.47053 0.35023,-0.70046 -0.46992,-0.1279 -0.97309,-0.19661 -1.51766,-0.2043 z"
+           style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:0.9978106" />
+      </g>
+    </g>
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\tile_size.png"
+       id="g4499"
+       transform="translate(38.972452,-64.23928)">
+      <g
+         id="g7865"
+         transform="matrix(0.84615385,0,0,0.84615385,10.593404,26.209573)">
+        <rect
+           y="160.90715"
+           x="68.857605"
+           height="11.818182"
+           width="11.818182"
+           id="rect4501"
+           style="fill:#000000;fill-opacity:0.58823529;stroke:none"
+           inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90" />
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:none"
+           id="rect4503"
+           width="11.818182"
+           height="11.818182"
+           x="67.675323"
+           y="159.72581"
+           inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90" />
+        <rect
+           y="160.90764"
+           x="68.85714"
+           height="9.454545"
+           width="9.454545"
+           id="rect4505"
+           style="fill:#442178;fill-opacity:1;stroke:none"
+           inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90" />
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.99999982px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Mstart);marker-end:url(#Arrow2Mend)"
+         d="m 81.456328,162.68656 0,12.25574 -12.274815,0"
+         id="path4511"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\show_divisions.png"
+       id="g7870"
+       transform="translate(59.390161,-59.050648)">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         style="fill:#000000;fill-opacity:0.58823529;stroke:none"
+         id="rect7872"
+         width="15"
+         height="15"
+         x="68.85714"
+         y="157.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         y="156.36218"
+         x="67.85714"
+         height="15"
+         width="15"
+         id="rect7874"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         style="fill:#442178;fill-opacity:1;stroke:none"
+         d="M 60.375 926.0625 L 60.375 932.0625 L 66.375 932.0625 L 66.375 926.0625 L 60.375 926.0625 z M 67.375 926.0625 L 67.375 932.0625 L 73.375 932.0625 L 73.375 926.0625 L 67.375 926.0625 z M 60.375 933.0625 L 60.375 939.0625 L 66.375 939.0625 L 66.375 933.0625 L 60.375 933.0625 z M 67.375 933.0625 L 67.375 939.0625 L 73.375 939.0625 L 73.375 933.0625 L 67.375 933.0625 z "
+         transform="translate(8.466979,-768.58716)"
+         id="rect7876" />
+    </g>
+    <g
+       transform="translate(77.202661,-59.050648)"
+       id="g7897"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\show_grid.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="157.36218"
+         x="68.85714"
+         height="15"
+         width="15"
+         id="rect7899"
+         style="fill:#000000;fill-opacity:0.58823529;stroke:none"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect7901"
+         width="15"
+         height="15"
+         x="67.85714"
+         y="156.36218"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <path
+         style="fill:#442178;fill-opacity:1;stroke:none"
+         d="M 78.1875 933.0625 L 78.1875 935.8125 L 80.96875 935.8125 L 80.96875 933.0625 L 78.1875 933.0625 z M 81.4375 933.0625 L 81.4375 935.8125 L 84.1875 935.8125 L 84.1875 933.0625 L 81.4375 933.0625 z M 78.1875 936.28125 L 78.1875 939.0625 L 80.96875 939.0625 L 80.96875 936.28125 L 78.1875 936.28125 z M 81.4375 936.28125 L 81.4375 939.0625 L 84.1875 939.0625 L 84.1875 936.28125 L 81.4375 936.28125 z "
+         transform="translate(-9.345521,-768.58716)"
+         id="rect7903" />
+      <path
+         id="path7913"
+         d="m 68.842479,157.47584 0,2.75 2.78125,0 0,-2.75 -2.78125,0 z m 3.25,0 0,2.75 2.75,0 0,-2.75 -2.75,0 z m -3.25,3.21875 0,2.78125 2.78125,0 0,-2.78125 -2.78125,0 z m 3.25,0 0,2.78125 2.75,0 0,-2.78125 -2.75,0 z"
+         style="fill:#442178;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path7915"
+         d="m 75.842479,164.47534 0,2.75 2.78125,0 0,-2.75 -2.78125,0 z m 3.25,0 0,2.75 2.75,0 0,-2.75 -2.75,0 z m -3.25,3.21875 0,2.78125 2.78125,0 0,-2.78125 -2.78125,0 z m 3.25,0 0,2.78125 2.75,0 0,-2.78125 -2.75,0 z"
+         style="fill:#442178;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#442178;fill-opacity:1;stroke:none"
+         d="m 75.842979,157.47584 0,2.75 2.78125,0 0,-2.75 -2.78125,0 z m 3.25,0 0,2.75 2.75,0 0,-2.75 -2.75,0 z m -3.25,3.21875 0,2.78125 2.78125,0 0,-2.78125 -2.78125,0 z m 3.25,0 0,2.78125 2.75,0 0,-2.78125 -2.75,0 z"
+         id="path7917" />
+    </g>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#003380;stroke-width:4;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4.00000002, 4.00000002;stroke-dashoffset:0"
+       id="rect4792"
+       width="496"
+       height="296"
+       x="380.64667"
+       y="-671.72961"
+       rx="0"
+       ry="0"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\splash.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g4787"
+       transform="translate(4.2426407,-55.154329)"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\splash.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         id="rect3227"
+         transform="translate(67.85714,-827.63781)"
+         d="m 345.40625,263.0625 c -9.01279,0 -16.28125,7.26846 -16.28125,16.28125 l 0,95.46875 c 0,9.01279 7.26846,16.25 16.28125,16.25 l 95.4375,0 c 9.01279,0 16.28125,-7.23721 16.28125,-16.25 l 0,-95.46875 c 0,-9.01279 -7.26846,-16.28125 -16.28125,-16.28125 l -95.4375,0 z m 145.375,71.4375 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 59.53125,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.90625,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.90625,0 z m 14.90625,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.53125 1.53125,1.53125 l 8.875,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 29.75,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.90625,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.90625,0 z m 14.90625,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.53125 1.53125,1.53125 l 8.875,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 44.65625,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.53125 1.53125,1.53125 l 8.875,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.53125 1.53125,1.53125 l 8.875,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 29.78125,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.53125 1.53125,1.53125 l 8.875,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m -282.78125,14.90625 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.90625,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.5 -1.5,-1.5 l -8.90625,0 z m 29.78125,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 29.78125,0 c -0.8384,0 -1.53125,0.6616 -1.53125,1.5 l 0,8.875 c 0,0.8384 0.69285,1.53125 1.53125,1.53125 l 8.875,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.5 -1.5,-1.5 l -8.875,0 z m 29.75,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 29.78125,0 c -0.8384,0 -1.53125,0.6616 -1.53125,1.5 l 0,8.875 c 0,0.8384 0.69285,1.53125 1.53125,1.53125 l 8.875,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.5 -1.5,-1.5 l -8.875,0 z m 29.75,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 14.90625,0 c -0.8384,0 -1.53125,0.6616 -1.53125,1.5 l 0,8.875 c 0,0.8384 0.69285,1.53125 1.53125,1.53125 l 8.875,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.5 -1.5,-1.5 l -8.875,0 z m 74.40625,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m -267.90625,14.875 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.90625 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.90625 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 29.75,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.90625 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.90625,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.90625 c 0,-0.8384 -0.6616,-1.5 -1.5,-1.5 l -8.90625,0 z m 29.78125,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.90625 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.90625 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 29.78125,0 c -0.8384,0 -1.53125,0.6616 -1.53125,1.5 l 0,8.90625 c 0,0.8384 0.69285,1.5 1.53125,1.5 l 8.875,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.90625 c 0,-0.8384 -0.6616,-1.5 -1.5,-1.5 l -8.875,0 z m 29.75,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.90625 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.90625 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 29.78125,0 c -0.8384,0 -1.53125,0.6616 -1.53125,1.5 l 0,8.90625 c 0,0.8384 0.69285,1.5 1.53125,1.5 l 8.875,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.90625 c 0,-0.8384 -0.6616,-1.5 -1.5,-1.5 l -8.875,0 z m 59.53125,0 c -0.8384,0 -1.53125,0.6616 -1.53125,1.5 l 0,8.90625 c 0,0.8384 0.69285,1.5 1.53125,1.5 l 8.875,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.90625 c 0,-0.8384 -0.6616,-1.5 -1.5,-1.5 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.90625 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.90625 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 44.65625,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.90625 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.90625 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m -267.90625,14.875 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.90625,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.90625,0 z m 29.78125,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.90625,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.90625,0 z m 14.90625,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.5 1.53125,1.5 l 8.875,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 29.75,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.90625,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.90625,0 z m 14.90625,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.5 1.53125,1.5 l 8.875,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 29.75,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 14.90625,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.5 1.53125,1.5 l 8.875,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.5 1.53125,1.5 l 8.875,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 59.53125,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z"
+         style="fill:#003380;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         d="m 410.57588,-552.98156 c -1.59863,0 -2.875,1.30762 -2.875,2.90625 l 0,16.90625 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 l -16.9375,0 z m 0,26.8125 c -1.59863,0 -2.875,1.27637 -2.875,2.875 l 0,16.9375 c 0,1.59863 1.27637,2.875 2.875,2.875 l 16.9375,0 c 1.59863,0 2.875,-1.27637 2.875,-2.875 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 l -16.9375,0 z m 26.8125,0 c -1.59863,0 -2.90625,1.27637 -2.90625,2.875 l 0,16.9375 c 0,1.59863 1.30762,2.875 2.90625,2.875 l 16.9375,0 c 1.59863,0 2.875,-1.27637 2.875,-2.875 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 l -16.9375,0 z m 27.125,0 c -1.59863,0 -2.875,1.27637 -2.875,2.875 l 0,16.9375 c 0,1.59863 1.27637,2.875 2.875,2.875 l 16.9375,0 c 1.59863,0 2.875,-1.27637 2.875,-2.875 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 l -16.9375,0 z m -53.9375,27.125 c -1.59863,0 -2.875,1.27637 -2.875,2.875 l 0,16.9375 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 l -16.9375,0 z m 53.9375,0 c -1.59863,0 -2.875,1.27637 -2.875,2.875 l 0,16.9375 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 l -16.9375,0 z m -53.9375,27.125 c -1.59863,0 -2.875,1.30762 -2.875,2.90625 l 0,16.90625 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 l -16.9375,0 z m 26.8125,0 c -1.59863,0 -2.90625,1.30762 -2.90625,2.90625 l 0,16.90625 c 0,1.59863 1.30762,2.90625 2.90625,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 l -16.9375,0 z m 27.125,0 c -1.59863,0 -2.875,1.30762 -2.875,2.90625 l 0,16.90625 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 l -16.9375,0 z"
+         id="rect3229"
+         inkscape:connector-curvature="0" />
+      <path
+         transform="translate(67.85714,-827.63781)"
+         id="rect3231"
+         d="m 490.78125,263.0625 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.90625,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.90625,0 z m 29.78125,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 29.78125,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.5 1.53125,1.5 l 8.875,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 44.625,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.90625,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.90625,0 z m 29.78125,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 14.90625,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.5 1.53125,1.5 l 8.875,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.5 1.53125,1.5 l 8.875,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 29.75,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.90625,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.90625,0 z m -359.375,11.59375 c -1.59863,0 -2.90625,1.30762 -2.90625,2.90625 l 0,16.90625 c 0,1.59863 1.30762,2.90625 2.90625,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 l -16.9375,0 z m 27.125,0 c -1.59863,0 -2.875,1.30762 -2.875,2.90625 l 0,16.90625 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 l -16.9375,0 z m 27.125,0 c -1.59863,0 -2.875,1.30762 -2.875,2.90625 l 0,16.90625 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 l -16.9375,0 z m 67,3.3125 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 29.75,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.90625,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.5 -1.5,-1.5 l -8.90625,0 z m 74.4375,0 c -0.8384,0 -1.53125,0.6616 -1.53125,1.5 l 0,8.875 c 0,0.8384 0.69285,1.53125 1.53125,1.53125 l 8.875,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.5 -1.5,-1.5 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 44.65625,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 59.53125,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.90625,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.5 -1.5,-1.5 l -8.90625,0 z m -238.125,14.875 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.90625,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.5 -1.5,-1.5 l -8.90625,0 z m 29.78125,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 44.65625,0 c -0.8384,0 -1.53125,0.6616 -1.53125,1.5 l 0,8.875 c 0,0.8384 0.69285,1.53125 1.53125,1.53125 l 8.875,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.5 -1.5,-1.5 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 44.65625,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.875,0 c 0.8384,0 1.53125,-0.69285 1.53125,-1.53125 l 0,-8.875 c 0,-0.8384 -0.69285,-1.5 -1.53125,-1.5 l -8.875,0 z m 74.40625,0 c -0.8384,0 -1.5,0.6616 -1.5,1.5 l 0,8.875 c 0,0.8384 0.6616,1.53125 1.5,1.53125 l 8.90625,0 c 0.8384,0 1.5,-0.69285 1.5,-1.53125 l 0,-8.875 c 0,-0.8384 -0.6616,-1.5 -1.5,-1.5 l -8.90625,0 z m -305.125,8.625 c -1.59863,0 -2.875,1.27637 -2.875,2.875 l 0,16.9375 c 0,1.59863 1.27637,2.875 2.875,2.875 l 16.9375,0 c 1.59863,0 2.875,-1.27637 2.875,-2.875 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 l -16.9375,0 z m 67,6.25 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 59.53125,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 29.78125,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.5 1.53125,1.5 l 8.875,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 44.625,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.90625,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.90625,0 z m 29.78125,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 14.90625,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.5 1.53125,1.5 l 8.875,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.5 1.53125,1.5 l 8.875,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 29.75,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.90625,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.90625,0 z m 14.90625,0 c -0.8384,0 -1.53125,0.69285 -1.53125,1.53125 l 0,8.875 c 0,0.8384 0.69285,1.5 1.53125,1.5 l 8.875,0 c 0.8384,0 1.5,-0.6616 1.5,-1.5 l 0,-8.875 c 0,-0.8384 -0.6616,-1.53125 -1.5,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m 14.875,0 c -0.8384,0 -1.5,0.69285 -1.5,1.53125 l 0,8.875 c 0,0.8384 0.6616,1.5 1.5,1.5 l 8.875,0 c 0.8384,0 1.53125,-0.6616 1.53125,-1.5 l 0,-8.875 c 0,-0.8384 -0.69285,-1.53125 -1.53125,-1.53125 l -8.875,0 z m -404.03125,20.875 c -1.59863,0 -2.90625,1.27637 -2.90625,2.875 l 0,16.9375 c 0,1.59863 1.30762,2.90625 2.90625,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 l -16.9375,0 z m 54.25,0 c -1.59863,0 -2.875,1.27637 -2.875,2.875 l 0,16.9375 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 l -16.9375,0 z m 0,27.125 c -1.59863,0 -2.875,1.30762 -2.875,2.90625 l 0,16.90625 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 l -16.9375,0 z"
+         style="fill:#2ca05a;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\splash.png"
+       transform="translate(-267.75736,-59.154329)"
+       id="g3226">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#003380;fill-opacity:1;stroke:none"
+         d="m 345.40625,263.0625 c -9.01279,0 -16.28125,7.26846 -16.28125,16.28125 l 0,95.46875 c 0,9.01279 7.26846,16.25 16.28125,16.25 l 95.4375,0 c 9.01279,0 16.28125,-7.23721 16.28125,-16.25 l 0,-95.46875 c 0,-9.01279 -7.26846,-16.28125 -16.28125,-16.28125 z"
+         transform="translate(67.85714,-827.63781)"
+         id="path3228"
+         sodipodi:nodetypes="sssssssss" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3230"
+         d="m 410.57588,-552.98156 c -1.59863,0 -2.875,1.30762 -2.875,2.90625 l 0,16.90625 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 l -16.9375,0 z m 0,26.8125 c -1.59863,0 -2.875,1.27637 -2.875,2.875 l 0,16.9375 c 0,1.59863 1.27637,2.875 2.875,2.875 l 16.9375,0 c 1.59863,0 2.875,-1.27637 2.875,-2.875 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 l -16.9375,0 z m 26.8125,0 c -1.59863,0 -2.90625,1.27637 -2.90625,2.875 l 0,16.9375 c 0,1.59863 1.30762,2.875 2.90625,2.875 l 16.9375,0 c 1.59863,0 2.875,-1.27637 2.875,-2.875 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 l -16.9375,0 z m 27.125,0 c -1.59863,0 -2.875,1.27637 -2.875,2.875 l 0,16.9375 c 0,1.59863 1.27637,2.875 2.875,2.875 l 16.9375,0 c 1.59863,0 2.875,-1.27637 2.875,-2.875 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 l -16.9375,0 z m -53.9375,27.125 c -1.59863,0 -2.875,1.27637 -2.875,2.875 l 0,16.9375 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 l -16.9375,0 z m 53.9375,0 c -1.59863,0 -2.875,1.27637 -2.875,2.875 l 0,16.9375 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 l -16.9375,0 z m -53.9375,27.125 c -1.59863,0 -2.875,1.30762 -2.875,2.90625 l 0,16.90625 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 l -16.9375,0 z m 26.8125,0 c -1.59863,0 -2.90625,1.30762 -2.90625,2.90625 l 0,16.90625 c 0,1.59863 1.30762,2.90625 2.90625,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 l -16.9375,0 z m 27.125,0 c -1.59863,0 -2.875,1.30762 -2.875,2.90625 l 0,16.90625 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 l -16.9375,0 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#2ca05a;fill-opacity:1;stroke:none"
+         d="m 369.53125,274.65625 c -1.59863,0 -2.90625,1.30762 -2.90625,2.90625 l 0,16.90625 c 0,1.59863 1.30762,2.90625 2.90625,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 z m 27.125,0 c -1.59863,0 -2.875,1.30762 -2.875,2.90625 l 0,16.90625 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 z m 27.125,0 c -1.59863,0 -2.875,1.30762 -2.875,2.90625 l 0,16.90625 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 z m 0,26.8125 c -1.59863,0 -2.875,1.27637 -2.875,2.875 l 0,16.9375 c 0,1.59863 1.27637,2.875 2.875,2.875 l 16.9375,0 c 1.59863,0 2.875,-1.27637 2.875,-2.875 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 z m -54.25,27.125 c -1.59863,0 -2.90625,1.27637 -2.90625,2.875 l 0,16.9375 c 0,1.59863 1.30762,2.90625 2.90625,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 z m 54.25,0 c -1.59863,0 -2.875,1.27637 -2.875,2.875 l 0,16.9375 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 z m 0,27.125 c -1.59863,0 -2.875,1.30762 -2.875,2.90625 l 0,16.90625 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 z"
+         id="path3232"
+         transform="translate(67.85714,-827.63781)"
+         sodipodi:nodetypes="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss" />
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffe680;fill-opacity:1;stroke:#000000;stroke-width:1.56666672000000000;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path3231"
+       sodipodi:cx="206.25"
+       sodipodi:cy="930.75"
+       sodipodi:rx="11.75"
+       sodipodi:ry="11.75"
+       d="M 218,930.75 A 11.75,11.75 0 0 1 206.25,942.5 11.75,11.75 0 0 1 194.5,930.75 11.75,11.75 0 0 1 206.25,919 11.75,11.75 0 0 1 218,930.75 Z"
+       transform="matrix(0.63829787,0,0,0.63829787,133.612,-486.46837)" />
+    <path
+       transform="matrix(0.16963648,0,0,0.16963648,232.79346,-46.995047)"
+       d="M 218,930.75 A 11.75,11.75 0 0 1 206.25,942.5 11.75,11.75 0 0 1 194.5,930.75 11.75,11.75 0 0 1 206.25,919 11.75,11.75 0 0 1 218,930.75 Z"
+       sodipodi:ry="11.75"
+       sodipodi:rx="11.75"
+       sodipodi:cy="930.75"
+       sodipodi:cx="206.25"
+       id="path4055"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.89495897;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#5fd35f;fill-opacity:1;stroke:none"
+       id="path4057"
+       sodipodi:cx="206.25"
+       sodipodi:cy="930.75"
+       sodipodi:rx="11.75"
+       sodipodi:ry="11.75"
+       d="M 218,930.75 A 11.75,11.75 0 0 1 206.25,942.5 11.75,11.75 0 0 1 194.5,930.75 11.75,11.75 0 0 1 206.25,919 11.75,11.75 0 0 1 218,930.75 Z"
+       transform="matrix(0.16963648,0,0,0.16963648,227.47335,-53.62184)" />
+    <path
+       transform="matrix(0.16963648,0,0,0.16963648,232.04677,-53.62184)"
+       d="M 218,930.75 A 11.75,11.75 0 0 1 206.25,942.5 11.75,11.75 0 0 1 194.5,930.75 11.75,11.75 0 0 1 206.25,919 11.75,11.75 0 0 1 218,930.75 Z"
+       sodipodi:ry="11.75"
+       sodipodi:rx="11.75"
+       sodipodi:cy="930.75"
+       sodipodi:cx="206.25"
+       id="path4063"
+       style="fill:#5599ff;fill-opacity:1;stroke:none"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#de87aa;fill-opacity:1;stroke:none"
+       id="path4065"
+       sodipodi:cx="206.25"
+       sodipodi:cy="930.75"
+       sodipodi:rx="11.75"
+       sodipodi:ry="11.75"
+       d="M 218,930.75 A 11.75,11.75 0 0 1 206.25,942.5 11.75,11.75 0 0 1 194.5,930.75 11.75,11.75 0 0 1 206.25,919 11.75,11.75 0 0 1 218,930.75 Z"
+       transform="matrix(0.16963648,0,0,0.16963648,226.54,-48.675079)" />
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\move_right.png"
+       id="g4441"
+       transform="translate(137.6463,-118.5911)">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         style="fill:#000000;fill-opacity:0.58823529;stroke:none"
+         id="rect4443"
+         width="15"
+         height="15"
+         x="68.85714"
+         y="157.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         y="156.36218"
+         x="67.85714"
+         height="15"
+         width="15"
+         id="rect4445"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         style="fill:#008080;fill-opacity:1;stroke:none"
+         id="rect4447"
+         width="13"
+         height="13"
+         x="68.85714"
+         y="157.36218" />
+      <path
+         style="opacity:1;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 80.50851,163.86315 -5.16797,-5.16991 0,3.6289 -5.13477,0 0,3.08008 5.13477,0 0,3.6289 5.16797,-5.16797 z"
+         id="rect4466"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="translate(158.8963,-118.5911)"
+       id="g4472"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\move_down.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="157.36218"
+         x="68.85714"
+         height="15"
+         width="15"
+         id="rect4474"
+         style="fill:#000000;fill-opacity:0.58823529;stroke:none"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect4476"
+         width="15"
+         height="15"
+         x="67.85714"
+         y="156.36218"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="157.36218"
+         x="68.85714"
+         height="13"
+         width="13"
+         id="rect4478"
+         style="fill:#008080;fill-opacity:1;stroke:none"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4480"
+         d="m 75.35617,169.01355 5.16991,-5.16797 -3.6289,0 0,-5.13477 -3.08008,0 0,5.13477 -3.6289,0 5.16797,5.16797 z"
+         style="opacity:1;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\move_left.png"
+       id="g4482"
+       transform="translate(178.1463,-118.5911)">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         style="fill:#000000;fill-opacity:0.58823529;stroke:none"
+         id="rect4484"
+         width="15"
+         height="15"
+         x="68.85714"
+         y="157.36218" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         y="156.36218"
+         x="67.85714"
+         height="15"
+         width="15"
+         id="rect4486"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         style="fill:#008080;fill-opacity:1;stroke:none"
+         id="rect4488"
+         width="13"
+         height="13"
+         x="68.85714"
+         y="157.36218" />
+      <path
+         style="opacity:1;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 70.20577,163.86121 5.16797,5.16991 0,-3.6289 5.13477,0 0,-3.08008 -5.13477,0 0,-3.6289 -5.16797,5.16797 z"
+         id="path4490"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="translate(120.0213,-118.5911)"
+       id="g4492"
+       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\move_up.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="157.36218"
+         x="68.85714"
+         height="15"
+         width="15"
+         id="rect4494"
+         style="fill:#000000;fill-opacity:0.58823529;stroke:none"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect4496"
+         width="15"
+         height="15"
+         x="67.85714"
+         y="156.36218"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         y="157.36218"
+         x="68.85714"
+         height="13"
+         width="13"
+         id="rect4498"
+         style="fill:#008080;fill-opacity:1;stroke:none"
+         inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\zoom_x1.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4500"
+         d="m 75.358115,158.71081 -5.16992,5.16797 3.62891,0 0,5.13477 3.08008,0 0,-5.13477 3.6289,0 -5.16797,-5.16797 z"
+         style="opacity:1;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
