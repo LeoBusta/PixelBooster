@@ -17,7 +17,7 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/images/lines_background_color.png);
+   <string notr="true">background-image: url(:/images/transparent_background.png);
 </string>
   </property>
   <property name="widgetResizable">

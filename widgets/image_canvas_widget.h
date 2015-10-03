@@ -27,7 +27,7 @@
 class ImageCanvasWidget : public QWidget {
   Q_OBJECT
 public:
-  explicit ImageCanvasWidget(QWidget *parent = 0);
+  explicit ImageCanvasWidget(const QImage &image, QWidget *parent = 0);
   virtual ~ImageCanvasWidget();
 
 protected:

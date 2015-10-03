@@ -29,29 +29,32 @@ SOURCES += \
     main.cpp \
     screens/mainwindow.cpp \
     widgets/image_edit_widget.cpp \
-    widgets/new_image_file_dialog.cpp \
+    screens/new_image_file_dialog.cpp \
     application/pixel_booster.cpp \
     logic/action_handler.cpp \
     widgets/image_canvas_container.cpp \
     widgets/image_canvas_widget.cpp \
-    application/global_options.cpp
+    application/global_options.cpp \
+    screens/about_dialog.cpp
 
 HEADERS  += \
     screens/mainwindow.h \
     widgets/image_edit_widget.h \
-    widgets/new_image_file_dialog.h \
+    screens/new_image_file_dialog.h \
     application/pixel_booster.h \
     logic/action_handler.h \
     utils/debug.h \
     resources/translations/international_text.h \
     widgets/image_canvas_container.h \
     widgets/image_canvas_widget.h \
-    application/global_options.h
+    application/global_options.h \
+    screens/about_dialog.h
 
 FORMS    += \
     screens/mainwindow.ui \
-    widgets/new_image_file_dialog.ui \
-    widgets/image_canvas_container.ui
+    screens/new_image_file_dialog.ui \
+    widgets/image_canvas_container.ui \
+    screens/about_dialog.ui
 
 RESOURCES += \
     resources/icons/icons.qrc \

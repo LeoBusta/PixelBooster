@@ -35,12 +35,15 @@ public slots:
   void NewFile() const;
   void OpenFile() const;
 
+  // Interface Actions
+  void About() const;
+
   // Language Actions
   void TranslatePT_BR() const;
   void TranslateEN_US() const;
 
 private:
-  void CreateImageCanvas() const;
+  void CreateImageCanvas(const QImage &image) const;
 };
 
 #endif // ACTION_HANDLER_H

@@ -18,12 +18,14 @@
 
 #include "action_handler.h"
 
-#include "widgets/new_image_file_dialog.h"
 #include "application/pixel_booster.h"
 #include "utils/debug.h"
 #include "widgets/image_canvas_container.h"
-#include "screens/mainwindow.h"
 #include "widgets/image_canvas_widget.h"
+#include "screens/mainwindow.h"
+#include "screens/new_image_file_dialog.h"
+#include "screens/about_dialog.h"
+
 
 #include <QFileDialog>
 #include <QMdiArea>
@@ -38,6 +40,45 @@ ActionHandler::~ActionHandler() {
 
 }
 
+void ActionHandler::NewFile() const {
+  NewImageFileDialog * image_file_dialog = new NewImageFileDialog(pApp->main_window());
+  int result = image_file_dialog->exec();
+
+  if(result != QFileDialog::Accepted){
+    return;
+  }
+
+  QSize size = image_file_dialog->selected_size();
+  QImage::Format format = image_file_dialog->selected_format();
+
+  delete image_file_dialog;
+
+  //DEBUG_MSG(size << format);
+
+  QImage image(size,format);
+
+  CreateImageCanvas(image);
+}
+
+void ActionHandler::OpenFile() const {
+  QStringList file_names = QFileDialog::getOpenFileNames(pApp->main_window(),"Open Files",".","Images (*.png *.xpm *.jpg)");
+
+  for( QString file_name : file_names ){
+    if(!file_name.isEmpty()){
+      QImage image(file_name);
+      if(!image.isNull()){
+        CreateImageCanvas(image);
+      }
+    }
+  }
+}
+
+void ActionHandler::About() const {
+  AboutDialog * about_dialog = new AboutDialog(pApp->main_window());
+  about_dialog->exec();
+  delete about_dialog;
+}
+
 void ActionHandler::TranslatePT_BR() const {
   pApp->Translate("pt_br");
 }
@@ -46,26 +87,8 @@ void ActionHandler::TranslateEN_US() const {
   pApp->Translate("en_us");
 }
 
-void ActionHandler::NewFile() const {
-  NewImageFileDialog * image_file_dialog = new NewImageFileDialog(pApp->main_window());
-  image_file_dialog->exec();
-  delete image_file_dialog;
-
-  CreateImageCanvas();
-}
-
-void ActionHandler::OpenFile() const {
-  QStringList file_names = QFileDialog::getOpenFileNames(pApp->main_window(),"Open Files",".");
-
-  for( QString file_name : file_names ){
-    DEBUG_MSG(file_name);
-  }
-
-  CreateImageCanvas();
-}
-
-void ActionHandler::CreateImageCanvas() const {
-  ImageCanvasWidget * image_canvas = new ImageCanvasWidget;
+void ActionHandler::CreateImageCanvas(const QImage &image) const {
+  ImageCanvasWidget * image_canvas = new ImageCanvasWidget(image);
   ImageCanvasContainer * canvas_container = new ImageCanvasContainer(image_canvas);
   QMdiArea * mdi = dynamic_cast<MainWindow*>(pApp->main_window())->mdi_area();
   mdi->addSubWindow(canvas_container);

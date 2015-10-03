@@ -24,6 +24,10 @@
  */
 class GlobalOptions {
 public:
+  static GlobalOptions * instance();
+
+
+private:
   GlobalOptions();
 };
 

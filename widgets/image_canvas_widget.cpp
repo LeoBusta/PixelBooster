@@ -18,14 +18,19 @@
 
 #include "image_canvas_widget.h"
 
+#include "utils/debug.h"
+
 #include <QPainter>
 
-ImageCanvasWidget::ImageCanvasWidget(QWidget *parent) : QWidget(parent) {
+ImageCanvasWidget::ImageCanvasWidget(const QImage &image, QWidget *parent)
+  : QWidget(parent) {
   setMouseTracking(true);
 
-  image_ = QImage(256,256,QImage::Format_ARGB32);
-  image_.fill(Qt::black);
+  DEBUG_MSG(image_.isNull());
+  image_ = image;
+  DEBUG_MSG("ok?");
   this->setFixedSize(image_.size());
+  DEBUG_MSG("wat");
 }
 
 ImageCanvasWidget::~ImageCanvasWidget() {
@@ -35,6 +40,7 @@ ImageCanvasWidget::~ImageCanvasWidget() {
 void ImageCanvasWidget::paintEvent(QPaintEvent *event) {
   QPainter painter(this);
 
+  if(image_.isNull()) return;
   painter.drawImage(image_.rect(),image_);
 }
 

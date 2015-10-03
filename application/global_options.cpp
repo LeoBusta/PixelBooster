@@ -18,6 +18,11 @@
 
 #include "global_options.h"
 
+GlobalOptions *GlobalOptions::instance() {
+  static GlobalOptions instance_;
+  return &instance_;
+}
+
 GlobalOptions::GlobalOptions() {
 
 }

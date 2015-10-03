@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/images">
         <file>lines_background_color.png</file>
+        <file>transparent_background.png</file>
     </qresource>
 </RCC>
