@@ -24,7 +24,7 @@
        <widget class="QComboBox" name="preset_comboBox">
         <item>
          <property name="text">
-          <string>custom</string>
+          <string>Custom</string>
          </property>
         </item>
        </widget>

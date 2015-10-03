@@ -1,1 +1,2 @@
 *.user
+/resources/translations/*.qm

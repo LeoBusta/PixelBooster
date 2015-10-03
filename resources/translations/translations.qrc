@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/translations">
+        <file>pixel_booster_en_us.qm</file>
+        <file>pixel_booster_pt_br.qm</file>
+    </qresource>
+</RCC>
