@@ -29,4 +29,8 @@
     <qresource prefix="/app_icon">
         <file>app_icon.svg</file>
     </qresource>
+    <qresource prefix="/language_icons">
+        <file>flag_en_us.png</file>
+        <file>flag_pt_br.png</file>
+    </qresource>
 </RCC>

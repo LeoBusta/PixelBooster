@@ -28,23 +28,23 @@ QMAKE_CXXFLAGS += -Wall
 SOURCES += \
     main.cpp \
     widgets/mainwindow.cpp \
-    widgets/image_widget.cpp \
     widgets/image_edit_widget.cpp \
     widgets/new_image_file_dialog.cpp \
     application/pixel_booster.cpp \
     logic/action_handler.cpp \
-    widgets/image_canvas_container.cpp
+    widgets/image_canvas_container.cpp \
+    widgets/image_canvas_widget.cpp
 
 HEADERS  += \
     widgets/mainwindow.h \
-    widgets/image_widget.h \
     widgets/image_edit_widget.h \
     widgets/new_image_file_dialog.h \
     application/pixel_booster.h \
     logic/action_handler.h \
     utils/debug.h \
     resources/translations/international_text.h \
-    widgets/image_canvas_container.h
+    widgets/image_canvas_container.h \
+    widgets/image_canvas_widget.h
 
 FORMS    += \
     widgets/mainwindow.ui \

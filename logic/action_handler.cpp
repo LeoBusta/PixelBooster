@@ -23,6 +23,7 @@
 #include "utils/debug.h"
 #include "widgets/image_canvas_container.h"
 #include "widgets/mainwindow.h"
+#include "widgets/image_canvas_widget.h"
 
 #include <QFileDialog>
 #include <QMdiArea>
@@ -64,8 +65,9 @@ void ActionHandler::OpenFile() const {
 }
 
 void ActionHandler::CreateImageCanvas() const {
-  ImageCanvasContainer * canvas = new ImageCanvasContainer();
+  ImageCanvasWidget * image_canvas = new ImageCanvasWidget;
+  ImageCanvasContainer * canvas_container = new ImageCanvasContainer(image_canvas);
   QMdiArea * mdi = dynamic_cast<MainWindow*>(pApp->main_window())->mdi_area();
-  mdi->addSubWindow(canvas);
-  canvas->show();
+  mdi->addSubWindow(canvas_container);
+  canvas_container->show();
 }

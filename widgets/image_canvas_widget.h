@@ -16,20 +16,29 @@
 *  along with this program.  If not, see <http://www.gnu.org/licenses/>.    *
 \***************************************************************************/
 
-#ifndef IMAGE_WIDGET_H
-#define IMAGE_WIDGET_H
+#ifndef IMAGE_CANVAS_WIDGET_H
+#define IMAGE_CANVAS_WIDGET_H
 
 #include <QWidget>
 
-class ImageWidget : public QWidget
-{
+class ImageCanvasWidget : public QWidget {
   Q_OBJECT
 public:
-  explicit ImageWidget(QWidget *parent = 0);
+  explicit ImageCanvasWidget(QWidget *parent = 0);
+  virtual ~ImageCanvasWidget();
+
+protected:
+    virtual void paintEvent(QPaintEvent *event);
+    virtual void mousePressEvent(QMouseEvent *event);
+    virtual void mouseReleaseEvent(QMouseEvent *event);
+    virtual void mouseMoveEvent(QMouseEvent *event);
+
+private:
+  QImage image_;
 
 signals:
 
 public slots:
 };
 
-#endif // IMAGE_WIDGET_H
+#endif // IMAGE_CANVAS_WIDGET_H

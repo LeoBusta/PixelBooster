@@ -16,9 +16,37 @@
 *  along with this program.  If not, see <http://www.gnu.org/licenses/>.    *
 \***************************************************************************/
 
-#include "image_widget.h"
+#include "image_canvas_widget.h"
 
-ImageWidget::ImageWidget(QWidget *parent) : QWidget(parent) {
+#include <QPainter>
+
+ImageCanvasWidget::ImageCanvasWidget(QWidget *parent) : QWidget(parent) {
+  setMouseTracking(true);
+
+  image_ = QImage(256,256,QImage::Format_ARGB32);
+  image_.fill(Qt::black);
+  this->setFixedSize(image_.size());
+}
+
+ImageCanvasWidget::~ImageCanvasWidget() {
+
+}
+
+void ImageCanvasWidget::paintEvent(QPaintEvent *event) {
+  QPainter painter(this);
+
+  painter.drawImage(image_.rect(),image_);
+}
+
+void ImageCanvasWidget::mousePressEvent(QMouseEvent *event) {
+
+}
+
+void ImageCanvasWidget::mouseReleaseEvent(QMouseEvent *event) {
+
+}
+
+void ImageCanvasWidget::mouseMoveEvent(QMouseEvent *event) {
 
 }
 

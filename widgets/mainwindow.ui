@@ -125,6 +125,9 @@
     <property name="title">
      <string>Help</string>
     </property>
+    <addaction name="actionManual"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
@@ -560,13 +563,34 @@
    </property>
   </action>
   <action name="actionPT_BR">
+   <property name="icon">
+    <iconset resource="../resources/icons/icons.qrc">
+     <normaloff>:/language_icons/flag_pt_br.png</normaloff>:/language_icons/flag_pt_br.png</iconset>
+   </property>
    <property name="text">
     <string>PT_BR</string>
    </property>
   </action>
   <action name="actionEN_US">
+   <property name="icon">
+    <iconset resource="../resources/icons/icons.qrc">
+     <normaloff>:/language_icons/flag_en_us.png</normaloff>:/language_icons/flag_en_us.png</iconset>
+   </property>
    <property name="text">
     <string>EN_US</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionManual">
+   <property name="text">
+    <string>Instructions</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
    </property>
   </action>
  </widget>

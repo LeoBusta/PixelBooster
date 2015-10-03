@@ -17,7 +17,8 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/images/lines_background_color.png);</string>
+   <string notr="true">background-image: url(:/images/lines_background_color.png);
+</string>
   </property>
   <property name="widgetResizable">
    <bool>true</bool>
@@ -34,6 +35,23 @@
      <height>311</height>
     </rect>
    </property>
+   <layout class="QGridLayout" name="image_layout_">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+   </layout>
   </widget>
  </widget>
  <resources/>
