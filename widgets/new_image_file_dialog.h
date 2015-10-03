@@ -25,6 +25,9 @@ namespace Ui {
 class NewImageFileDialog;
 }
 
+/*!
+ * \brief The NewImageFileDialog class
+ */
 class NewImageFileDialog : public QDialog
 {
   Q_OBJECT

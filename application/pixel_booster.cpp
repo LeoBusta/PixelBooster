@@ -21,7 +21,7 @@
 #include <QTranslator>
 #include <QTimer>
 
-#include "widgets/mainwindow.h"
+#include "screens/mainwindow.h"
 #include "utils/debug.h"
 
 PixelBooster::PixelBooster(int argc, char * argv[])

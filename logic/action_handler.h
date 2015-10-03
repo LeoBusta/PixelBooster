@@ -21,6 +21,9 @@
 
 #include <QObject>
 
+/*!
+ * \brief The ActionHandler class
+ */
 class ActionHandler: public QObject {
   Q_OBJECT
 public:

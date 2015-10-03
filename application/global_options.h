@@ -16,44 +16,15 @@
 *  along with this program.  If not, see <http://www.gnu.org/licenses/>.    *
 \***************************************************************************/
 
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
+#ifndef GLOBAL_OPTIONS_H
+#define GLOBAL_OPTIONS_H
 
-#include <QSignalMapper>
+/*!
+ * \brief The GlobalOptions class
+ */
+class GlobalOptions {
+public:
+  GlobalOptions();
+};
 
-#include "utils/debug.h"
-#include "logic/action_handler.h"
-
-MainWindow::MainWindow(QWidget *parent) :
-  QMainWindow(parent),
-  ui(new Ui::MainWindow),
-  action_handler_(new ActionHandler(this)){
-  ui->setupUi(this);
-
-  ConnectActions();
-}
-
-MainWindow::~MainWindow() {
-  delete ui;
-}
-
-QMdiArea *MainWindow::mdi_area() const
-{
-  return ui->image_mdi_area_;
-}
-
-void MainWindow::ConnectActions() {
-  // File Actions
-  QObject::connect(ui->actionNew,SIGNAL(triggered(bool)),action_handler_,SLOT(NewFile()));
-  QObject::connect(ui->actionOpen,SIGNAL(triggered(bool)),action_handler_,SLOT(OpenFile()));
-
-  // Translation Actions
-  QObject::connect(ui->actionPT_BR,SIGNAL(triggered(bool)),action_handler_,SLOT(TranslatePT_BR()));
-  QObject::connect(ui->actionEN_US,SIGNAL(triggered(bool)),action_handler_,SLOT(TranslateEN_US()));
-}
-
-void MainWindow::changeEvent(QEvent *event) {
-  if(event->type() == QEvent::LanguageChange){
-    ui->retranslateUi(this);
-  }
-}
+#endif // GLOBAL_OPTIONS_H

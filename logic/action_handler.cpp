@@ -22,7 +22,7 @@
 #include "application/pixel_booster.h"
 #include "utils/debug.h"
 #include "widgets/image_canvas_container.h"
-#include "widgets/mainwindow.h"
+#include "screens/mainwindow.h"
 #include "widgets/image_canvas_widget.h"
 
 #include <QFileDialog>

@@ -21,6 +21,9 @@
 
 #include <QWidget>
 
+/*!
+ * \brief The ImageEditWidget class
+ */
 class ImageEditWidget : public QWidget
 {
   Q_OBJECT

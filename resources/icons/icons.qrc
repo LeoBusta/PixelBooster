@@ -2,7 +2,6 @@
     <qresource prefix="/icons">
         <file>copy.png</file>
         <file>cut.png</file>
-        <file>elipse_tool.png</file>
         <file>fill_tool.png</file>
         <file>help.png</file>
         <file>line_tool.png</file>
@@ -25,6 +24,7 @@
         <file>move_left.png</file>
         <file>move_right.png</file>
         <file>move_up.png</file>
+        <file>ellipse_tool.png</file>
     </qresource>
     <qresource prefix="/app_icon">
         <file>app_icon.svg</file>

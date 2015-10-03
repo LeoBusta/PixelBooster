@@ -16,32 +16,9 @@
 *  along with this program.  If not, see <http://www.gnu.org/licenses/>.    *
 \***************************************************************************/
 
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#include "global_options.h"
 
-#include <QMainWindow>
+GlobalOptions::GlobalOptions() {
 
-namespace Ui {
-class MainWindow;
 }
 
-class QMdiArea;
-class ActionHandler;
-
-class MainWindow : public QMainWindow {
-  Q_OBJECT
-
-public:
-  explicit MainWindow(QWidget *parent = 0);
-  ~MainWindow();
-
-  QMdiArea * mdi_area() const;
-private:
-  Ui::MainWindow *ui;
-  ActionHandler * action_handler_;
-
-  void ConnectActions();
-  void changeEvent(QEvent *event);
-};
-
-#endif // MAINWINDOW_H

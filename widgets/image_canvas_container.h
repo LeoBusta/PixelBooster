@@ -27,10 +27,11 @@ class ImageCanvasContainer;
 
 class ImageCanvasWidget;
 
-class ImageCanvasContainer : public QScrollArea
-{
+/*!
+ * \brief The ImageCanvasContainer class
+ */
+class ImageCanvasContainer : public QScrollArea {
   Q_OBJECT
-
 public:
   explicit ImageCanvasContainer(QWidget *image_canvas, QWidget *parent = 0);
   ~ImageCanvasContainer();

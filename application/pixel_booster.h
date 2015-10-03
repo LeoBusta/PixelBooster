@@ -25,6 +25,9 @@
 
 class MainWindow;
 
+/*!
+ * \brief The PixelBooster class
+ */
 class PixelBooster : public QApplication
 {
 public:

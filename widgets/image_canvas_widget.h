@@ -21,6 +21,9 @@
 
 #include <QWidget>
 
+/*!
+ * \brief The ImageCanvasWidget class
+ */
 class ImageCanvasWidget : public QWidget {
   Q_OBJECT
 public:
