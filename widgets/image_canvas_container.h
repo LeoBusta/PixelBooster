@@ -33,7 +33,7 @@ class ImageCanvasWidget;
 class ImageCanvasContainer : public QScrollArea {
   Q_OBJECT
 public:
-  explicit ImageCanvasContainer(QWidget *image_canvas, QWidget *parent = 0);
+  explicit ImageCanvasContainer(const QImage &image, QWidget *parent = 0);
   ~ImageCanvasContainer();
 
 private:

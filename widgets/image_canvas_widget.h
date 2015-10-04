@@ -27,9 +27,10 @@
 class ImageCanvasWidget : public QWidget {
   Q_OBJECT
 public:
-  explicit ImageCanvasWidget(const QImage &image, QWidget *parent = 0);
+  explicit ImageCanvasWidget(QWidget *parent = 0);
   virtual ~ImageCanvasWidget();
 
+  void SetImage(const QImage &image);
 protected:
     virtual void paintEvent(QPaintEvent *event);
     virtual void mousePressEvent(QMouseEvent *event);

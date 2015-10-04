@@ -19,12 +19,11 @@
 #include "image_canvas_container.h"
 #include "ui_image_canvas_container.h"
 
-ImageCanvasContainer::ImageCanvasContainer(QWidget * image_canvas, QWidget *parent) :
+ImageCanvasContainer::ImageCanvasContainer(const QImage &image, QWidget *parent) :
   QScrollArea(parent),
-  ui(new Ui::ImageCanvasContainer) {
+  ui(new Ui::ImageCanvasContainer){
   ui->setupUi(this);
-
-  ui->image_layout_->addWidget(image_canvas);
+  ui->image_canvas_widget_->SetImage(image);
 }
 
 ImageCanvasContainer::~ImageCanvasContainer() {

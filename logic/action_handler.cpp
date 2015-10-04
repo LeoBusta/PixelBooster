@@ -44,20 +44,21 @@ void ActionHandler::NewFile() const {
   NewImageFileDialog * image_file_dialog = new NewImageFileDialog(pApp->main_window());
   int result = image_file_dialog->exec();
 
+  // Check if the user canceled the new image creation.
   if(result != QFileDialog::Accepted){
+    delete image_file_dialog;
     return;
   }
 
+  // Gather information from the dialog to create the image.
   QSize size = image_file_dialog->selected_size();
   QImage::Format format = image_file_dialog->selected_format();
 
-  delete image_file_dialog;
-
-  //DEBUG_MSG(size << format);
-
   QImage image(size,format);
-
   CreateImageCanvas(image);
+
+  delete image_file_dialog;
+  return;
 }
 
 void ActionHandler::OpenFile() const {
@@ -88,8 +89,7 @@ void ActionHandler::TranslateEN_US() const {
 }
 
 void ActionHandler::CreateImageCanvas(const QImage &image) const {
-  ImageCanvasWidget * image_canvas = new ImageCanvasWidget(image);
-  ImageCanvasContainer * canvas_container = new ImageCanvasContainer(image_canvas);
+  ImageCanvasContainer * canvas_container = new ImageCanvasContainer(image);
   QMdiArea * mdi = dynamic_cast<MainWindow*>(pApp->main_window())->mdi_area();
   mdi->addSubWindow(canvas_container);
   canvas_container->show();

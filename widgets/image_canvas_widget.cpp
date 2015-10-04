@@ -22,37 +22,46 @@
 
 #include <QPainter>
 
-ImageCanvasWidget::ImageCanvasWidget(const QImage &image, QWidget *parent)
+ImageCanvasWidget::ImageCanvasWidget(QWidget *parent)
   : QWidget(parent) {
   setMouseTracking(true);
-
-  DEBUG_MSG(image_.isNull());
-  image_ = image;
-  DEBUG_MSG("ok?");
-  this->setFixedSize(image_.size());
-  DEBUG_MSG("wat");
 }
 
 ImageCanvasWidget::~ImageCanvasWidget() {
 
 }
 
-void ImageCanvasWidget::paintEvent(QPaintEvent *event) {
+void ImageCanvasWidget::SetImage(const QImage &image) {
+  if(image.isNull()){
+    DEBUG_MSG("image is null");
+    return;
+  }
+
+  if( image.format() != QImage::Format_Indexed8 ){
+    DEBUG_MSG("format not 8bit");
+    image_ = image;
+  }
+  DEBUG_MSG("format not 8bit");
+  this->setFixedSize(image_.size());
+}
+
+void ImageCanvasWidget::paintEvent(QPaintEvent *) {
   QPainter painter(this);
 
+  DEBUG_MSG("is null?" << image_.isNull());
   if(image_.isNull()) return;
   painter.drawImage(image_.rect(),image_);
 }
 
-void ImageCanvasWidget::mousePressEvent(QMouseEvent *event) {
+void ImageCanvasWidget::mousePressEvent(QMouseEvent *) {
 
 }
 
-void ImageCanvasWidget::mouseReleaseEvent(QMouseEvent *event) {
+void ImageCanvasWidget::mouseReleaseEvent(QMouseEvent *) {
 
 }
 
-void ImageCanvasWidget::mouseMoveEvent(QMouseEvent *event) {
+void ImageCanvasWidget::mouseMoveEvent(QMouseEvent *) {
 
 }
 
