@@ -21,6 +21,8 @@
 
 #include <QApplication>
 
+#include "application/global_options.h"
+
 #define pApp dynamic_cast<PixelBooster*>(qApp)
 
 class MainWindow;
@@ -34,10 +36,12 @@ public:
   PixelBooster(int argc, char *argv[]);
 
   QWidget *main_window() const;
+  GlobalOptions * options() const;
 
   void Translate(QString language);
 private:
   MainWindow * main_window_;
+  GlobalOptions * options_;
 };
 
 #endif // PIXEL_BOOSTER_H

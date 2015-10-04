@@ -26,12 +26,17 @@
 
 PixelBooster::PixelBooster(int argc, char * argv[])
   : QApplication(argc,argv),
-    main_window_(new MainWindow()) {
+    main_window_(new MainWindow()),
+    options_(new GlobalOptions()){
   main_window_->show();
 }
 
 QWidget *PixelBooster::main_window() const {
   return main_window_;
+}
+
+GlobalOptions *PixelBooster::options() const {
+  return options_;
 }
 
 void PixelBooster::Translate(QString language) {

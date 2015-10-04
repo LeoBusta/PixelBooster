@@ -19,16 +19,20 @@
 #ifndef GLOBAL_OPTIONS_H
 #define GLOBAL_OPTIONS_H
 
+#include <QSize>
+
 /*!
  * \brief The GlobalOptions class
  */
 class GlobalOptions {
 public:
-  static GlobalOptions * instance();
+  GlobalOptions();
 
+  QSize cursor_size();
+  void SetCursorSize(const QSize &size);
 
 private:
-  GlobalOptions();
+  QSize cursor_size_;
 };
 
 #endif // GLOBAL_OPTIONS_H

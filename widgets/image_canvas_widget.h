@@ -40,6 +40,11 @@ protected:
 private:
   QImage image_;
 
+  bool anchor_down_;
+  QRect anchor_;
+  QRect selection_;
+
+  QRect PosToGrid(const QPoint &pos) const;
 signals:
 
 public slots:

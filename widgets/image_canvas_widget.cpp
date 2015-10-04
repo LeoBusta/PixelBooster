@@ -19,11 +19,14 @@
 #include "image_canvas_widget.h"
 
 #include "utils/debug.h"
+#include "application/pixel_booster.h"
 
 #include <QPainter>
+#include <QMouseEvent>
 
 ImageCanvasWidget::ImageCanvasWidget(QWidget *parent)
-  : QWidget(parent) {
+  : QWidget(parent),
+    anchor_down_(false){
   setMouseTracking(true);
 }
 
@@ -53,15 +56,42 @@ void ImageCanvasWidget::paintEvent(QPaintEvent *) {
   painter.drawImage(image_.rect(),image_);
 }
 
-void ImageCanvasWidget::mousePressEvent(QMouseEvent *) {
-
+void ImageCanvasWidget::mousePressEvent(QMouseEvent *event) {
+  if(event->button() == Qt::RightButton){
+    anchor_down_ = true;
+    anchor_ = PosToGrid(event->pos());
+    selection_ = anchor_;
+    update();
+  }
 }
 
-void ImageCanvasWidget::mouseReleaseEvent(QMouseEvent *) {
-
+void ImageCanvasWidget::mouseReleaseEvent(QMouseEvent *event) {
+  anchor_down_ = false;
+  if(event->button() == Qt::RightButton){
+    //emit SendPick(image_.copy(selection_));
+  }else{
+    //emit GetPickRequest();
+  }
 }
 
-void ImageCanvasWidget::mouseMoveEvent(QMouseEvent *) {
+void ImageCanvasWidget::mouseMoveEvent(QMouseEvent *event) {
+  if(anchor_down_){
+    QRect current_cursor = PosToGrid(event->pos());
 
+    selection_ = current_cursor.united(anchor_);
+  }else{
+    selection_.moveTopLeft( PosToGrid(event->pos()).topLeft() );
+  }
+  update();
+}
+
+QRect ImageCanvasWidget::PosToGrid(const QPoint &pos) const {
+  QSize cursor_size = pApp->options()->cursor_size();
+  QPoint top_left = QPoint(
+                      (pos.x()/cursor_size.width())*cursor_size.width(),
+                      (pos.y()/cursor_size.height())*cursor_size.height()
+                      );
+
+  return QRect(top_left,cursor_size);
 }
 

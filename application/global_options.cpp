@@ -18,12 +18,15 @@
 
 #include "global_options.h"
 
-GlobalOptions *GlobalOptions::instance() {
-  static GlobalOptions instance_;
-  return &instance_;
-}
-
 GlobalOptions::GlobalOptions() {
 
+}
+
+QSize GlobalOptions::cursor_size() {
+  return cursor_size_;
+}
+
+void GlobalOptions::SetCursorSize(const QSize &size) {
+  cursor_size_ = size;
 }
 
