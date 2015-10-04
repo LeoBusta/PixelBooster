@@ -1,2 +1,7 @@
 # PixelBooster
-Pixel Art Image Editor using C++ and Qt
+
+A simple pixel art image editor.
+
+## Planned Features
+
+https://github.com/RicardoBusta/PixelBooster/wiki/Planned-Features
