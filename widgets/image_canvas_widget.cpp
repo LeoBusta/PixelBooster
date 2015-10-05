@@ -26,7 +26,8 @@
 
 ImageCanvasWidget::ImageCanvasWidget(QWidget *parent)
   : QWidget(parent),
-    anchor_down_(false){
+    anchor_down_(false),
+    active_(false){
   setMouseTracking(true);
 }
 
@@ -36,31 +37,43 @@ ImageCanvasWidget::~ImageCanvasWidget() {
 
 void ImageCanvasWidget::SetImage(const QImage &image) {
   if(image.isNull()){
-    DEBUG_MSG("image is null");
     return;
   }
 
   if( image.format() != QImage::Format_Indexed8 ){
-    DEBUG_MSG("format not 8bit");
     image_ = image;
   }
-  DEBUG_MSG("format not 8bit");
   this->setFixedSize(image_.size());
 }
 
 void ImageCanvasWidget::paintEvent(QPaintEvent *) {
   QPainter painter(this);
 
-  DEBUG_MSG("is null?" << image_.isNull());
   if(image_.isNull()) return;
   painter.drawImage(image_.rect(),image_);
+
+  if(active_){
+    QRect selection = pApp->options()->selection();
+
+    painter.setPen(Qt::yellow);
+    painter.setBrush(Qt::NoBrush);
+    painter.drawRect(selection);
+
+    QVector<qreal> dashes = {2,2};
+
+    QPen pen;
+    pen.setColor(Qt::red);
+    pen.setDashPattern(dashes);
+    painter.setPen(pen);
+    painter.drawRect(selection);
+  }
 }
 
 void ImageCanvasWidget::mousePressEvent(QMouseEvent *event) {
   if(event->button() == Qt::RightButton){
     anchor_down_ = true;
     anchor_ = PosToGrid(event->pos());
-    selection_ = anchor_;
+    pApp->options()->set_selection( anchor_ );
     update();
   }
 }
@@ -68,8 +81,8 @@ void ImageCanvasWidget::mousePressEvent(QMouseEvent *event) {
 void ImageCanvasWidget::mouseReleaseEvent(QMouseEvent *event) {
   anchor_down_ = false;
   if(event->button() == Qt::RightButton){
-    //emit SendPick(image_.copy(selection_));
-  }else{
+    emit SendImage(&image_.copy(pApp->options()->selection()));
+  }else if(event->button() == Qt::LeftButton){
     //emit GetPickRequest();
   }
 }
@@ -78,20 +91,24 @@ void ImageCanvasWidget::mouseMoveEvent(QMouseEvent *event) {
   if(anchor_down_){
     QRect current_cursor = PosToGrid(event->pos());
 
-    selection_ = current_cursor.united(anchor_);
+    pApp->options()->set_selection( current_cursor.united(anchor_) );
   }else{
-    selection_.moveTopLeft( PosToGrid(event->pos()).topLeft() );
+    pApp->options()->MoveSelection( PosToGrid(event->pos()).center() );
   }
   update();
 }
 
 QRect ImageCanvasWidget::PosToGrid(const QPoint &pos) const {
-  QSize cursor_size = pApp->options()->cursor_size();
+  QSize &cursor_size = pApp->options()->cursor_size();
   QPoint top_left = QPoint(
-                      (pos.x()/cursor_size.width())*cursor_size.width(),
-                      (pos.y()/cursor_size.height())*cursor_size.height()
-                      );
+        (pos.x()/cursor_size.width())*cursor_size.width(),
+        (pos.y()/cursor_size.height())*cursor_size.height()
+        );
 
   return QRect(top_left,cursor_size);
+}
+
+void ImageCanvasWidget::ReceiveImage(QImage *) {
+
 }
 

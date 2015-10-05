@@ -20,6 +20,7 @@
 #define GLOBAL_OPTIONS_H
 
 #include <QSize>
+#include <QRect>
 
 /*!
  * \brief The GlobalOptions class
@@ -28,11 +29,16 @@ class GlobalOptions {
 public:
   GlobalOptions();
 
-  QSize cursor_size();
-  void SetCursorSize(const QSize &size);
+  QSize cursor_size() const;
+  void set_cursor_size(const QSize &size);
+
+  QRect selection() const;
+  void set_selection(const QRect &selection);
+  void MoveSelection(const QPoint &top_left);
 
 private:
   QSize cursor_size_;
+  QRect selection_;
 };
 
 #endif // GLOBAL_OPTIONS_H

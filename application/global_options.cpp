@@ -19,14 +19,26 @@
 #include "global_options.h"
 
 GlobalOptions::GlobalOptions() {
-
+  cursor_size_ = QSize(32,32);
 }
 
-QSize GlobalOptions::cursor_size() {
+QSize GlobalOptions::cursor_size() const {
   return cursor_size_;
 }
 
-void GlobalOptions::SetCursorSize(const QSize &size) {
+void GlobalOptions::set_cursor_size(const QSize &size) {
   cursor_size_ = size;
+}
+
+QRect GlobalOptions::selection() const {
+  return selection_;
+}
+
+void GlobalOptions::set_selection(const QRect &selection) {
+  selection_ = selection;
+}
+
+void GlobalOptions::MoveSelection(const QPoint &center) {
+  selection_.moveCenter(center);
 }
 

@@ -32,22 +32,27 @@ public:
 
   void SetImage(const QImage &image);
 protected:
-    virtual void paintEvent(QPaintEvent *event);
-    virtual void mousePressEvent(QMouseEvent *event);
-    virtual void mouseReleaseEvent(QMouseEvent *event);
-    virtual void mouseMoveEvent(QMouseEvent *event);
+  virtual void paintEvent(QPaintEvent *event);
+  virtual void mousePressEvent(QMouseEvent *event);
+  virtual void mouseReleaseEvent(QMouseEvent *event);
+  virtual void mouseMoveEvent(QMouseEvent *event);
 
 private:
-  QImage image_;
-
+  bool active_;
   bool anchor_down_;
+
+  QImage image_;
   QRect anchor_;
-  QRect selection_;
+  //QRect selection_;
 
   QRect PosToGrid(const QPoint &pos) const;
-signals:
 
-public slots:
+signals:
+  void SendImage(QImage*);
+  void RequestImage();
+
+private slots:
+  void ReceiveImage(QImage*);
 };
 
 #endif // IMAGE_CANVAS_WIDGET_H

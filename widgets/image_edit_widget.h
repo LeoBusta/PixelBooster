@@ -31,8 +31,10 @@ public:
   explicit ImageEditWidget(QWidget *parent = 0);
 
 signals:
-
+  void SendImage(QImage*);
 public slots:
+  void GetImage(QImage*);
+  void HandleRequest();
 };
 
 #endif // IMAGE_EDIT_WIDGET_H

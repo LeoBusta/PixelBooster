@@ -22,3 +22,11 @@ ImageEditWidget::ImageEditWidget(QWidget *parent) : QWidget(parent) {
 
 }
 
+void ImageEditWidget::GetImage(QImage *) {
+
+}
+
+void ImageEditWidget::HandleRequest() {
+
+}
+
