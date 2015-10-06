@@ -20,6 +20,7 @@
 #define IMAGE_EDIT_WIDGET_H
 
 #include <QWidget>
+#include <QImage>
 
 /*!
  * \brief The ImageEditWidget class
@@ -30,10 +31,15 @@ class ImageEditWidget : public QWidget
 public:
   explicit ImageEditWidget(QWidget *parent = 0);
 
+  QImage image_;
+
+protected:
+  virtual void paintEvent(QPaintEvent *event);
+
 signals:
   void SendImage(QImage*);
 public slots:
-  void GetImage(QImage*);
+  void GetImage(QImage*image);
   void HandleRequest();
 };
 

@@ -47,6 +47,8 @@ private:
   ImageCanvasContainer * current_canvas_container_;
 
   void ConnectActions();
+  void ConnectWidgets();
+
   void changeEvent(QEvent *event);
 
 private slots:

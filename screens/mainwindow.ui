@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>703</width>
-    <height>412</height>
+    <width>373</width>
+    <height>370</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -44,7 +44,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>703</width>
+     <width>373</width>
      <height>21</height>
     </rect>
    </property>
@@ -225,8 +225,8 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>164</width>
-          <height>167</height>
+          <width>157</width>
+          <height>139</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout">
@@ -312,26 +312,7 @@
              <number>0</number>
             </property>
             <item>
-             <widget class="QWidget" name="widget_2" native="true">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>100</width>
-                <height>100</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>100</width>
-                <height>100</height>
-               </size>
-              </property>
-             </widget>
+             <widget class="ImageEditWidget" name="edit_widget" native="true"/>
             </item>
            </layout>
           </widget>
@@ -848,6 +829,14 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ImageEditWidget</class>
+   <extends>QWidget</extends>
+   <header>widgets/image_edit_widget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../resources/icons/icons.qrc"/>
  </resources>

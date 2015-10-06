@@ -18,6 +18,8 @@
 
 #include "global_options.h"
 
+#include "utils/debug.h"
+
 GlobalOptions::GlobalOptions() {
   cursor_size_ = QSize(32,32);
 }
@@ -38,7 +40,30 @@ void GlobalOptions::set_selection(const QRect &selection) {
   selection_ = selection;
 }
 
+void GlobalOptions::UpdateCursorShift() {
+  horizontal_shift_ = ((selection_.width()/cursor_size().width())%2==0);
+  vertical_shift_ = ((selection_.height()/cursor_size().height())%2==0);
+}
+
+void GlobalOptions::CleanCursorShift()
+{
+  horizontal_shift_ = false;
+  vertical_shift_ = false;
+}
+
+
 void GlobalOptions::MoveSelection(const QPoint &center) {
   selection_.moveCenter(center);
+}
+
+QRect GlobalOptions::PosToGrid(const QPoint &pos) const {
+  int x = (horizontal_shift_?cursor_size_.width()/2:0);
+  int y = (vertical_shift_?cursor_size_.height()/2:0);
+  QPoint top_left = QPoint(
+        ((pos.x()+x)/cursor_size_.width())*cursor_size_.width() -x,
+        ((pos.y()+y)/cursor_size_.height())*cursor_size_.height() -y
+        );
+
+  return QRect(top_left,cursor_size_);
 }
 

@@ -34,11 +34,17 @@ public:
 
   QRect selection() const;
   void set_selection(const QRect &selection);
+  void UpdateCursorShift();
+  void CleanCursorShift();
   void MoveSelection(const QPoint &top_left);
+
+  QRect PosToGrid(const QPoint &pos) const;
 
 private:
   QSize cursor_size_;
   QRect selection_;
+  bool horizontal_shift_;
+  bool vertical_shift_;
 };
 
 #endif // GLOBAL_OPTIONS_H

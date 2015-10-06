@@ -18,15 +18,34 @@
 
 #include "image_edit_widget.h"
 
-ImageEditWidget::ImageEditWidget(QWidget *parent) : QWidget(parent) {
+#include <QPainter>
 
+#include "utils/debug.h"
+
+ImageEditWidget::ImageEditWidget(QWidget *parent) : QWidget(parent) {
+  image_ = QImage(0,0,QImage::Format_ARGB32);
+  this->setFixedSize(0,0);
 }
 
-void ImageEditWidget::GetImage(QImage *) {
+void ImageEditWidget::paintEvent(QPaintEvent *event) {
+  QPainter painter(this);
 
+  if(image_.isNull()){
+    return;
+  }
+  painter.drawImage(image_.rect(),image_);
+}
+
+void ImageEditWidget::GetImage(QImage *image) {
+  if(NULL == image || image->isNull()){
+    return;
+  }
+  image_ = *image;
+  this->setFixedSize(image_.size());
+  update();
 }
 
 void ImageEditWidget::HandleRequest() {
-
+  emit SendImage(&image_);
 }
 

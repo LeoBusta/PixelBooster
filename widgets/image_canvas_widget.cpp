@@ -46,6 +46,10 @@ void ImageCanvasWidget::SetImage(const QImage &image) {
   this->setFixedSize(image_.size());
 }
 
+void ImageCanvasWidget::set_active(bool active) {
+  active_ = active;
+}
+
 void ImageCanvasWidget::paintEvent(QPaintEvent *) {
   QPainter painter(this);
 
@@ -66,13 +70,16 @@ void ImageCanvasWidget::paintEvent(QPaintEvent *) {
     pen.setDashPattern(dashes);
     painter.setPen(pen);
     painter.drawRect(selection);
+
+    //painter.drawRect(cursor_);
   }
 }
 
 void ImageCanvasWidget::mousePressEvent(QMouseEvent *event) {
   if(event->button() == Qt::RightButton){
+    pApp->options()->CleanCursorShift();
     anchor_down_ = true;
-    anchor_ = PosToGrid(event->pos());
+    anchor_ = pApp->options()->PosToGrid(event->pos());
     pApp->options()->set_selection( anchor_ );
     update();
   }
@@ -82,33 +89,30 @@ void ImageCanvasWidget::mouseReleaseEvent(QMouseEvent *event) {
   anchor_down_ = false;
   if(event->button() == Qt::RightButton){
     emit SendImage(&image_.copy(pApp->options()->selection()));
+    pApp->options()->UpdateCursorShift();
   }else if(event->button() == Qt::LeftButton){
-    //emit GetPickRequest();
+    emit RequestImage();
   }
 }
 
 void ImageCanvasWidget::mouseMoveEvent(QMouseEvent *event) {
+  QRect current_cursor = pApp->options()->PosToGrid(event->pos());
   if(anchor_down_){
-    QRect current_cursor = PosToGrid(event->pos());
-
     pApp->options()->set_selection( current_cursor.united(anchor_) );
   }else{
-    pApp->options()->MoveSelection( PosToGrid(event->pos()).center() );
+    pApp->options()->MoveSelection( current_cursor.center() );
   }
+  //cursor_ = current_cursor;
   update();
 }
 
-QRect ImageCanvasWidget::PosToGrid(const QPoint &pos) const {
-  QSize &cursor_size = pApp->options()->cursor_size();
-  QPoint top_left = QPoint(
-        (pos.x()/cursor_size.width())*cursor_size.width(),
-        (pos.y()/cursor_size.height())*cursor_size.height()
-        );
+void ImageCanvasWidget::ReceiveImage(QImage * image) {
+  if(NULL == image || image->isNull()){
+    return;
+  }
+  QPainter painter(&image_);
+  painter.drawImage(pApp->options()->selection(),*image);
 
-  return QRect(top_left,cursor_size);
-}
-
-void ImageCanvasWidget::ReceiveImage(QImage *) {
-
+  update();
 }
 

@@ -19,6 +19,9 @@
 #include "image_canvas_container.h"
 #include "ui_image_canvas_container.h"
 
+#include "widgets/image_edit_widget.h"
+#include "utils/debug.h"
+
 ImageCanvasContainer::ImageCanvasContainer(const QImage &image, QWidget *parent) :
   QScrollArea(parent),
   ui(new Ui::ImageCanvasContainer){
@@ -28,4 +31,17 @@ ImageCanvasContainer::ImageCanvasContainer(const QImage &image, QWidget *parent)
 
 ImageCanvasContainer::~ImageCanvasContainer() {
   delete ui;
+}
+
+void ImageCanvasContainer::SetAsActive(ImageEditWidget * edit_widget) {
+  QObject::connect(ui->image_canvas_widget_,SIGNAL(SendImage(QImage*)),edit_widget,SLOT(GetImage(QImage*)));
+  QObject::connect(ui->image_canvas_widget_,SIGNAL(RequestImage()),edit_widget,SLOT(HandleRequest()));
+  QObject::connect(edit_widget,SIGNAL(SendImage(QImage*)),ui->image_canvas_widget_,SLOT(ReceiveImage(QImage*)));
+  ui->image_canvas_widget_->set_active(true);
+}
+
+void ImageCanvasContainer::RemoveAsActive(ImageEditWidget * edit_widget) {
+  QObject::disconnect(ui->image_canvas_widget_,0,edit_widget,0);
+  QObject::disconnect(edit_widget,0,ui->image_canvas_widget_,0);
+  ui->image_canvas_widget_->set_active(false);
 }

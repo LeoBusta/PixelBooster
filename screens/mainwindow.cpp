@@ -33,6 +33,7 @@ MainWindow::MainWindow(QWidget *parent) :
   ui->setupUi(this);
 
   ConnectActions();
+  ConnectWidgets();
 }
 
 MainWindow::~MainWindow() {
@@ -57,6 +58,10 @@ void MainWindow::ConnectActions() {
   QObject::connect(ui->actionEN_US,SIGNAL(triggered(bool)),action_handler_,SLOT(TranslateEN_US()));
 }
 
+void MainWindow::ConnectWidgets() {
+  QObject::connect(ui->image_mdi_area_,SIGNAL(subWindowActivated(QMdiSubWindow*)),this,SLOT(CurrentWindowChanged(QMdiSubWindow*)));
+}
+
 void MainWindow::changeEvent(QEvent *event) {
   if(event->type() == QEvent::LanguageChange){
     ui->retranslateUi(this);
@@ -65,11 +70,14 @@ void MainWindow::changeEvent(QEvent *event) {
 
 void MainWindow::CurrentWindowChanged(QMdiSubWindow *w) {
   if(NULL != current_canvas_container_) {
-    //current_canvas_container_->RemoveAsActive();
-    //current_canvas_container_ = NULL;
+    current_canvas_container_->RemoveAsActive(ui->edit_widget);
+    current_canvas_container_ = NULL;
   }
 
   if(NULL != w) {
-    //ImageCanvasContainer * container = dynamic_cast<ImageCanvasContainer*>(w->widget());
+    current_canvas_container_ = dynamic_cast<ImageCanvasContainer*>(w->widget());
+    if(NULL != current_canvas_container_){
+      current_canvas_container_->SetAsActive(ui->edit_widget);
+    }
   }
 }

@@ -26,6 +26,7 @@ class ImageCanvasContainer;
 }
 
 class ImageCanvasWidget;
+class ImageEditWidget;
 
 /*!
  * \brief The ImageCanvasContainer class
@@ -36,6 +37,8 @@ public:
   explicit ImageCanvasContainer(const QImage &image, QWidget *parent = 0);
   ~ImageCanvasContainer();
 
+  void SetAsActive(ImageEditWidget * edit_widget);
+  void RemoveAsActive(ImageEditWidget *edit_widget);
 private:
   Ui::ImageCanvasContainer *ui;
 };
