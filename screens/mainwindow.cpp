@@ -24,6 +24,16 @@
 #include "utils/debug.h"
 #include "logic/action_handler.h"
 #include "widgets/image_canvas_container.h"
+#include "application/pixel_booster.h"
+
+#include <QSettings>
+
+const QString kConfigFileName = "config.ini";
+const QString kConfigGroupState = "State";
+const QString kConfigGroupWindow = "Window";
+const QString kConfigWindowState = "WindowState";
+const QString kConfigWindowGeometry = "WindowGeometry";
+const QRect kConfigDefaultWindowGeometry = QRect(0,10,800,600);
 
 MainWindow::MainWindow(QWidget *parent) :
   QMainWindow(parent),
@@ -34,6 +44,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
   ConnectActions();
   ConnectWidgets();
+
+  LoadSettings();
 }
 
 MainWindow::~MainWindow() {
@@ -62,10 +74,40 @@ void MainWindow::ConnectWidgets() {
   QObject::connect(ui->image_mdi_area_,SIGNAL(subWindowActivated(QMdiSubWindow*)),this,SLOT(CurrentWindowChanged(QMdiSubWindow*)));
 }
 
+void MainWindow::SaveSettings() {
+  QSettings settings(kConfigFileName,QSettings::IniFormat);
+
+  settings.beginGroup(kConfigGroupState);
+  pApp->options()->SaveState();
+  settings.endGroup();
+
+  settings.beginGroup(kConfigGroupWindow);
+  settings.setValue(kConfigWindowGeometry,this->geometry());
+  settings.setValue(kConfigWindowState,this->saveState());
+  settings.endGroup();
+}
+
+void MainWindow::LoadSettings() {
+  QSettings settings(kConfigFileName,QSettings::IniFormat);
+
+  settings.beginGroup(kConfigGroupState);
+  pApp->options()->LoadState();
+  settings.endGroup();
+
+  settings.beginGroup(kConfigGroupWindow);
+  setGeometry(settings.value(kConfigWindowGeometry,kConfigDefaultWindowGeometry).toRect());
+  restoreState(settings.value(kConfigWindowState).toByteArray());
+  settings.endGroup();
+}
+
 void MainWindow::changeEvent(QEvent *event) {
   if(event->type() == QEvent::LanguageChange){
     ui->retranslateUi(this);
   }
+}
+
+void MainWindow::closeEvent(QCloseEvent *event) {
+  SaveSettings();
 }
 
 void MainWindow::CurrentWindowChanged(QMdiSubWindow *w) {

@@ -67,3 +67,11 @@ QRect GlobalOptions::PosToGrid(const QPoint &pos) const {
   return QRect(top_left,cursor_size_);
 }
 
+void GlobalOptions::SaveState() {
+
+}
+
+void GlobalOptions::LoadState() {
+
+}
+

@@ -24,10 +24,17 @@
 #include "screens/mainwindow.h"
 #include "utils/debug.h"
 
+const QString kApplicationName = "Pixel::Booster";
+const QString kOrganizationName = "Busta Software";
+const QString kOrganizationDomain = "pixel.busta.com.br";
+
 PixelBooster::PixelBooster(int argc, char * argv[])
   : QApplication(argc,argv),
     main_window_(new MainWindow()),
     options_(new GlobalOptions()){
+  QCoreApplication::setApplicationName(kApplicationName);
+  QCoreApplication::setOrganizationName(kOrganizationName);
+  QCoreApplication::setOrganizationDomain(kOrganizationDomain);
   main_window_->show();
 }
 

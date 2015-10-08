@@ -49,7 +49,11 @@ private:
   void ConnectActions();
   void ConnectWidgets();
 
+  void SaveSettings();
+  void LoadSettings();
+
   void changeEvent(QEvent *event);
+  void closeEvent(QCloseEvent *event);
 
 private slots:
   void CurrentWindowChanged(QMdiSubWindow *w);

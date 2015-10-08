@@ -40,6 +40,9 @@ public:
 
   QRect PosToGrid(const QPoint &pos) const;
 
+  void SaveState();
+  void LoadState();
+
 private:
   QSize cursor_size_;
   QRect selection_;
