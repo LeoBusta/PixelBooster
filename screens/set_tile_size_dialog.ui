@@ -1,57 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>NewImageFileDialog</class>
- <widget class="QDialog" name="NewImageFileDialog">
+ <class>Set_Tile_Size_Dialog</class>
+ <widget class="QDialog" name="Set_Tile_Size_Dialog">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>174</width>
-    <height>193</height>
+    <height>188</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>New Image</string>
+   <string>Dialog</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QGroupBox" name="groupBox">
      <property name="title">
-      <string>Image Size</string>
+      <string>Tile Size</string>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QComboBox" name="preset_comboBox">
-        <item>
-         <property name="text">
-          <string>Custom</string>
-         </property>
-        </item>
+       <widget class="QSpinBox" name="spinBox">
+        <property name="maximum">
+         <number>1024</number>
+        </property>
        </widget>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <widget class="QSpinBox" name="width_spinBox">
-          <property name="minimum">
-           <number>1</number>
-          </property>
-          <property name="maximum">
-           <number>9999</number>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="height_spinBox">
-          <property name="minimum">
-           <number>1</number>
-          </property>
-          <property name="maximum">
-           <number>9999</number>
-          </property>
-         </widget>
-        </item>
-       </layout>
+       <widget class="QSpinBox" name="spinBox_2">
+        <property name="maximum">
+         <number>1024</number>
+        </property>
+       </widget>
       </item>
      </layout>
     </widget>
@@ -59,13 +40,23 @@
    <item>
     <widget class="QGroupBox" name="groupBox_2">
      <property name="title">
-      <string>Image Format</string>
+      <string>Grid Size</string>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_3">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QComboBox" name="format_comboBox"/>
+       <widget class="QSpinBox" name="spinBox_4"/>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinBox_3"/>
       </item>
      </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="text">
+      <string>CheckBox</string>
+     </property>
     </widget>
    </item>
    <item>
@@ -101,7 +92,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>NewImageFileDialog</receiver>
+   <receiver>Set_Tile_Size_Dialog</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -117,7 +108,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>NewImageFileDialog</receiver>
+   <receiver>Set_Tile_Size_Dialog</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">

@@ -35,7 +35,8 @@ SOURCES += \
     widgets/image_canvas_container.cpp \
     widgets/image_canvas_widget.cpp \
     application/global_options.cpp \
-    screens/about_dialog.cpp
+    screens/about_dialog.cpp \
+    screens/set_tile_size_dialog.cpp
 
 HEADERS  += \
     screens/mainwindow.h \
@@ -48,13 +49,15 @@ HEADERS  += \
     widgets/image_canvas_container.h \
     widgets/image_canvas_widget.h \
     application/global_options.h \
-    screens/about_dialog.h
+    screens/about_dialog.h \
+    screens/set_tile_size_dialog.h
 
 FORMS    += \
     screens/mainwindow.ui \
     screens/new_image_file_dialog.ui \
     widgets/image_canvas_container.ui \
-    screens/about_dialog.ui
+    screens/about_dialog.ui \
+    screens/set_tile_size_dialog.ui
 
 RESOURCES += \
     resources/icons/icons.qrc \
