@@ -33,6 +33,8 @@ const QString kConfigGroupState = "State";
 const QString kConfigGroupWindow = "Window";
 const QString kConfigWindowState = "WindowState";
 const QString kConfigWindowGeometry = "WindowGeometry";
+const QString kConfigWindowMaximized = "Maximized";
+const bool kConfigWindowMaximizedDefault = false;
 const QRect kConfigDefaultWindowGeometry = QRect(0,10,800,600);
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -83,6 +85,7 @@ void MainWindow::SaveSettings() {
 
   settings.beginGroup(kConfigGroupWindow);
   settings.setValue(kConfigWindowGeometry,this->geometry());
+  settings.setValue(kConfigWindowMaximized,this->isMaximized());
   settings.setValue(kConfigWindowState,this->saveState());
   settings.endGroup();
 }
@@ -95,7 +98,12 @@ void MainWindow::LoadSettings() {
   settings.endGroup();
 
   settings.beginGroup(kConfigGroupWindow);
-  setGeometry(settings.value(kConfigWindowGeometry,kConfigDefaultWindowGeometry).toRect());
+
+  if(settings.value(kConfigWindowMaximized,kConfigWindowMaximizedDefault).toBool()){
+    showMaximized();
+  }else{
+    setGeometry(settings.value(kConfigWindowGeometry,kConfigDefaultWindowGeometry).toRect());
+  }
   restoreState(settings.value(kConfigWindowState).toByteArray());
   settings.endGroup();
 }
