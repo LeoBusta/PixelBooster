@@ -28,8 +28,6 @@ const QString kStateNewImageSize = "NewImageSize";
 const QSize kStateNewImageSizeDefault = QSize(256,256);
 
 GlobalOptions::GlobalOptions() {
-  cursor_size_ = kStateCursorSizeDefault;
-  new_image_size_ = kStateNewImageSizeDefault;
 }
 
 QSize GlobalOptions::cursor_size() const {
@@ -83,13 +81,16 @@ void GlobalOptions::set_new_image_size(const QSize &size) {
   new_image_size_ = size;
 }
 
-void GlobalOptions::SaveState(QSettings &settings) const {
-  settings.setValue(kStateCursorSize,cursor_size_);
-  settings.setValue(kStateNewImageSize,new_image_size_);
+void GlobalOptions::SaveState(QSettings * settings) const {
+  settings->setValue(kStateCursorSize,cursor_size_);
+  settings->setValue(kStateNewImageSize,new_image_size_);
+  DEBUG_MSG("saved size:" << cursor_size_);
 }
 
-void GlobalOptions::LoadState(QSettings &settings) {
-  cursor_size_ = settings.value(kStateCursorSize,kStateCursorSizeDefault).toSize();
-  //new_image_size_ = settings.value(kStateNewImageSize,kStateNewImageSizeDefault).toSize();
+void GlobalOptions::LoadState(QSettings * settings) {
+  cursor_size_ = settings->value(kStateCursorSize,kStateCursorSizeDefault).toSize();
+  DEBUG_MSG("loaded size:" << cursor_size_);
+  new_image_size_ = settings->value(kStateNewImageSize,kStateNewImageSizeDefault).toSize();
+  DEBUG_MSG("loaded new image size:" << new_image_size_);
 }
 

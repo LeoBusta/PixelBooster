@@ -33,8 +33,7 @@
 #include <QLabel>
 
 ActionHandler::ActionHandler(QObject *parent)
-  : QObject(parent) {
-
+  : QObject(parent){
 }
 
 ActionHandler::~ActionHandler() {

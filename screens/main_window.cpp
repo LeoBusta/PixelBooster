@@ -81,7 +81,7 @@ void MainWindow::SaveSettings() {
   QSettings settings(kConfigFileName,QSettings::IniFormat);
 
   settings.beginGroup(kConfigGroupState);
-  pApp->options()->SaveState(settings);
+  pApp->options()->SaveState(&settings);
   settings.endGroup();
 
   settings.beginGroup(kConfigGroupWindow);
@@ -95,7 +95,7 @@ void MainWindow::LoadSettings() {
   QSettings settings(kConfigFileName,QSettings::IniFormat);
 
   settings.beginGroup(kConfigGroupState);
-  pApp->options()->LoadState(settings);
+  pApp->options()->LoadState(&settings);
   settings.endGroup();
 
   settings.beginGroup(kConfigGroupWindow);
@@ -107,6 +107,8 @@ void MainWindow::LoadSettings() {
   }
   restoreState(settings.value(kConfigWindowState).toByteArray());
   settings.endGroup();
+
+  DEBUG_MSG("what is cursor size?" << pApp->options()->cursor_size());
 }
 
 void MainWindow::changeEvent(QEvent *event) {

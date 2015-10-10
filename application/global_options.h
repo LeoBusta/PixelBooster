@@ -45,8 +45,8 @@ public:
 
   QRect PosToGrid(const QPoint &pos) const;
 
-  void SaveState(QSettings &settings) const;
-  void LoadState(QSettings &settings);
+  void SaveState(QSettings *settings) const;
+  void LoadState(QSettings *settings);
 
 private:
   QSize cursor_size_;
