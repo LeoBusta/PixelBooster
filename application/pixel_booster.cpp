@@ -21,7 +21,7 @@
 #include <QTranslator>
 #include <QTimer>
 
-#include "screens/mainwindow.h"
+#include "screens/main_window.h"
 #include "utils/debug.h"
 
 const QString kApplicationName = "Pixel::Booster";

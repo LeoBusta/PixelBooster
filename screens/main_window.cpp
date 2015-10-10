@@ -16,7 +16,7 @@
 *  along with this program.  If not, see <http://www.gnu.org/licenses/>.    *
 \***************************************************************************/
 
-#include "mainwindow.h"
+#include "main_window.h"
 #include "ui_mainwindow.h"
 
 #include <QMdiSubWindow>

@@ -22,7 +22,7 @@
 #include "utils/debug.h"
 #include "widgets/image_canvas_container.h"
 #include "widgets/image_canvas_widget.h"
-#include "screens/mainwindow.h"
+#include "screens/main_window.h"
 #include "screens/new_image_file_dialog.h"
 #include "screens/about_dialog.h"
 
@@ -55,6 +55,7 @@ void ActionHandler::NewFile() const {
   QImage::Format format = image_file_dialog->selected_format();
 
   QImage image(size,format);
+  image.fill(Qt::white);
   CreateImageCanvas(image);
 
   delete image_file_dialog;

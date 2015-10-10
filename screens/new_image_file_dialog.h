@@ -49,6 +49,7 @@ private slots:
   void UpdateWidthValue(int w);
   void UpdateHeightValue(int h);
   void UpdateFormatValue(int f);
+  void UpdateGlobalNewImageSize();
 };
 
 #endif // NEW_IMAGE_FILE_DIALOG_H

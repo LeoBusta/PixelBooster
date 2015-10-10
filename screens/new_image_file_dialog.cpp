@@ -22,6 +22,7 @@
 #include <QRegularExpression>
 
 #include "utils/debug.h"
+#include "application/pixel_booster.h"
 
 const QSize kPresetOptions[] = {
   QSize(16,16),
@@ -57,6 +58,12 @@ NewImageFileDialog::NewImageFileDialog(QWidget *parent) :
   QObject::connect(ui->width_spinBox,SIGNAL(valueChanged(int)),this,SLOT(UpdateWidthValue(int)));
   QObject::connect(ui->height_spinBox,SIGNAL(valueChanged(int)),this,SLOT(UpdateHeightValue(int)));
   QObject::connect(ui->format_comboBox,SIGNAL(currentIndexChanged(int)),this,SLOT(UpdateFormatValue(int)));
+
+  QSize new_image_size = pApp->options()->new_image_size();
+  ui->width_spinBox->setValue(new_image_size.width());
+  ui->height_spinBox->setValue(new_image_size.height());
+
+  QObject::connect(this,SIGNAL(accepted()),this,SLOT(UpdateGlobalNewImageSize()));
 }
 
 NewImageFileDialog::~NewImageFileDialog() {
@@ -104,4 +111,8 @@ void NewImageFileDialog::UpdateHeightValue(int h) {
 
 void NewImageFileDialog::UpdateFormatValue(int f) {
   selected_format_ = kFormatOptions[f].first;
+}
+
+void NewImageFileDialog::UpdateGlobalNewImageSize() {
+  pApp->options()->set_new_image_size(selected_size_);
 }

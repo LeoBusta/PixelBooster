@@ -40,6 +40,9 @@ public:
 
   QRect PosToGrid(const QPoint &pos) const;
 
+  QSize new_image_size() const;
+  void set_new_image_size(const QSize &size);
+
   void SaveState();
   void LoadState();
 
@@ -48,6 +51,7 @@ private:
   QRect selection_;
   bool horizontal_shift_;
   bool vertical_shift_;
+  QSize new_image_size_;
 };
 
 #endif // GLOBAL_OPTIONS_H

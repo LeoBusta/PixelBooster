@@ -22,6 +22,7 @@
 
 GlobalOptions::GlobalOptions() {
   cursor_size_ = QSize(32,32);
+  new_image_size_ = QSize(256,256);
 }
 
 QSize GlobalOptions::cursor_size() const {
@@ -65,6 +66,14 @@ QRect GlobalOptions::PosToGrid(const QPoint &pos) const {
         );
 
   return QRect(top_left,cursor_size_);
+}
+
+QSize GlobalOptions::new_image_size() const {
+  return new_image_size_;
+}
+
+void GlobalOptions::set_new_image_size(const QSize &size) {
+  new_image_size_ = size;
 }
 
 void GlobalOptions::SaveState() {

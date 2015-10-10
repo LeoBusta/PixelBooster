@@ -27,7 +27,6 @@ QMAKE_CXXFLAGS += -Wall
 
 SOURCES += \
     main.cpp \
-    screens/mainwindow.cpp \
     widgets/image_edit_widget.cpp \
     screens/new_image_file_dialog.cpp \
     application/pixel_booster.cpp \
@@ -36,10 +35,10 @@ SOURCES += \
     widgets/image_canvas_widget.cpp \
     application/global_options.cpp \
     screens/about_dialog.cpp \
-    screens/set_tile_size_dialog.cpp
+    screens/set_tile_size_dialog.cpp \
+    screens/main_window.cpp
 
 HEADERS  += \
-    screens/mainwindow.h \
     widgets/image_edit_widget.h \
     screens/new_image_file_dialog.h \
     application/pixel_booster.h \
@@ -50,14 +49,15 @@ HEADERS  += \
     widgets/image_canvas_widget.h \
     application/global_options.h \
     screens/about_dialog.h \
-    screens/set_tile_size_dialog.h
+    screens/set_tile_size_dialog.h \
+    screens/main_window.h
 
 FORMS    += \
-    screens/mainwindow.ui \
     screens/new_image_file_dialog.ui \
     widgets/image_canvas_container.ui \
     screens/about_dialog.ui \
-    screens/set_tile_size_dialog.ui
+    screens/set_tile_size_dialog.ui \
+    screens/main_window.ui
 
 RESOURCES += \
     resources/icons/icons.qrc \
