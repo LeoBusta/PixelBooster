@@ -25,6 +25,8 @@
         <file>move_right.png</file>
         <file>move_up.png</file>
         <file>ellipse_tool.png</file>
+        <file>save_all_file.png</file>
+        <file>save_file_as.png</file>
     </qresource>
     <qresource prefix="/app_icon">
         <file>app_icon.svg</file>

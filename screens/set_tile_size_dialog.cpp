@@ -1,14 +1,24 @@
 #include "set_tile_size_dialog.h"
 #include "ui_set_tile_size_dialog.h"
 
-Set_Tile_Size_Dialog::Set_Tile_Size_Dialog(QWidget *parent) :
+#include "application/pixel_booster.h"
+
+SetTileSizeDialog::SetTileSizeDialog(QWidget *parent) :
   QDialog(parent),
-  ui(new Ui::Set_Tile_Size_Dialog)
-{
+  ui(new Ui::SetTileSizeDialog) {
   ui->setupUi(this);
+
+  QSize cursor_size = pApp->options()->cursor_size();
+  ui->tile_width_spinBox->setValue(cursor_size.width());
+  ui->tile_height_spinBox->setValue(cursor_size.height());
+
+  QObject::connect(this,SIGNAL(accepted()),this,SLOT(UpdateGlobalValues()));
 }
 
-Set_Tile_Size_Dialog::~Set_Tile_Size_Dialog()
-{
+SetTileSizeDialog::~SetTileSizeDialog() {
   delete ui;
+}
+
+void SetTileSizeDialog::UpdateGlobalValues() {
+  pApp->options()->set_cursor_size(QSize(ui->tile_width_spinBox->value(),ui->tile_height_spinBox->value()));
 }

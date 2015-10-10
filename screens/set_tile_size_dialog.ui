@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Set_Tile_Size_Dialog</class>
- <widget class="QDialog" name="Set_Tile_Size_Dialog">
+ <class>SetTileSizeDialog</class>
+ <widget class="QDialog" name="SetTileSizeDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -21,14 +21,14 @@
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QSpinBox" name="spinBox">
+       <widget class="QSpinBox" name="tile_width_spinBox">
         <property name="maximum">
          <number>1024</number>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="spinBox_2">
+       <widget class="QSpinBox" name="tile_height_spinBox">
         <property name="maximum">
          <number>1024</number>
         </property>
@@ -39,12 +39,19 @@
    </item>
    <item>
     <widget class="QGroupBox" name="groupBox_2">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="title">
       <string>Grid Size</string>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QSpinBox" name="spinBox_4"/>
+       <widget class="QSpinBox" name="spinBox_4">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QSpinBox" name="spinBox_3"/>
@@ -54,8 +61,11 @@
    </item>
    <item>
     <widget class="QCheckBox" name="checkBox">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="text">
-      <string>CheckBox</string>
+      <string>Move Halfway</string>
      </property>
     </widget>
    </item>
@@ -92,7 +102,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>Set_Tile_Size_Dialog</receiver>
+   <receiver>SetTileSizeDialog</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -108,7 +118,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>Set_Tile_Size_Dialog</receiver>
+   <receiver>SetTileSizeDialog</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">

@@ -25,6 +25,7 @@
 #include "screens/main_window.h"
 #include "screens/new_image_file_dialog.h"
 #include "screens/about_dialog.h"
+#include "screens/set_tile_size_dialog.h"
 
 
 #include <QFileDialog>
@@ -79,6 +80,12 @@ void ActionHandler::About() const {
   AboutDialog * about_dialog = new AboutDialog(pApp->main_window());
   about_dialog->exec();
   delete about_dialog;
+}
+
+void ActionHandler::TileSize() const {
+  SetTileSizeDialog * tile_dialog = new SetTileSizeDialog(pApp->main_window());
+  tile_dialog->exec();
+  delete tile_dialog;
 }
 
 void ActionHandler::TranslatePT_BR() const {

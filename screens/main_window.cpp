@@ -17,7 +17,7 @@
 \***************************************************************************/
 
 #include "main_window.h"
-#include "ui_mainwindow.h"
+#include "ui_main_window.h"
 
 #include <QMdiSubWindow>
 
@@ -66,6 +66,7 @@ void MainWindow::ConnectActions() {
 
   // Interface Actions
   QObject::connect(ui->actionAbout,SIGNAL(triggered(bool)),action_handler_,SLOT(About()));
+  QObject::connect(ui->actionTile_Size, SIGNAL(triggered(bool)),action_handler_,SLOT(TileSize()));
 
   // Translation Actions
   QObject::connect(ui->actionPT_BR,SIGNAL(triggered(bool)),action_handler_,SLOT(TranslatePT_BR()));
@@ -80,7 +81,7 @@ void MainWindow::SaveSettings() {
   QSettings settings(kConfigFileName,QSettings::IniFormat);
 
   settings.beginGroup(kConfigGroupState);
-  pApp->options()->SaveState();
+  pApp->options()->SaveState(settings);
   settings.endGroup();
 
   settings.beginGroup(kConfigGroupWindow);
@@ -94,7 +95,7 @@ void MainWindow::LoadSettings() {
   QSettings settings(kConfigFileName,QSettings::IniFormat);
 
   settings.beginGroup(kConfigGroupState);
-  pApp->options()->LoadState();
+  pApp->options()->LoadState(settings);
   settings.endGroup();
 
   settings.beginGroup(kConfigGroupWindow);

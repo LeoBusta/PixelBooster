@@ -69,7 +69,7 @@ void ImageCanvasWidget::paintEvent(QPaintEvent *) {
     pen.setColor(Qt::red);
     pen.setDashPattern(dashes);
     painter.setPen(pen);
-    painter.drawRect(selection);
+    painter.drawRect(selection.adjusted(0,0,-1,-1));
 
     //painter.drawRect(cursor_);
   }
@@ -96,7 +96,14 @@ void ImageCanvasWidget::mouseReleaseEvent(QMouseEvent *event) {
 }
 
 void ImageCanvasWidget::mouseMoveEvent(QMouseEvent *event) {
-  QRect current_cursor = pApp->options()->PosToGrid(event->pos());
+  QPoint pos = event->pos();
+  if(!rect().contains(event->pos())){
+    pos.setX( qMin(rect().right()-1,qMax(rect().left(),pos.x())) );
+    pos.setY( qMin(rect().bottom()-1,qMax(rect().top(),pos.y())) );
+    //return;
+  }
+
+  QRect current_cursor = pApp->options()->PosToGrid(pos);
   if(anchor_down_){
     pApp->options()->set_selection( current_cursor.united(anchor_) );
   }else{

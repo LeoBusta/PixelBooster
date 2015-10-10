@@ -22,6 +22,8 @@
 #include <QSize>
 #include <QRect>
 
+class QSettings;
+
 /*!
  * \brief The GlobalOptions class
  */
@@ -38,13 +40,13 @@ public:
   void CleanCursorShift();
   void MoveSelection(const QPoint &top_left);
 
-  QRect PosToGrid(const QPoint &pos) const;
-
   QSize new_image_size() const;
   void set_new_image_size(const QSize &size);
 
-  void SaveState();
-  void LoadState();
+  QRect PosToGrid(const QPoint &pos) const;
+
+  void SaveState(QSettings &settings) const;
+  void LoadState(QSettings &settings);
 
 private:
   QSize cursor_size_;

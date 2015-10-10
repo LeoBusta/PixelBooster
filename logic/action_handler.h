@@ -37,6 +37,7 @@ public slots:
 
   // Interface Actions
   void About() const;
+  void TileSize() const;
 
   // Language Actions
   void TranslatePT_BR() const;

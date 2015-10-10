@@ -4,19 +4,22 @@
 #include <QDialog>
 
 namespace Ui {
-class Set_Tile_Size_Dialog;
+class SetTileSizeDialog;
 }
 
-class Set_Tile_Size_Dialog : public QDialog
+class SetTileSizeDialog : public QDialog
 {
   Q_OBJECT
 
 public:
-  explicit Set_Tile_Size_Dialog(QWidget *parent = 0);
-  ~Set_Tile_Size_Dialog();
+  explicit SetTileSizeDialog(QWidget *parent = 0);
+  ~SetTileSizeDialog();
 
 private:
-  Ui::Set_Tile_Size_Dialog *ui;
+  Ui::SetTileSizeDialog *ui;
+
+private slots:
+  void UpdateGlobalValues();
 };
 
 #endif // SET_TILE_SIZE_DIALOG_H
