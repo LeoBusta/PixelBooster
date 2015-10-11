@@ -30,8 +30,8 @@ const QString kOrganizationDomain = "pixel.busta.com.br";
 
 PixelBooster::PixelBooster(int argc, char * argv[])
   : QApplication(argc,argv),
-    main_window_(new MainWindow()),
-    options_(new GlobalOptions()){
+    options_(new GlobalOptions()),
+    main_window_(new MainWindow()){
   DEBUG_MSG("Instance!");
   QCoreApplication::setApplicationName(kApplicationName);
   QCoreApplication::setOrganizationName(kOrganizationName);

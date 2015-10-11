@@ -40,8 +40,8 @@ public:
 
   void Translate(QString language);
 private:
-  MainWindow * main_window_;
   GlobalOptions * options_;
+  MainWindow * main_window_;
 };
 
 #endif // PIXEL_BOOSTER_H
