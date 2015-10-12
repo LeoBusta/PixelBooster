@@ -364,7 +364,11 @@
    <widget class="QWidget" name="dockWidgetContents_2">
     <layout class="QVBoxLayout" name="verticalLayout_3">
      <item>
-      <widget class="ColorPickerWidget" name="widget" native="true"/>
+      <widget class="ColorPickerWidget" name="widget" native="true">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -409,7 +413,7 @@
   </action>
   <action name="actionSave">
    <property name="enabled">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="icon">
     <iconset resource="../resources/icons/icons.qrc">
@@ -783,7 +787,7 @@
   </action>
   <action name="actionPencil_Tool">
    <property name="enabled">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="icon">
     <iconset resource="../resources/icons/icons.qrc">

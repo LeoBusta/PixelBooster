@@ -28,6 +28,11 @@ ImageCanvasContainer::ImageCanvasContainer(const QImage &image, const QString &f
   file_name_(file_name){
   ui->setupUi(this);
   ui->image_canvas_widget_->SetImage(image);
+  if(!file_name.isEmpty()){
+    this->setWindowTitle(file_name);
+  }else{
+    this->setWindowTitle("New Image");
+  }
 }
 
 ImageCanvasContainer::~ImageCanvasContainer() {
