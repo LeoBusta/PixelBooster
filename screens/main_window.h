@@ -41,6 +41,7 @@ public:
   ~MainWindow();
 
   QMdiArea * mdi_area() const;
+  ImageCanvasContainer * current_canvas_container();
 private:
   Ui::MainWindow *ui;
   ActionHandler * action_handler_;

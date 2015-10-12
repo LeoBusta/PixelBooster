@@ -34,6 +34,7 @@ public slots:
   // File Actions
   void NewFile() const;
   void OpenFile() const;
+  void SaveFile() const;
 
   // Interface Actions
   void About() const;

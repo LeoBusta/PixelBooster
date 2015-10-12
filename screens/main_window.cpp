@@ -37,11 +37,11 @@ const QString kConfigWindowMaximized = "Maximized";
 const bool kConfigWindowMaximizedDefault = false;
 const QRect kConfigDefaultWindowGeometry = QRect(0,10,800,600);
 
-MainWindow::MainWindow(QWidget *parent) :
-  QMainWindow(parent),
-  ui(new Ui::MainWindow),
-  action_handler_(new ActionHandler(this)),
-  current_canvas_container_(NULL){
+MainWindow::MainWindow(QWidget *parent)
+  : QMainWindow(parent),
+    ui(new Ui::MainWindow),
+    action_handler_(new ActionHandler(this)),
+    current_canvas_container_(NULL) {
   ui->setupUi(this);
 
   ConnectActions();
@@ -56,15 +56,19 @@ MainWindow::~MainWindow() {
   delete ui;
 }
 
-QMdiArea *MainWindow::mdi_area() const
-{
+QMdiArea *MainWindow::mdi_area() const {
   return ui->image_mdi_area_;
+}
+
+ImageCanvasContainer *MainWindow::current_canvas_container() {
+  return current_canvas_container_;
 }
 
 void MainWindow::ConnectActions() {
   // File Actions
   QObject::connect(ui->actionNew,SIGNAL(triggered(bool)),action_handler_,SLOT(NewFile()));
   QObject::connect(ui->actionOpen,SIGNAL(triggered(bool)),action_handler_,SLOT(OpenFile()));
+  QObject::connect(ui->actionSave,SIGNAL(triggered(bool)),action_handler_,SLOT(SaveFile()));
 
   // Interface Actions
   QObject::connect(ui->actionAbout,SIGNAL(triggered(bool)),action_handler_,SLOT(About()));

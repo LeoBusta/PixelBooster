@@ -75,6 +75,10 @@ void ActionHandler::OpenFile() const {
   }
 }
 
+void ActionHandler::SaveFile() const {
+
+}
+
 void ActionHandler::About() const {
   AboutDialog * about_dialog = new AboutDialog(pApp->main_window());
   about_dialog->exec();
