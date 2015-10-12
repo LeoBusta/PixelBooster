@@ -26,6 +26,8 @@ const QString kStateCursorSize = "CursorSize";
 const QSize kStateCursorSizeDefault = QSize(32,32);
 const QString kStateNewImageSize = "NewImageSize";
 const QSize kStateNewImageSizeDefault = QSize(256,256);
+const QString kStateTransparency = "TransparencyEnabled";
+const bool kStateTransparencyDefault = false;
 
 GlobalOptions::GlobalOptions():
   vertical_shift_(false),
@@ -83,18 +85,25 @@ void GlobalOptions::set_new_image_size(const QSize &size) {
   new_image_size_ = size;
 }
 
+bool GlobalOptions::transparency_enabled() const {
+  return transparency_enabled_;
+}
+
+void GlobalOptions::set_transparency_enabled(bool transparency) {
+  transparency_enabled_ = transparency;
+}
+
 void GlobalOptions::SaveState(QSettings * settings) const {
   settings->setValue(kStateCursorSize,cursor_size_);
   settings->setValue(kStateNewImageSize,new_image_size_);
-  DEBUG_MSG("saved size:" << cursor_size_);
+  settings->setValue(kStateTransparency,transparency_enabled_);
 }
 
 void GlobalOptions::LoadState(QSettings * settings) {
   cursor_size_ = settings->value(kStateCursorSize,kStateCursorSizeDefault).toSize();
-  DEBUG_MSG("loaded size:" << cursor_size_);
   selection_.setSize(cursor_size_);
   selection_.setTopLeft(QPoint(0,0));
   new_image_size_ = settings->value(kStateNewImageSize,kStateNewImageSizeDefault).toSize();
-  DEBUG_MSG("loaded new image size:" << new_image_size_);
+  transparency_enabled_ = settings->value(kStateTransparency,kStateTransparencyDefault).toBool();
 }
 

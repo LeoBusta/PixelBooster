@@ -29,6 +29,7 @@ class QMdiArea;
 class QMdiSubWindow;
 class ActionHandler;
 class ImageCanvasContainer;
+class GlobalOptions;
 
 /*!
  * \brief The MainWindow class
@@ -47,11 +48,14 @@ private:
   ActionHandler * action_handler_;
   ImageCanvasContainer * current_canvas_container_;
 
+  GlobalOptions * options_cache_;
+
   void ConnectActions();
   void ConnectWidgets();
 
   void SaveSettings();
   void LoadSettings();
+  void UpdateWidgetState();
 
   void changeEvent(QEvent *event);
   void closeEvent(QCloseEvent *event);

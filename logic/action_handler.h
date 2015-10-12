@@ -21,6 +21,9 @@
 
 #include <QObject>
 
+class GlobalOptions;
+class MainWindow;
+
 /*!
  * \brief The ActionHandler class
  */
@@ -39,12 +42,16 @@ public slots:
   // Interface Actions
   void About() const;
   void TileSize() const;
+  void ToggleTransparency(bool transparency) const;
 
   // Language Actions
   void TranslatePT_BR() const;
   void TranslateEN_US() const;
 
 private:
+  GlobalOptions * options_cache_;
+  MainWindow * window_cache_;
+
   void CreateImageCanvas(const QImage &image, const QString &file_name) const;
 };
 

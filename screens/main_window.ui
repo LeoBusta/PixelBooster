@@ -652,8 +652,11 @@
    </property>
   </action>
   <action name="actionTransparency">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="icon">
     <iconset resource="../resources/icons/icons.qrc">

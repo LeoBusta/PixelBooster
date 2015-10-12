@@ -41,15 +41,17 @@ MainWindow::MainWindow(QWidget *parent)
   : QMainWindow(parent),
     ui(new Ui::MainWindow),
     action_handler_(new ActionHandler(this)),
-    current_canvas_container_(NULL) {
+    current_canvas_container_(NULL),
+    options_cache_(pApp->options()){
   ui->setupUi(this);
+
+  LoadSettings();
+  UpdateWidgetState();
+
+  ui->edit_widget->Clear(options_cache_->selection().size());
 
   ConnectActions();
   ConnectWidgets();
-
-  LoadSettings();
-
-  ui->edit_widget->Clear(pApp->options()->selection().size());
 }
 
 MainWindow::~MainWindow() {
@@ -76,6 +78,7 @@ void MainWindow::ConnectActions() {
   QObject::connect(ui->actionCascade,SIGNAL(triggered(bool)),ui->image_mdi_area_,SLOT(cascadeSubWindows()));
   QObject::connect(ui->actionTile_Subwindows,SIGNAL(triggered(bool)),ui->image_mdi_area_,SLOT(tileSubWindows()));
   QObject::connect(ui->actionExit,SIGNAL(triggered(bool)),this,SLOT(close()));
+  QObject::connect(ui->actionTransparency,SIGNAL(triggered(bool)),action_handler_,SLOT(ToggleTransparency(bool)));
 
   // Translation Actions
   QObject::connect(ui->actionPT_BR,SIGNAL(triggered(bool)),action_handler_,SLOT(TranslatePT_BR()));
@@ -90,7 +93,7 @@ void MainWindow::SaveSettings() {
   QSettings settings(kConfigFileName,QSettings::IniFormat);
 
   settings.beginGroup(kConfigGroupState);
-  pApp->options()->SaveState(&settings);
+  options_cache_->SaveState(&settings);
   settings.endGroup();
 
   settings.beginGroup(kConfigGroupWindow);
@@ -104,7 +107,7 @@ void MainWindow::LoadSettings() {
   QSettings settings(kConfigFileName,QSettings::IniFormat);
 
   settings.beginGroup(kConfigGroupState);
-  pApp->options()->LoadState(&settings);
+  options_cache_->LoadState(&settings);
   settings.endGroup();
 
   settings.beginGroup(kConfigGroupWindow);
@@ -117,7 +120,11 @@ void MainWindow::LoadSettings() {
   restoreState(settings.value(kConfigWindowState).toByteArray());
   settings.endGroup();
 
-  DEBUG_MSG("what is cursor size?" << pApp->options()->cursor_size());
+  DEBUG_MSG("what is cursor size?" << options_cache_->cursor_size());
+}
+
+void MainWindow::UpdateWidgetState() {
+  ui->actionTransparency->setChecked(options_cache_->transparency_enabled());
 }
 
 void MainWindow::changeEvent(QEvent *event) {

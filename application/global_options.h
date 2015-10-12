@@ -43,6 +43,9 @@ public:
   QSize new_image_size() const;
   void set_new_image_size(const QSize &size);
 
+  bool transparency_enabled() const;
+  void set_transparency_enabled(bool transparency);
+
   QRect PosToGrid(const QPoint &pos) const;
 
   void SaveState(QSettings *settings) const;
@@ -54,6 +57,7 @@ private:
   bool horizontal_shift_;
   bool vertical_shift_;
   QSize new_image_size_;
+  bool transparency_enabled_;
 };
 
 #endif // GLOBAL_OPTIONS_H

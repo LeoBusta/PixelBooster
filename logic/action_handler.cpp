@@ -33,15 +33,16 @@
 #include <QLabel>
 
 ActionHandler::ActionHandler(QObject *parent)
-  : QObject(parent){
+  : QObject(parent),
+    options_cache_(pApp->options()),
+    window_cache_(dynamic_cast<MainWindow*>(parent)){
 }
 
 ActionHandler::~ActionHandler() {
-
 }
 
 void ActionHandler::NewFile() const {
-  NewImageFileDialog * image_file_dialog = new NewImageFileDialog(pApp->main_window());
+  NewImageFileDialog * image_file_dialog = new NewImageFileDialog(window_cache_);
   int result = image_file_dialog->exec();
 
   // Check if the user canceled the new image creation.
@@ -63,7 +64,7 @@ void ActionHandler::NewFile() const {
 }
 
 void ActionHandler::OpenFile() const {
-  QStringList file_names = QFileDialog::getOpenFileNames(pApp->main_window(),"Open Files",".","Images (*.png *.xpm *.jpg)");
+  QStringList file_names = QFileDialog::getOpenFileNames(window_cache_,"Open Files",".","Images (*.png *.xpm *.jpg)");
 
   for( QString file_name : file_names ){
     if(!file_name.isEmpty()){
@@ -80,15 +81,19 @@ void ActionHandler::SaveFile() const {
 }
 
 void ActionHandler::About() const {
-  AboutDialog * about_dialog = new AboutDialog(pApp->main_window());
+  AboutDialog * about_dialog = new AboutDialog(window_cache_);
   about_dialog->exec();
   delete about_dialog;
 }
 
 void ActionHandler::TileSize() const {
-  SetTileSizeDialog * tile_dialog = new SetTileSizeDialog(pApp->main_window());
+  SetTileSizeDialog * tile_dialog = new SetTileSizeDialog(window_cache_);
   tile_dialog->exec();
   delete tile_dialog;
+}
+
+void ActionHandler::ToggleTransparency(bool transparency) const {
+  options_cache_->set_transparency_enabled(transparency);
 }
 
 void ActionHandler::TranslatePT_BR() const {
@@ -101,7 +106,7 @@ void ActionHandler::TranslateEN_US() const {
 
 void ActionHandler::CreateImageCanvas(const QImage &image, const QString &file_name) const {
   ImageCanvasContainer * canvas_container = new ImageCanvasContainer(image,file_name);
-  QMdiArea * mdi = dynamic_cast<MainWindow*>(pApp->main_window())->mdi_area();
+  QMdiArea * mdi = dynamic_cast<MainWindow*>(window_cache_)->mdi_area();
   mdi->addSubWindow(canvas_container);
   canvas_container->setWindowTitle(file_name);
   canvas_container->show();
