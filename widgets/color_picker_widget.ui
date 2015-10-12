@@ -30,52 +30,22 @@
       </spacer>
      </item>
      <item>
-      <widget class="QFrame" name="frame">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>50</width>
-         <height>30</height>
-        </size>
-       </property>
+      <widget class="QPushButton" name="pushButton">
        <property name="styleSheet">
         <string notr="true">background-color: #fff;</string>
        </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
+       <property name="text">
+        <string>PushButton</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QFrame" name="frame_2">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>50</width>
-         <height>30</height>
-        </size>
-       </property>
+      <widget class="QPushButton" name="pushButton_2">
        <property name="styleSheet">
         <string notr="true">background-color: #000;</string>
        </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
+       <property name="text">
+        <string>PushButton</string>
        </property>
       </widget>
      </item>

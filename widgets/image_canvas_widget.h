@@ -21,6 +21,8 @@
 
 #include <QWidget>
 
+class GlobalOptions;
+
 /*!
  * \brief The ImageCanvasWidget class
  */
@@ -40,6 +42,8 @@ protected:
   virtual void mouseMoveEvent(QMouseEvent *event);
 
 private:
+  GlobalOptions * options_cache_;
+
   bool active_;
   bool anchor_down_;
 

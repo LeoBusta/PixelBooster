@@ -14,7 +14,7 @@
    <string>ScrollArea</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/images/lines_background_color.png);</string>
+   <string notr="true"/>
   </property>
   <property name="frameShape">
    <enum>QFrame::NoFrame</enum>
@@ -35,10 +35,13 @@
     </rect>
    </property>
    <property name="sizePolicy">
-    <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
      <horstretch>0</horstretch>
      <verstretch>0</verstretch>
     </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/images/lines_background_color.png);</string>
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <property name="leftMargin">

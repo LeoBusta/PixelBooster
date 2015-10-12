@@ -31,7 +31,8 @@ const bool kStateTransparencyDefault = false;
 
 GlobalOptions::GlobalOptions():
   vertical_shift_(false),
-  horizontal_shift_(false){
+  horizontal_shift_(false),
+  zoom_(1){
 }
 
 QSize GlobalOptions::cursor_size() const {
@@ -91,6 +92,14 @@ bool GlobalOptions::transparency_enabled() const {
 
 void GlobalOptions::set_transparency_enabled(bool transparency) {
   transparency_enabled_ = transparency;
+}
+
+int GlobalOptions::zoom() const {
+  return zoom_;
+}
+
+void GlobalOptions::set_zoom(int zoom) {
+  zoom_ = zoom;
 }
 
 void GlobalOptions::SaveState(QSettings * settings) const {

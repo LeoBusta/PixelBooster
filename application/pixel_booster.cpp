@@ -32,7 +32,6 @@ PixelBooster::PixelBooster(int argc, char * argv[])
   : QApplication(argc,argv),
     options_(new GlobalOptions()),
     main_window_(new MainWindow()){
-  DEBUG_MSG("Instance!");
   QCoreApplication::setApplicationName(kApplicationName);
   QCoreApplication::setOrganizationName(kOrganizationName);
   QCoreApplication::setOrganizationDomain(kOrganizationDomain);

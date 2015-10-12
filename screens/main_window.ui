@@ -227,7 +227,7 @@
           <x>0</x>
           <y>0</y>
           <width>100</width>
-          <height>157</height>
+          <height>143</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout">
@@ -346,6 +346,22 @@
          </item>
         </layout>
        </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="zoom_horizontalSlider">
+       <property name="maximum">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBelow</enum>
+       </property>
+       <property name="tickInterval">
+        <number>1</number>
+       </property>
       </widget>
      </item>
     </layout>

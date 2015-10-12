@@ -21,6 +21,7 @@
 #include <QPainter>
 
 #include "utils/debug.h"
+#include "application/pixel_booster.h"
 
 ImageEditWidget::ImageEditWidget(QWidget *parent) : QWidget(parent) {
   image_ = QImage(0,0,QImage::Format_ARGB32);
@@ -47,7 +48,9 @@ void ImageEditWidget::GetImage(QImage *image) {
   if(NULL == image || image->isNull()){
     return;
   }
+
   image_ = *image;
+
   this->setFixedSize(image_.size());
   update();
 }

@@ -79,7 +79,7 @@ void MainWindow::ConnectActions() {
   QObject::connect(ui->actionTile_Subwindows,SIGNAL(triggered(bool)),ui->image_mdi_area_,SLOT(tileSubWindows()));
   QObject::connect(ui->actionExit,SIGNAL(triggered(bool)),this,SLOT(close()));
   QObject::connect(ui->actionTransparency,SIGNAL(triggered(bool)),action_handler_,SLOT(ToggleTransparency(bool)));
-
+  QObject::connect(ui->zoom_horizontalSlider,SIGNAL(valueChanged(int)),action_handler_,SLOT(Zoom(int)));
   // Translation Actions
   QObject::connect(ui->actionPT_BR,SIGNAL(triggered(bool)),action_handler_,SLOT(TranslatePT_BR()));
   QObject::connect(ui->actionEN_US,SIGNAL(triggered(bool)),action_handler_,SLOT(TranslateEN_US()));
@@ -119,8 +119,6 @@ void MainWindow::LoadSettings() {
   }
   restoreState(settings.value(kConfigWindowState).toByteArray());
   settings.endGroup();
-
-  DEBUG_MSG("what is cursor size?" << options_cache_->cursor_size());
 }
 
 void MainWindow::UpdateWidgetState() {

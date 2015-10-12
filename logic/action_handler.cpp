@@ -96,6 +96,11 @@ void ActionHandler::ToggleTransparency(bool transparency) const {
   options_cache_->set_transparency_enabled(transparency);
 }
 
+void ActionHandler::Zoom(int zoom) {
+  DEBUG_MSG(zoom);
+  options_cache_->set_zoom( pow(2,zoom) );
+}
+
 void ActionHandler::TranslatePT_BR() const {
   pApp->Translate("pt_br");
 }

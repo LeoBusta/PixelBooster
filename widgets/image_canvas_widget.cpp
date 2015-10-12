@@ -27,7 +27,8 @@
 ImageCanvasWidget::ImageCanvasWidget(QWidget *parent)
   : QWidget(parent),
     anchor_down_(false),
-    active_(false){
+    active_(false),
+    options_cache_(pApp->options()){
   setMouseTracking(true);
 }
 
@@ -50,14 +51,14 @@ void ImageCanvasWidget::set_active(bool active) {
   active_ = active;
 }
 
-void ImageCanvasWidget::paintEvent(QPaintEvent *) {
+void ImageCanvasWidget::paintEvent(QPaintEvent *event) {
   QPainter painter(this);
 
   if(image_.isNull()) return;
   painter.drawImage(image_.rect(),image_);
 
   if(active_){
-    QRect selection = pApp->options()->selection();
+    QRect selection = options_cache_->selection();
 
     painter.setPen(Qt::yellow);
     painter.setBrush(Qt::NoBrush);
@@ -70,17 +71,15 @@ void ImageCanvasWidget::paintEvent(QPaintEvent *) {
     pen.setDashPattern(dashes);
     painter.setPen(pen);
     painter.drawRect(selection.adjusted(0,0,-1,-1));
-
-    //painter.drawRect(cursor_);
   }
 }
 
 void ImageCanvasWidget::mousePressEvent(QMouseEvent *event) {
   if(event->button() == Qt::RightButton){
-    pApp->options()->CleanCursorShift();
+    options_cache_->CleanCursorShift();
     anchor_down_ = true;
-    anchor_ = pApp->options()->PosToGrid(event->pos());
-    pApp->options()->set_selection( anchor_ );
+    anchor_ = options_cache_->PosToGrid(event->pos());
+    options_cache_->set_selection( anchor_ );
     update();
   }
 }
@@ -88,8 +87,8 @@ void ImageCanvasWidget::mousePressEvent(QMouseEvent *event) {
 void ImageCanvasWidget::mouseReleaseEvent(QMouseEvent *event) {
   anchor_down_ = false;
   if(event->button() == Qt::RightButton){
-    emit SendImage(&image_.copy(pApp->options()->selection()));
-    pApp->options()->UpdateCursorShift();
+    emit SendImage(&image_.copy(options_cache_->selection()));
+    options_cache_->UpdateCursorShift();
   }else if(event->button() == Qt::LeftButton){
     emit RequestImage();
   }
@@ -100,16 +99,14 @@ void ImageCanvasWidget::mouseMoveEvent(QMouseEvent *event) {
   if(!rect().contains(event->pos())){
     pos.setX( qMin(rect().right()-1,qMax(rect().left(),pos.x())) );
     pos.setY( qMin(rect().bottom()-1,qMax(rect().top(),pos.y())) );
-    //return;
   }
 
-  QRect current_cursor = pApp->options()->PosToGrid(pos);
+  QRect current_cursor = options_cache_->PosToGrid(pos);
   if(anchor_down_){
-    pApp->options()->set_selection( current_cursor.united(anchor_) );
+    options_cache_->set_selection( current_cursor.united(anchor_) );
   }else{
-    pApp->options()->MoveSelection( current_cursor.center() );
+    options_cache_->MoveSelection( current_cursor.center() );
   }
-  //cursor_ = current_cursor;
   update();
 }
 
@@ -118,7 +115,12 @@ void ImageCanvasWidget::ReceiveImage(QImage * image) {
     return;
   }
   QPainter painter(&image_);
-  painter.drawImage(pApp->options()->selection(),*image);
+
+  if(!options_cache_->transparency_enabled()){
+    painter.setCompositionMode(QPainter::CompositionMode_Source);
+    painter.eraseRect(options_cache_->selection());
+  }
+  painter.drawImage(options_cache_->selection(),*image);
 
   update();
 }

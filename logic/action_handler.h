@@ -43,6 +43,7 @@ public slots:
   void About() const;
   void TileSize() const;
   void ToggleTransparency(bool transparency) const;
+  void Zoom(int zoom);
 
   // Language Actions
   void TranslatePT_BR() const;
