@@ -27,7 +27,9 @@ const QSize kStateCursorSizeDefault = QSize(32,32);
 const QString kStateNewImageSize = "NewImageSize";
 const QSize kStateNewImageSizeDefault = QSize(256,256);
 
-GlobalOptions::GlobalOptions() {
+GlobalOptions::GlobalOptions():
+  vertical_shift_(false),
+  horizontal_shift_(false){
 }
 
 QSize GlobalOptions::cursor_size() const {
@@ -90,6 +92,8 @@ void GlobalOptions::SaveState(QSettings * settings) const {
 void GlobalOptions::LoadState(QSettings * settings) {
   cursor_size_ = settings->value(kStateCursorSize,kStateCursorSizeDefault).toSize();
   DEBUG_MSG("loaded size:" << cursor_size_);
+  selection_.setSize(cursor_size_);
+  selection_.setTopLeft(QPoint(0,0));
   new_image_size_ = settings->value(kStateNewImageSize,kStateNewImageSizeDefault).toSize();
   DEBUG_MSG("loaded new image size:" << new_image_size_);
 }

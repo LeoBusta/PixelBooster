@@ -33,6 +33,7 @@ public:
 
   QImage image_;
 
+  void Clear(const QSize &size);
 protected:
   virtual void paintEvent(QPaintEvent *event);
 

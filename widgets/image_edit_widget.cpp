@@ -27,6 +27,13 @@ ImageEditWidget::ImageEditWidget(QWidget *parent) : QWidget(parent) {
   this->setFixedSize(0,0);
 }
 
+void ImageEditWidget::Clear(const QSize &size) {
+  image_ = QImage(size,QImage::Format_ARGB32);
+  image_.fill(Qt::white);
+  this->setFixedSize(image_.size());
+  update();
+}
+
 void ImageEditWidget::paintEvent(QPaintEvent *event) {
   QPainter painter(this);
 

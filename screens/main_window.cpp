@@ -48,6 +48,8 @@ MainWindow::MainWindow(QWidget *parent) :
   ConnectWidgets();
 
   LoadSettings();
+
+  ui->edit_widget->Clear(pApp->options()->selection().size());
 }
 
 MainWindow::~MainWindow() {
