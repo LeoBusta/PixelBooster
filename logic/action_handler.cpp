@@ -56,7 +56,7 @@ void ActionHandler::NewFile() const {
 
   QImage image(size,format);
   image.fill(Qt::white);
-  CreateImageCanvas(image);
+  CreateImageCanvas(image, "New Image *");
 
   delete image_file_dialog;
   return;
@@ -69,7 +69,7 @@ void ActionHandler::OpenFile() const {
     if(!file_name.isEmpty()){
       QImage image(file_name);
       if(!image.isNull()){
-        CreateImageCanvas(image);
+        CreateImageCanvas(image,file_name);
       }
     }
   }
@@ -99,9 +99,10 @@ void ActionHandler::TranslateEN_US() const {
   pApp->Translate("en_us");
 }
 
-void ActionHandler::CreateImageCanvas(const QImage &image) const {
+void ActionHandler::CreateImageCanvas(const QImage &image, const QString &file_name) const {
   ImageCanvasContainer * canvas_container = new ImageCanvasContainer(image);
   QMdiArea * mdi = dynamic_cast<MainWindow*>(pApp->main_window())->mdi_area();
   mdi->addSubWindow(canvas_container);
+  canvas_container->setWindowTitle(file_name);
   canvas_container->show();
 }

@@ -45,7 +45,7 @@ public slots:
   void TranslateEN_US() const;
 
 private:
-  void CreateImageCanvas(const QImage &image) const;
+  void CreateImageCanvas(const QImage &image, const QString &file_name) const;
 };
 
 #endif // ACTION_HANDLER_H

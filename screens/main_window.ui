@@ -195,6 +195,8 @@
    <addaction name="actionLine_Tool"/>
    <addaction name="actionRectangle_Tool"/>
    <addaction name="actionEllipse_Tool"/>
+   <addaction name="separator"/>
+   <addaction name="actionTransparency"/>
   </widget>
   <widget class="QDockWidget" name="dockWidget">
    <property name="features">
@@ -551,6 +553,10 @@
    <property name="enabled">
     <bool>false</bool>
    </property>
+   <property name="icon">
+    <iconset resource="../resources/icons/icons.qrc">
+     <normaloff>:/icons/delete.png</normaloff>:/icons/delete.png</iconset>
+   </property>
    <property name="text">
     <string>Delete</string>
    </property>
@@ -651,6 +657,10 @@
    <property name="enabled">
     <bool>false</bool>
    </property>
+   <property name="icon">
+    <iconset resource="../resources/icons/icons.qrc">
+     <normaloff>:/icons/transparency.png</normaloff>:/icons/transparency.png</iconset>
+   </property>
    <property name="text">
     <string>Transparency</string>
    </property>
@@ -722,6 +732,10 @@
    </property>
   </action>
   <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="../resources/icons/icons.qrc">
+     <normaloff>:/app_icon/app_icon.svg</normaloff>:/app_icon/app_icon.svg</iconset>
+   </property>
    <property name="text">
     <string>About</string>
    </property>
@@ -825,6 +839,10 @@
    <property name="enabled">
     <bool>true</bool>
    </property>
+   <property name="icon">
+    <iconset resource="../resources/icons/icons.qrc">
+     <normaloff>:/icons/cascade.png</normaloff>:/icons/cascade.png</iconset>
+   </property>
    <property name="text">
     <string>Cascade</string>
    </property>
@@ -838,6 +856,10 @@
    </property>
   </action>
   <action name="actionTile_Subwindows">
+   <property name="icon">
+    <iconset resource="../resources/icons/icons.qrc">
+     <normaloff>:/icons/tile_windows.png</normaloff>:/icons/tile_windows.png</iconset>
+   </property>
    <property name="text">
     <string>Tile Subwindows</string>
    </property>
