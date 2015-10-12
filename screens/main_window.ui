@@ -122,8 +122,7 @@
     <addaction name="menuSet_Language"/>
     <addaction name="separator"/>
     <addaction name="actionCascade"/>
-    <addaction name="actionSide_by_Side"/>
-    <addaction name="actionVertical"/>
+    <addaction name="actionTile_Subwindows"/>
     <addaction name="separator"/>
     <addaction name="actionNormal_Size"/>
    </widget>
@@ -824,26 +823,10 @@
   </action>
   <action name="actionCascade">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="text">
     <string>Cascade</string>
-   </property>
-  </action>
-  <action name="actionSide_by_Side">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="text">
-    <string>Side by Side</string>
-   </property>
-  </action>
-  <action name="actionVertical">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="text">
-    <string>Vertical</string>
    </property>
   </action>
   <action name="actionNormal_Size">
@@ -852,6 +835,11 @@
    </property>
    <property name="text">
     <string>Normal Size</string>
+   </property>
+  </action>
+  <action name="actionTile_Subwindows">
+   <property name="text">
+    <string>Tile Subwindows</string>
    </property>
   </action>
  </widget>
