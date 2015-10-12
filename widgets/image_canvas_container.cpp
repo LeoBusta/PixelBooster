@@ -22,9 +22,10 @@
 #include "widgets/image_edit_widget.h"
 #include "utils/debug.h"
 
-ImageCanvasContainer::ImageCanvasContainer(const QImage &image, QWidget *parent) :
+ImageCanvasContainer::ImageCanvasContainer(const QImage &image, const QString &file_name, QWidget *parent) :
   QScrollArea(parent),
-  ui(new Ui::ImageCanvasContainer){
+  ui(new Ui::ImageCanvasContainer),
+  file_name_(file_name){
   ui->setupUi(this);
   ui->image_canvas_widget_->SetImage(image);
 }

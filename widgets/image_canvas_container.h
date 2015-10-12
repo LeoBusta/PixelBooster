@@ -34,13 +34,15 @@ class ImageEditWidget;
 class ImageCanvasContainer : public QScrollArea {
   Q_OBJECT
 public:
-  explicit ImageCanvasContainer(const QImage &image, QWidget *parent = 0);
+  explicit ImageCanvasContainer(const QImage &image, const QString &file_name, QWidget *parent = 0);
   ~ImageCanvasContainer();
 
   void SetAsActive(ImageEditWidget * edit_widget);
   void RemoveAsActive(ImageEditWidget *edit_widget);
 private:
   Ui::ImageCanvasContainer *ui;
+
+  QString file_name_;
 };
 
 #endif // IMAGE_CANVAS_CONTAINER_H

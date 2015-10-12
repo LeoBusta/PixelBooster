@@ -364,16 +364,7 @@
    <widget class="QWidget" name="dockWidgetContents_2">
     <layout class="QVBoxLayout" name="verticalLayout_3">
      <item>
-      <widget class="QStackedWidget" name="stackedWidget">
-       <widget class="QWidget" name="page">
-        <layout class="QVBoxLayout" name="verticalLayout_4">
-         <item>
-          <widget class="QWidget" name="widget" native="true"/>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="page_2"/>
-      </widget>
+      <widget class="ColorPickerWidget" name="widget" native="true"/>
      </item>
     </layout>
    </widget>
@@ -468,10 +459,13 @@
   </action>
   <action name="actionExit">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="text">
     <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
    </property>
   </action>
   <action name="actionUndo">
@@ -871,6 +865,12 @@
    <class>ImageEditWidget</class>
    <extends>QWidget</extends>
    <header>widgets/image_edit_widget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ColorPickerWidget</class>
+   <extends>QWidget</extends>
+   <header>widgets/color_picker_widget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

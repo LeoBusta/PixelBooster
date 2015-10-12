@@ -36,7 +36,8 @@ SOURCES += \
     application/global_options.cpp \
     screens/about_dialog.cpp \
     screens/set_tile_size_dialog.cpp \
-    screens/main_window.cpp
+    screens/main_window.cpp \
+    widgets/color_picker_widget.cpp
 
 HEADERS  += \
     widgets/image_edit_widget.h \
@@ -50,14 +51,16 @@ HEADERS  += \
     application/global_options.h \
     screens/about_dialog.h \
     screens/set_tile_size_dialog.h \
-    screens/main_window.h
+    screens/main_window.h \
+    widgets/color_picker_widget.h
 
 FORMS    += \
     screens/new_image_file_dialog.ui \
     widgets/image_canvas_container.ui \
     screens/about_dialog.ui \
     screens/set_tile_size_dialog.ui \
-    screens/main_window.ui
+    screens/main_window.ui \
+    widgets/color_picker_widget.ui
 
 RESOURCES += \
     resources/icons/icons.qrc \

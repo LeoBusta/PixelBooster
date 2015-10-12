@@ -16,8 +16,8 @@
 *  along with this program.  If not, see <http://www.gnu.org/licenses/>.    *
 \***************************************************************************/
 
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef MAIN_WINDOW_H
+#define MAIN_WINDOW_H
 
 #include <QMainWindow>
 
@@ -60,4 +60,4 @@ private slots:
   void CurrentWindowChanged(QMdiSubWindow *w);
 };
 
-#endif // MAINWINDOW_H
+#endif // MAIN_WINDOW_H

@@ -75,6 +75,7 @@ void MainWindow::ConnectActions() {
   QObject::connect(ui->actionTile_Size, SIGNAL(triggered(bool)),action_handler_,SLOT(TileSize()));
   QObject::connect(ui->actionCascade,SIGNAL(triggered(bool)),ui->image_mdi_area_,SLOT(cascadeSubWindows()));
   QObject::connect(ui->actionTile_Subwindows,SIGNAL(triggered(bool)),ui->image_mdi_area_,SLOT(tileSubWindows()));
+  QObject::connect(ui->actionExit,SIGNAL(triggered(bool)),this,SLOT(close()));
 
   // Translation Actions
   QObject::connect(ui->actionPT_BR,SIGNAL(triggered(bool)),action_handler_,SLOT(TranslatePT_BR()));
