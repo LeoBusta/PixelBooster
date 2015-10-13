@@ -28,6 +28,8 @@ const QString kStateNewImageSize = "NewImageSize";
 const QSize kStateNewImageSizeDefault = QSize(256,256);
 const QString kStateTransparency = "TransparencyEnabled";
 const bool kStateTransparencyDefault = false;
+const QString kStateZoomLevel = "ZoomLevel";
+const int kStateZoomLevelDefault = 0;
 
 GlobalOptions::GlobalOptions():
   vertical_shift_(false),
@@ -98,15 +100,36 @@ int GlobalOptions::zoom() const {
   return zoom_;
 }
 
-void GlobalOptions::set_zoom(int zoom) {
+void GlobalOptions::set_zoom_level(int zoom) {
   zoom_level_ = zoom;
-  zoom_ = pow(2,zoom);
+  zoom_ = pow(2,zoom_level_);
+}
+
+int GlobalOptions::zoom_level() const {
+  return zoom_level_;
+}
+
+QColor GlobalOptions::main_color() const {
+  return main_color_;
+}
+
+void GlobalOptions::set_main_color(const QColor &color) {
+  main_color_ = color;
+}
+
+QColor GlobalOptions::alt_color() const {
+  return alt_color_;
+}
+
+void GlobalOptions::set_alt_color(const QColor &color) {
+  alt_color_ = color;
 }
 
 void GlobalOptions::SaveState(QSettings * settings) const {
   settings->setValue(kStateCursorSize,cursor_size_);
   settings->setValue(kStateNewImageSize,new_image_size_);
   settings->setValue(kStateTransparency,transparency_enabled_);
+  settings->setValue(kStateZoomLevel,zoom_level_);
 }
 
 void GlobalOptions::LoadState(QSettings * settings) {
@@ -115,5 +138,6 @@ void GlobalOptions::LoadState(QSettings * settings) {
   selection_.setTopLeft(QPoint(0,0));
   new_image_size_ = settings->value(kStateNewImageSize,kStateNewImageSizeDefault).toSize();
   transparency_enabled_ = settings->value(kStateTransparency,kStateTransparencyDefault).toBool();
+  set_zoom_level(settings->value(kStateZoomLevel,kStateZoomLevelDefault).toInt());
 }
 

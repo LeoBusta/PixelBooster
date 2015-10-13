@@ -24,6 +24,7 @@
 #include "application/pixel_booster.h"
 
 ImageEditWidget::ImageEditWidget(QWidget *parent) : QWidget(parent) {
+  setMouseTracking(true);
   image_ = QImage(0,0,QImage::Format_ARGB32);
   this->setFixedSize(0,0);
 }
@@ -48,6 +49,10 @@ void ImageEditWidget::paintEvent(QPaintEvent *event) {
   image_rect.setSize( QSize(image_.width()*zoom,image_.height()*zoom) );
 
   painter.drawImage(image_rect,image_);
+}
+
+void ImageEditWidget::mouseMoveEvent(QMouseEvent *event) {
+  update();
 }
 
 void ImageEditWidget::GetImage(QImage *image) {

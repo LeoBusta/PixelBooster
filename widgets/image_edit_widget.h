@@ -36,7 +36,7 @@ public:
   void Clear(const QSize &size);
 protected:
   virtual void paintEvent(QPaintEvent *event);
-
+  virtual void mouseMoveEvent(QMouseEvent *event);
 signals:
   void SendImage(QImage*);
 public slots:

@@ -21,6 +21,7 @@
 
 #include <QSize>
 #include <QRect>
+#include <QColor>
 
 class QSettings;
 
@@ -47,7 +48,15 @@ public:
   void set_transparency_enabled(bool transparency);
 
   int zoom() const;
-  void set_zoom(int zoom);
+  void set_zoom_level(int zoom);
+
+  int zoom_level() const;
+
+  QColor main_color() const;
+  void set_main_color(const QColor &color);
+
+  QColor alt_color() const;
+  void set_alt_color(const QColor &color);
 
   QRect PosToGrid(const QPoint &pos) const;
 
@@ -63,6 +72,8 @@ private:
   bool transparency_enabled_;
   int zoom_level_;
   int zoom_;
+  QColor main_color_;
+  QColor alt_color_;
 };
 
 #endif // GLOBAL_OPTIONS_H

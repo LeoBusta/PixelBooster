@@ -227,7 +227,7 @@
           <x>0</x>
           <y>0</y>
           <width>100</width>
-          <height>143</height>
+          <height>138</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout">
@@ -380,9 +380,30 @@
    <widget class="QWidget" name="dockWidgetContents_2">
     <layout class="QVBoxLayout" name="verticalLayout_3">
      <item>
-      <widget class="ColorPickerWidget" name="widget" native="true">
-       <property name="enabled">
-        <bool>false</bool>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="color_main_pushButton">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="color_alt_pushButton">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
        </property>
       </widget>
      </item>
@@ -888,12 +909,6 @@
    <class>ImageEditWidget</class>
    <extends>QWidget</extends>
    <header>widgets/image_edit_widget.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>ColorPickerWidget</class>
-   <extends>QWidget</extends>
-   <header>widgets/color_picker_widget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

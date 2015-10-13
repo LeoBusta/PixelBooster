@@ -32,6 +32,10 @@
 #include <QMdiArea>
 #include <QLabel>
 #include <QMdiSubWindow>
+#include <QColorDialog>
+
+const QString kTxtSelectMainColor = "Select Main Color";
+const QString kTxtSelectAltColor = "Select Secondary Color";
 
 ActionHandler::ActionHandler(QObject *parent)
   : QObject(parent),
@@ -97,9 +101,14 @@ void ActionHandler::ToggleTransparency(bool transparency) const {
   options_cache_->set_transparency_enabled(transparency);
 }
 
-void ActionHandler::Zoom(int zoom) {
-  options_cache_->set_zoom( zoom );
+void ActionHandler::Zoom(int zoom) const {
+  options_cache_->set_zoom_level( zoom );
   emit UpdateEditArea();
+}
+
+void ActionHandler::OpenMainColorPick() const {
+  QColor color = QColorDialog::getColor(options_cache_->main_color(),window_cache_,kTxtSelectMainColor,QColorDialog::ShowAlphaChannel);
+  options_cache_->set_main_color(color);
 }
 
 void ActionHandler::TranslatePT_BR() const {

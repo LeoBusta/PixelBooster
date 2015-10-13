@@ -43,14 +43,15 @@ public slots:
   void About() const;
   void TileSize() const;
   void ToggleTransparency(bool transparency) const;
-  void Zoom(int zoom);
+  void Zoom(int zoom) const;
+  void OpenMainColorPick() const;
 
   // Language Actions
   void TranslatePT_BR() const;
   void TranslateEN_US() const;
 
 signals:
-  void UpdateEditArea();
+  void UpdateEditArea() const;
 
 private:
   GlobalOptions * options_cache_;

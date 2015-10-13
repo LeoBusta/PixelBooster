@@ -52,6 +52,8 @@ MainWindow::MainWindow(QWidget *parent)
 
   ConnectActions();
   ConnectWidgets();
+
+  ui->zoom_horizontalSlider->setValue(options_cache_->zoom_level());
 }
 
 MainWindow::~MainWindow() {
@@ -91,6 +93,7 @@ void MainWindow::ConnectActions() {
 
 void MainWindow::ConnectWidgets() {
   QObject::connect(ui->image_mdi_area_,SIGNAL(subWindowActivated(QMdiSubWindow*)),this,SLOT(CurrentWindowChanged(QMdiSubWindow*)));
+  QObject::connect(ui->color_main_pushButton,SIGNAL(clicked()),action_handler_,SLOT(OpenMainColorPick()));
 }
 
 void MainWindow::SaveSettings() {
@@ -116,12 +119,12 @@ void MainWindow::LoadSettings() {
 
   settings.beginGroup(kConfigGroupWindow);
 
+  setGeometry(settings.value(kConfigWindowGeometry,kConfigDefaultWindowGeometry).toRect());
+  restoreState(settings.value(kConfigWindowState).toByteArray());
+
   if(settings.value(kConfigWindowMaximized,kConfigWindowMaximizedDefault).toBool()){
     showMaximized();
-  }else{
-    setGeometry(settings.value(kConfigWindowGeometry,kConfigDefaultWindowGeometry).toRect());
   }
-  restoreState(settings.value(kConfigWindowState).toByteArray());
   settings.endGroup();
 }
 
