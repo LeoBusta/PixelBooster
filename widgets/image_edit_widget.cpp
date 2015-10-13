@@ -41,7 +41,13 @@ void ImageEditWidget::paintEvent(QPaintEvent *event) {
   if(image_.isNull()){
     return;
   }
-  painter.drawImage(image_.rect(),image_);
+
+  int zoom = pApp->options()->zoom();
+
+  QRect image_rect = image_.rect();
+  image_rect.setSize( QSize(image_.width()*zoom,image_.height()*zoom) );
+
+  painter.drawImage(image_rect,image_);
 }
 
 void ImageEditWidget::GetImage(QImage *image) {
@@ -51,11 +57,19 @@ void ImageEditWidget::GetImage(QImage *image) {
 
   image_ = *image;
 
-  this->setFixedSize(image_.size());
-  update();
+  UpdateWidget();
 }
 
 void ImageEditWidget::HandleRequest() {
   emit SendImage(&image_);
+}
+
+void ImageEditWidget::UpdateWidget() {
+  int zoom = pApp->options()->zoom();
+
+  QSize image_size = image_.size().scaled(image_.width()*zoom,image_.height()*zoom,Qt::KeepAspectRatio);
+
+  this->setFixedSize(image_size);
+  update();
 }
 

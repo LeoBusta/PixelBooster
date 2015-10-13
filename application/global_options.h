@@ -61,6 +61,7 @@ private:
   bool vertical_shift_;
   QSize new_image_size_;
   bool transparency_enabled_;
+  int zoom_level_;
   int zoom_;
 };
 

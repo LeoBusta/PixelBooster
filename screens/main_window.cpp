@@ -80,6 +80,10 @@ void MainWindow::ConnectActions() {
   QObject::connect(ui->actionExit,SIGNAL(triggered(bool)),this,SLOT(close()));
   QObject::connect(ui->actionTransparency,SIGNAL(triggered(bool)),action_handler_,SLOT(ToggleTransparency(bool)));
   QObject::connect(ui->zoom_horizontalSlider,SIGNAL(valueChanged(int)),action_handler_,SLOT(Zoom(int)));
+
+  // Inverse communication
+  QObject::connect(action_handler_,SIGNAL(UpdateEditArea()),ui->edit_widget,SLOT(UpdateWidget()));
+
   // Translation Actions
   QObject::connect(ui->actionPT_BR,SIGNAL(triggered(bool)),action_handler_,SLOT(TranslatePT_BR()));
   QObject::connect(ui->actionEN_US,SIGNAL(triggered(bool)),action_handler_,SLOT(TranslateEN_US()));

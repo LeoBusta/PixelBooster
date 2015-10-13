@@ -42,6 +42,7 @@ signals:
 public slots:
   void GetImage(QImage*image);
   void HandleRequest();
+  void UpdateWidget();
 };
 
 #endif // IMAGE_EDIT_WIDGET_H

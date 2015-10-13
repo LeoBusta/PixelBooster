@@ -58,7 +58,7 @@ void ImageCanvasWidget::paintEvent(QPaintEvent *event) {
   painter.drawImage(image_.rect(),image_);
 
   if(active_){
-    QRect selection = options_cache_->selection();
+    QRect selection = options_cache_->selection().adjusted(0,0,-1,-1);
 
     painter.setPen(Qt::yellow);
     painter.setBrush(Qt::NoBrush);
@@ -70,7 +70,7 @@ void ImageCanvasWidget::paintEvent(QPaintEvent *event) {
     pen.setColor(Qt::red);
     pen.setDashPattern(dashes);
     painter.setPen(pen);
-    painter.drawRect(selection.adjusted(0,0,-1,-1));
+    painter.drawRect(selection);
   }
 }
 

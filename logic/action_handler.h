@@ -49,6 +49,9 @@ public slots:
   void TranslatePT_BR() const;
   void TranslateEN_US() const;
 
+signals:
+  void UpdateEditArea();
+
 private:
   GlobalOptions * options_cache_;
   MainWindow * window_cache_;

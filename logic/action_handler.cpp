@@ -31,6 +31,7 @@
 #include <QFileDialog>
 #include <QMdiArea>
 #include <QLabel>
+#include <QMdiSubWindow>
 
 ActionHandler::ActionHandler(QObject *parent)
   : QObject(parent),
@@ -97,8 +98,8 @@ void ActionHandler::ToggleTransparency(bool transparency) const {
 }
 
 void ActionHandler::Zoom(int zoom) {
-  DEBUG_MSG(zoom);
-  options_cache_->set_zoom( pow(2,zoom) );
+  options_cache_->set_zoom( zoom );
+  emit UpdateEditArea();
 }
 
 void ActionHandler::TranslatePT_BR() const {
@@ -112,7 +113,8 @@ void ActionHandler::TranslateEN_US() const {
 void ActionHandler::CreateImageCanvas(const QImage &image, const QString &file_name) const {
   ImageCanvasContainer * canvas_container = new ImageCanvasContainer(image,file_name);
   QMdiArea * mdi = dynamic_cast<MainWindow*>(window_cache_)->mdi_area();
-  mdi->addSubWindow(canvas_container);
-  canvas_container->setWindowTitle(file_name);
-  canvas_container->show();
+  QMdiSubWindow * w = mdi->addSubWindow(canvas_container);
+  QSize size = image.size() + QSize(50,50);
+  w->resize(size);
+  w->show();
 }

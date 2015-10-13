@@ -99,7 +99,8 @@ int GlobalOptions::zoom() const {
 }
 
 void GlobalOptions::set_zoom(int zoom) {
-  zoom_ = zoom;
+  zoom_level_ = zoom;
+  zoom_ = pow(2,zoom);
 }
 
 void GlobalOptions::SaveState(QSettings * settings) const {
