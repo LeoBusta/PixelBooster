@@ -227,7 +227,7 @@
           <x>0</x>
           <y>0</y>
           <width>100</width>
-          <height>138</height>
+          <height>126</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout">
@@ -351,7 +351,7 @@
      <item>
       <widget class="QSlider" name="zoom_horizontalSlider">
        <property name="maximum">
-        <number>4</number>
+        <number>6</number>
        </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
@@ -450,7 +450,7 @@
   </action>
   <action name="actionSave">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="icon">
     <iconset resource="../resources/icons/icons.qrc">

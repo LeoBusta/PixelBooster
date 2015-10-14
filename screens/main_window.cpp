@@ -41,7 +41,7 @@ MainWindow::MainWindow(QWidget *parent)
   : QMainWindow(parent),
     ui(new Ui::MainWindow),
     action_handler_(new ActionHandler(this)),
-    current_canvas_container_(NULL),
+    current_canvas_container_(nullptr),
     options_cache_(pApp->options()){
   ui->setupUi(this);
 
@@ -94,6 +94,7 @@ void MainWindow::ConnectActions() {
 void MainWindow::ConnectWidgets() {
   QObject::connect(ui->image_mdi_area_,SIGNAL(subWindowActivated(QMdiSubWindow*)),this,SLOT(CurrentWindowChanged(QMdiSubWindow*)));
   QObject::connect(ui->color_main_pushButton,SIGNAL(clicked()),action_handler_,SLOT(OpenMainColorPick()));
+  QObject::connect(ui->color_alt_pushButton,SIGNAL(clicked()),action_handler_,SLOT(OpenAltColorPick()));
 }
 
 void MainWindow::SaveSettings() {
@@ -143,14 +144,14 @@ void MainWindow::closeEvent(QCloseEvent *event) {
 }
 
 void MainWindow::CurrentWindowChanged(QMdiSubWindow *w) {
-  if(NULL != current_canvas_container_) {
+  if(nullptr != current_canvas_container_) {
     current_canvas_container_->RemoveAsActive(ui->edit_widget);
-    current_canvas_container_ = NULL;
+    current_canvas_container_ = nullptr;
   }
 
-  if(NULL != w) {
+  if(nullptr != w) {
     current_canvas_container_ = dynamic_cast<ImageCanvasContainer*>(w->widget());
-    if(NULL != current_canvas_container_){
+    if(nullptr != current_canvas_container_){
       current_canvas_container_->SetAsActive(ui->edit_widget);
     }
   }

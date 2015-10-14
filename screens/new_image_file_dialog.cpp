@@ -36,7 +36,7 @@ const QSize kPresetOptions[] = {
 const QPair<QImage::Format,QString> kFormatOptions[] = {
   // TODO(ricardo) fix the program using 8 bit images issue.
   //{QImage::Format_Indexed8,"8 bit indexed"},
-  {QImage::Format_ARGB32, "32 bit"}
+  {QImage::Format_ARGB32_Premultiplied, "32 bit"}
 };
 
 NewImageFileDialog::NewImageFileDialog(QWidget *parent) :

@@ -45,6 +45,7 @@ public slots:
   void ToggleTransparency(bool transparency) const;
   void Zoom(int zoom) const;
   void OpenMainColorPick() const;
+  void OpenAltColorPick() const;
 
   // Language Actions
   void TranslatePT_BR() const;

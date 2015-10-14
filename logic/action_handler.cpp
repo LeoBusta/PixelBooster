@@ -82,7 +82,7 @@ void ActionHandler::OpenFile() const {
 }
 
 void ActionHandler::SaveFile() const {
-
+  DEBUG_MSG("Should attempt to save all unsaved files");
 }
 
 void ActionHandler::About() const {
@@ -109,6 +109,19 @@ void ActionHandler::Zoom(int zoom) const {
 void ActionHandler::OpenMainColorPick() const {
   QColor color = QColorDialog::getColor(options_cache_->main_color(),window_cache_,kTxtSelectMainColor,QColorDialog::ShowAlphaChannel);
   options_cache_->set_main_color(color);
+  QWidget * color_widget = dynamic_cast<QWidget*>(sender());
+  if(nullptr != color_widget){
+    color_widget->setStyleSheet(QString("background-color: %1;").arg(color.name()));
+  }
+}
+
+void ActionHandler::OpenAltColorPick() const {
+  QColor color = QColorDialog::getColor(options_cache_->alt_color(),window_cache_,kTxtSelectAltColor,QColorDialog::ShowAlphaChannel);
+  options_cache_->set_alt_color(color);
+  QWidget * color_widget = dynamic_cast<QWidget*>(sender());
+  if(nullptr != color_widget){
+    color_widget->setStyleSheet(QString("background-color: %1;").arg(color.name()));
+  }
 }
 
 void ActionHandler::TranslatePT_BR() const {
