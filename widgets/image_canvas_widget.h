@@ -35,6 +35,12 @@ public:
   void SetImage(const QImage &image);
 
   void set_active(bool active);
+
+  static QVector<ImageCanvasWidget*> * open_canvas();
+
+  bool saved_state() const;
+  void save_state();
+
 protected:
   virtual void paintEvent(QPaintEvent *event);
   virtual void mousePressEvent(QMouseEvent *event);
@@ -48,8 +54,14 @@ private:
   bool anchor_down_;
 
   QImage image_;
+  QString image_path_;
   QRect anchor_;
   //QRect cursor_;
+
+  bool saved_state_;
+
+  static QVector<ImageCanvasWidget*> open_canvas_;
+
 signals:
   void SendImage(QImage*);
   void RequestImage();

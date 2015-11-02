@@ -24,16 +24,21 @@
 #include <QPainter>
 #include <QMouseEvent>
 
+QVector<ImageCanvasWidget*> ImageCanvasWidget::open_canvas_;
+
 ImageCanvasWidget::ImageCanvasWidget(QWidget *parent)
   : QWidget(parent),
     anchor_down_(false),
     active_(false),
-    options_cache_(pApp->options()){
+    options_cache_(pApp->options()),
+    saved_state_(true){
   setMouseTracking(true);
+
+  open_canvas_.push_back(this);
 }
 
 ImageCanvasWidget::~ImageCanvasWidget() {
-
+  open_canvas_.removeOne(this);
 }
 
 void ImageCanvasWidget::SetImage(const QImage &image) {
@@ -49,6 +54,18 @@ void ImageCanvasWidget::SetImage(const QImage &image) {
 
 void ImageCanvasWidget::set_active(bool active) {
   active_ = active;
+}
+
+QVector<ImageCanvasWidget *> *ImageCanvasWidget::open_canvas() {
+  return &open_canvas_;
+}
+
+bool ImageCanvasWidget::saved_state() const {
+  return saved_state_;
+}
+
+void ImageCanvasWidget::save_state() {
+  saved_state_ = true;
 }
 
 void ImageCanvasWidget::paintEvent(QPaintEvent *event) {
@@ -87,9 +104,12 @@ void ImageCanvasWidget::mousePressEvent(QMouseEvent *event) {
 void ImageCanvasWidget::mouseReleaseEvent(QMouseEvent *event) {
   anchor_down_ = false;
   if(event->button() == Qt::RightButton){
+    // Get image from the canvas
     emit SendImage(&image_.copy(options_cache_->selection()));
     options_cache_->UpdateCursorShift();
   }else if(event->button() == Qt::LeftButton){
+    // Set image back to the canvas
+    saved_state_ = false;
     emit RequestImage();
   }
 }
