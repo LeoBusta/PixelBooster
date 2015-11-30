@@ -84,6 +84,13 @@ void ActionHandler::OpenFile() const {
 
 void ActionHandler::SaveFile() const {
   DEBUG_MSG("Should attempt to save all unsaved files");
+
+  for(ImageCanvasWidget* w : *ImageCanvasWidget::open_canvas()){
+    if(!w->saved_state()){
+      DEBUG_MSG("Saving image");
+      w->save_state();
+    }
+  }
 }
 
 void ActionHandler::PencilToolPressed() const {
