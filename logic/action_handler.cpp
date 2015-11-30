@@ -33,6 +33,7 @@
 #include <QLabel>
 #include <QMdiSubWindow>
 #include <QColorDialog>
+#include <QAction>
 
 const QString kTxtSelectMainColor = "Select Main Color";
 const QString kTxtSelectAltColor = "Select Secondary Color";
@@ -85,6 +86,11 @@ void ActionHandler::SaveFile() const {
   DEBUG_MSG("Should attempt to save all unsaved files");
 }
 
+void ActionHandler::PencilToolPressed() const {
+  options_cache_->set_tool(TOOL_PENCIL);
+  SetTool(TOOL_PENCIL);
+}
+
 void ActionHandler::About() const {
   AboutDialog * about_dialog = new AboutDialog(window_cache_);
   about_dialog->exec();
@@ -134,9 +140,14 @@ void ActionHandler::TranslateEN_US() const {
 
 void ActionHandler::CreateImageCanvas(const QImage &image, const QString &file_name) const {
   ImageCanvasContainer * canvas_container = new ImageCanvasContainer(image,file_name);
-  QMdiArea * mdi = dynamic_cast<MainWindow*>(window_cache_)->mdi_area();
+  QMdiArea * mdi = window_cache_->mdi_area();
   QMdiSubWindow * w = mdi->addSubWindow(canvas_container);
   QSize size = image.size() + QSize(50,50);
   w->resize(size);
   w->show();
+}
+
+void ActionHandler::SetTool(const int tool) const {
+  window_cache_->GetTool(options_cache_->tool())->setChecked(false);
+  window_cache_->GetTool(tool)->setChecked(true);
 }

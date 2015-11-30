@@ -23,6 +23,7 @@
 
 class GlobalOptions;
 class MainWindow;
+class QAction;
 
 /*!
  * \brief The ActionHandler class
@@ -38,6 +39,9 @@ public slots:
   void NewFile() const;
   void OpenFile() const;
   void SaveFile() const;
+
+  // Tools
+  void PencilToolPressed() const;
 
   // Interface Actions
   void About() const;
@@ -57,6 +61,8 @@ signals:
 private:
   GlobalOptions * options_cache_;
   MainWindow * window_cache_;
+
+  void SetTool(const int tool) const;
 
   void CreateImageCanvas(const QImage &image, const QString &file_name) const;
 };

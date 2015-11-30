@@ -43,6 +43,8 @@ public:
 
   QMdiArea * mdi_area() const;
   ImageCanvasContainer * current_canvas_container();
+
+  QAction * GetTool(const int tool);
 private:
   Ui::MainWindow *ui;
   ActionHandler * action_handler_;

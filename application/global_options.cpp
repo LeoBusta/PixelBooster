@@ -30,6 +30,8 @@ const QString kStateTransparency = "TransparencyEnabled";
 const bool kStateTransparencyDefault = false;
 const QString kStateZoomLevel = "ZoomLevel";
 const int kStateZoomLevelDefault = 0;
+const QString kStateTool = "Tool";
+const int kStateToolDefault = TOOL_PENCIL;
 
 GlobalOptions::GlobalOptions():
   vertical_shift_(false),
@@ -130,6 +132,7 @@ void GlobalOptions::SaveState(QSettings * settings) const {
   settings->setValue(kStateNewImageSize,new_image_size_);
   settings->setValue(kStateTransparency,transparency_enabled_);
   settings->setValue(kStateZoomLevel,zoom_level_);
+  settings->setValue(kStateTool,tool_);
 }
 
 void GlobalOptions::LoadState(QSettings * settings) {
@@ -139,5 +142,15 @@ void GlobalOptions::LoadState(QSettings * settings) {
   new_image_size_ = settings->value(kStateNewImageSize,kStateNewImageSizeDefault).toSize();
   transparency_enabled_ = settings->value(kStateTransparency,kStateTransparencyDefault).toBool();
   set_zoom_level(settings->value(kStateZoomLevel,kStateZoomLevelDefault).toInt());
+  set_tool((TOOL_ENUM)settings->value(kStateTool,kStateToolDefault).toInt());
+}
+
+void GlobalOptions::set_tool(const TOOL_ENUM tool) {
+  tool_ = tool;
+}
+
+TOOL_ENUM GlobalOptions::tool() const
+{
+  return tool_;
 }
 

@@ -25,6 +25,10 @@
 
 class QSettings;
 
+enum TOOL_ENUM : int{
+  TOOL_PENCIL = 1
+};
+
 /*!
  * \brief The GlobalOptions class
  */
@@ -63,6 +67,9 @@ public:
   void SaveState(QSettings *settings) const;
   void LoadState(QSettings *settings);
 
+  void set_tool(const TOOL_ENUM tool);
+  TOOL_ENUM tool() const;
+
 private:
   QSize cursor_size_;
   QRect selection_;
@@ -74,6 +81,7 @@ private:
   int zoom_;
   QColor main_color_;
   QColor alt_color_;
+  TOOL_ENUM tool_;
 };
 
 #endif // GLOBAL_OPTIONS_H

@@ -68,6 +68,17 @@ ImageCanvasContainer *MainWindow::current_canvas_container() {
   return current_canvas_container_;
 }
 
+QAction *MainWindow::GetTool(const int tool) {
+  switch(tool){
+  case TOOL_PENCIL:
+    return ui->actionPencil_Tool;
+    break;
+  default:
+    return nullptr;
+    break;
+  }
+}
+
 void MainWindow::ConnectActions() {
   // File Actions
   QObject::connect(ui->actionNew,SIGNAL(triggered(bool)),action_handler_,SLOT(NewFile()));
@@ -82,6 +93,9 @@ void MainWindow::ConnectActions() {
   QObject::connect(ui->actionExit,SIGNAL(triggered(bool)),this,SLOT(close()));
   QObject::connect(ui->actionTransparency,SIGNAL(triggered(bool)),action_handler_,SLOT(ToggleTransparency(bool)));
   QObject::connect(ui->zoom_horizontalSlider,SIGNAL(valueChanged(int)),action_handler_,SLOT(Zoom(int)));
+
+  // Tools
+  QObject::connect(ui->actionPencil_Tool,SIGNAL(triggered()),action_handler_,SLOT(PencilToolPressed()));
 
   // Inverse communication
   QObject::connect(action_handler_,SIGNAL(UpdateEditArea()),ui->edit_widget,SLOT(UpdateWidget()));
@@ -131,6 +145,7 @@ void MainWindow::LoadSettings() {
 
 void MainWindow::UpdateWidgetState() {
   ui->actionTransparency->setChecked(options_cache_->transparency_enabled());
+  GetTool(options_cache_->tool())->setChecked(true);
 }
 
 void MainWindow::changeEvent(QEvent *event) {
