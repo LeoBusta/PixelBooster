@@ -43,6 +43,9 @@ private:
   Ui::ImageCanvasContainer *ui;
 
   QString file_name_;
+
+private slots:
+  void IndicateUnsavedChanges(bool unsaved);
 };
 
 #endif // IMAGE_CANVAS_CONTAINER_H

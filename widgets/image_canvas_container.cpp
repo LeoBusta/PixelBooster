@@ -31,8 +31,9 @@ ImageCanvasContainer::ImageCanvasContainer(const QImage &image, const QString &f
   if(!file_name.isEmpty()){
     this->setWindowTitle(file_name);
   }else{
-    this->setWindowTitle("New Image");
+    this->setWindowTitle("New Image *");
   }
+  QObject::connect(ui->image_canvas_widget_,SIGNAL(UnsavedChanges(bool)),this,SLOT(IndicateUnsavedChanges(bool)));
 }
 
 ImageCanvasContainer::~ImageCanvasContainer() {
@@ -50,4 +51,13 @@ void ImageCanvasContainer::RemoveAsActive(ImageEditWidget * edit_widget) {
   QObject::disconnect(ui->image_canvas_widget_,0,edit_widget,0);
   QObject::disconnect(edit_widget,0,ui->image_canvas_widget_,0);
   ui->image_canvas_widget_->set_active(false);
+}
+
+void ImageCanvasContainer::IndicateUnsavedChanges(bool unsaved) {
+  QString name = file_name_.isEmpty()?"New Image":file_name_;
+  if(unsaved){
+    name += " *";
+  }
+
+  this->setWindowTitle(name);
 }

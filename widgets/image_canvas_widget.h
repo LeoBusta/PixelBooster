@@ -65,6 +65,7 @@ private:
 signals:
   void SendImage(QImage*);
   void RequestImage();
+  void UnsavedChanges(bool);
 
 private slots:
   void ReceiveImage(QImage*image);

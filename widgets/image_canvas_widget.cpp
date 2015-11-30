@@ -66,6 +66,7 @@ bool ImageCanvasWidget::saved_state() const {
 
 void ImageCanvasWidget::save_state() {
   saved_state_ = true;
+  emit UnsavedChanges(!saved_state_);
 }
 
 void ImageCanvasWidget::paintEvent(QPaintEvent *event) {
@@ -110,6 +111,7 @@ void ImageCanvasWidget::mouseReleaseEvent(QMouseEvent *event) {
   }else if(event->button() == Qt::LeftButton){
     // Set image back to the canvas
     saved_state_ = false;
+    emit UnsavedChanges(!saved_state_);
     emit RequestImage();
   }
 }
