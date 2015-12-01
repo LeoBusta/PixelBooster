@@ -41,6 +41,8 @@ public:
   bool saved_state() const;
   void save_state();
 
+  bool SaveAs();
+
 protected:
   virtual void paintEvent(QPaintEvent *event);
   virtual void mousePressEvent(QMouseEvent *event);

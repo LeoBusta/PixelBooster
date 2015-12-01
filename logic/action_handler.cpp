@@ -83,6 +83,17 @@ void ActionHandler::OpenFile() const {
 }
 
 void ActionHandler::SaveFile() const {
+  ImageCanvasContainer *c = window_cache_->current_canvas_container();
+  if(nullptr != c){
+    ImageCanvasWidget * w = c->GetCanvasWidget();
+    if(!w->saved_state()){
+      DEBUG_MSG("Saving image");
+      w->save_state();
+    }
+  }
+}
+
+void ActionHandler::SaveAll() const {
   DEBUG_MSG("Should attempt to save all unsaved files");
 
   for(ImageCanvasWidget* w : *ImageCanvasWidget::open_canvas()){

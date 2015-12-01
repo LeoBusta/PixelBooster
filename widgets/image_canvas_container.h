@@ -39,6 +39,7 @@ public:
 
   void SetAsActive(ImageEditWidget * edit_widget);
   void RemoveAsActive(ImageEditWidget *edit_widget);
+  ImageCanvasWidget * GetCanvasWidget() const;
 private:
   Ui::ImageCanvasContainer *ui;
 

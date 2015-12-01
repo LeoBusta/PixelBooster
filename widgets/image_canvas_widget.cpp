@@ -23,6 +23,7 @@
 
 #include <QPainter>
 #include <QMouseEvent>
+#include <QFileDialog>
 
 QVector<ImageCanvasWidget*> ImageCanvasWidget::open_canvas_;
 
@@ -65,8 +66,22 @@ bool ImageCanvasWidget::saved_state() const {
 }
 
 void ImageCanvasWidget::save_state() {
+  bool result = false;
+  if(image_path_.isEmpty()){
+    result = SaveAs();
+  }else{
+    result = image_.save(image_path_);
+  }
+  if(result == false){
+    return;
+  }
   saved_state_ = true;
   emit UnsavedChanges(!saved_state_);
+}
+
+bool ImageCanvasWidget::SaveAs() {
+  QString output = QFileDialog::getSaveFileName();
+  return false;
 }
 
 void ImageCanvasWidget::paintEvent(QPaintEvent *event) {

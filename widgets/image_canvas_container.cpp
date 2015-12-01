@@ -53,6 +53,10 @@ void ImageCanvasContainer::RemoveAsActive(ImageEditWidget * edit_widget) {
   ui->image_canvas_widget_->set_active(false);
 }
 
+ImageCanvasWidget *ImageCanvasContainer::GetCanvasWidget() const {
+  return ui->image_canvas_widget_;
+}
+
 void ImageCanvasContainer::IndicateUnsavedChanges(bool unsaved) {
   QString name = file_name_.isEmpty()?"New Image":file_name_;
   if(unsaved){

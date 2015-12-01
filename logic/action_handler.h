@@ -39,6 +39,7 @@ public slots:
   void NewFile() const;
   void OpenFile() const;
   void SaveFile() const;
+  void SaveAll() const;
 
   // Tools
   void PencilToolPressed() const;
