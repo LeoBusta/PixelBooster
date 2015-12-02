@@ -10,14 +10,30 @@
 		<link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script>
+			( function(d, s, id) {
+					var js,
+					    fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id))
+						return;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+		</script>
+
 		<section class="page-header">
 			<img src="images/home/app_icon.png"/>
 			<h1 class="project-name">Pixel::Booster</h1>
 			<h2 class="project-tagline">Pixel Art Image Editor using C++ and Qt</h2>
-			<a href="https://github.com/RicardoBusta/PixelBooster" class="btn">View Source on GitHub</a>
 			<a href="https://github.com/RicardoBusta/PixelBooster/releases" class="btn">Download Binaries</a>
+			<a href="https://github.com/RicardoBusta/PixelBooster" class="btn">View Source on GitHub</a>
 			<a href="https://github.com/RicardoBusta/PixelBooster/zipball/master" class="btn">Download Source (.zip)</a>
 			<a href="https://github.com/RicardoBusta/PixelBooster/tarball/master" class="btn">Download Source (.tar.gz)</a>
+			<br>
+			<div class="fb-like">Like!</div>
 		</section>
 
 		<section class="main-content">
