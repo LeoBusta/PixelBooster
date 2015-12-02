@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>317</width>
-    <height>174</height>
+    <width>345</width>
+    <height>224</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -73,9 +73,23 @@ color: #003380;</string>
     </layout>
    </item>
    <item>
+    <widget class="QLabel" name="version_label">
+     <property name="text">
+      <string>version</string>
+     </property>
+    </widget>
+   </item>
+   <item>
     <widget class="QLabel" name="label">
      <property name="text">
       <string>by Ricardo Bustamante de Queiroz (ricardo@busta.com.br)</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="website_label">
+     <property name="text">
+      <string>pixel.busta.com.br </string>
      </property>
     </widget>
    </item>

@@ -14,8 +14,11 @@
    height="128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="app_icon.svg">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="app_icon.svg"
+   inkscape:export-filename="D:\Projects\PixelBoosterHomePage\images\home\app_icon.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4">
     <marker
@@ -374,13 +377,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="314.16197"
-     inkscape:cy="24.796031"
+     inkscape:cx="164.16197"
+     inkscape:cy="-9.203969"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1440"
-     inkscape:window-height="838"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -399,7 +402,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -411,12 +414,12 @@
     <g
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="D:\Projects\QtCharacterMaker\icons\splash.png"
+       inkscape:export-filename="D:\Projects\PixelBoosterHomePage\images\home\app_icon.png"
        transform="translate(-267.75736,-59.154329)"
        id="g3226">
       <path
          inkscape:connector-curvature="0"
-         style="fill:#003380;fill-opacity:1;stroke:none"
+         style="fill:#155899;fill-opacity:1;stroke:none"
          d="m 345.40625,263.0625 c -9.01279,0 -16.28125,7.26846 -16.28125,16.28125 l 0,95.46875 c 0,9.01279 7.26846,16.25 16.28125,16.25 l 95.4375,0 c 9.01279,0 16.28125,-7.23721 16.28125,-16.25 l 0,-95.46875 c 0,-9.01279 -7.26846,-16.28125 -16.28125,-16.28125 z"
          transform="translate(67.85714,-827.63781)"
          id="path3228"
@@ -428,7 +431,7 @@
          style="fill:#ffffff;fill-opacity:1;stroke:none" />
       <path
          inkscape:connector-curvature="0"
-         style="fill:#2ca05a;fill-opacity:1;stroke:none"
+         style="fill:#149957;fill-opacity:1;stroke:none"
          d="m 369.53125,274.65625 c -1.59863,0 -2.90625,1.30762 -2.90625,2.90625 l 0,16.90625 c 0,1.59863 1.30762,2.90625 2.90625,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 z m 27.125,0 c -1.59863,0 -2.875,1.30762 -2.875,2.90625 l 0,16.90625 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 z m 27.125,0 c -1.59863,0 -2.875,1.30762 -2.875,2.90625 l 0,16.90625 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 z m 0,26.8125 c -1.59863,0 -2.875,1.27637 -2.875,2.875 l 0,16.9375 c 0,1.59863 1.27637,2.875 2.875,2.875 l 16.9375,0 c 1.59863,0 2.875,-1.27637 2.875,-2.875 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 z m -54.25,27.125 c -1.59863,0 -2.90625,1.27637 -2.90625,2.875 l 0,16.9375 c 0,1.59863 1.30762,2.90625 2.90625,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 z m 54.25,0 c -1.59863,0 -2.875,1.27637 -2.875,2.875 l 0,16.9375 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.9375 c 0,-1.59863 -1.27637,-2.875 -2.875,-2.875 z m 0,27.125 c -1.59863,0 -2.875,1.30762 -2.875,2.90625 l 0,16.90625 c 0,1.59863 1.27637,2.90625 2.875,2.90625 l 16.9375,0 c 1.59863,0 2.875,-1.30762 2.875,-2.90625 l 0,-16.90625 c 0,-1.59863 -1.27637,-2.90625 -2.875,-2.90625 z"
          id="path3232"
          transform="translate(67.85714,-827.63781)"

@@ -19,11 +19,19 @@
 #include "about_dialog.h"
 #include "ui_about_dialog.h"
 
+#include "resources/version.h"
+
 AboutDialog::AboutDialog(QWidget *parent) :
   QDialog(parent),
   ui(new Ui::AboutDialog)
 {
   ui->setupUi(this);
+
+  ui->version_label->setText(kVersionString);
+  ui->website_label->setTextFormat(Qt::RichText);
+  ui->website_label->setTextInteractionFlags(Qt::TextBrowserInteraction);
+  ui->website_label->setOpenExternalLinks(true);
+  ui->website_label->setText("<a href=\"http://pixel.busta.com.br\">pixel.busta.com.br</a>");
 }
 
 AboutDialog::~AboutDialog()

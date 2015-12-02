@@ -54,7 +54,8 @@ HEADERS  += \
     screens/set_tile_size_dialog.h \
     screens/main_window.h \
     widgets/color_picker_widget.h \
-    widgets/color_palette_widget.h
+    widgets/color_palette_widget.h \
+    resources/version.h
 
 FORMS    += \
     screens/new_image_file_dialog.ui \

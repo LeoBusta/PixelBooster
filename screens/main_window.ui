@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>697</width>
-    <height>490</height>
+    <width>785</width>
+    <height>553</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -44,7 +44,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>697</width>
+     <width>785</width>
      <height>21</height>
     </rect>
    </property>
@@ -226,8 +226,8 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>100</width>
-          <height>208</height>
+          <width>126</width>
+          <height>321</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout">
@@ -350,6 +350,9 @@
      </item>
      <item>
       <widget class="QSlider" name="zoom_horizontalSlider">
+       <property name="statusTip">
+        <string>Zoom: Move the slider to select the level of zoom on the edit area.</string>
+       </property>
        <property name="maximum">
         <number>6</number>
        </property>
@@ -383,6 +386,9 @@
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
         <widget class="QPushButton" name="color_main_pushButton">
+         <property name="statusTip">
+          <string>Click to select the main color.</string>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -390,6 +396,9 @@
        </item>
        <item>
         <widget class="QPushButton" name="color_alt_pushButton">
+         <property name="statusTip">
+          <string>Click to select the alternative color.</string>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -421,6 +430,9 @@
    <property name="text">
     <string>New</string>
    </property>
+   <property name="statusTip">
+    <string>New: Creates a new image file from scratch.</string>
+   </property>
    <property name="shortcut">
     <string>Ctrl+N</string>
    </property>
@@ -435,6 +447,9 @@
    </property>
    <property name="text">
     <string>Open</string>
+   </property>
+   <property name="statusTip">
+    <string>Open: Opens an existing image file.</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+O</string>
@@ -459,6 +474,9 @@
    <property name="text">
     <string>Save</string>
    </property>
+   <property name="statusTip">
+    <string>Save: Saves the focused image file.</string>
+   </property>
    <property name="shortcut">
     <string>Ctrl+S</string>
    </property>
@@ -474,6 +492,9 @@
    <property name="text">
     <string>Save As</string>
    </property>
+   <property name="statusTip">
+    <string>Save As: Saves the focused image file with another name.</string>
+   </property>
   </action>
   <action name="actionSave_All">
    <property name="enabled">
@@ -485,6 +506,9 @@
    </property>
    <property name="text">
     <string>Save All</string>
+   </property>
+   <property name="statusTip">
+    <string>Save All: Saves all the open image files.</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+S</string>
@@ -701,6 +725,9 @@
    </property>
    <property name="text">
     <string>Transparency</string>
+   </property>
+   <property name="statusTip">
+    <string>Transparency Tool: Enables transparency when pasting the edit area content back to the image.</string>
    </property>
   </action>
   <action name="actionLoad_Palette">

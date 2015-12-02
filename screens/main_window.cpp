@@ -25,6 +25,7 @@
 #include "logic/action_handler.h"
 #include "widgets/image_canvas_container.h"
 #include "application/pixel_booster.h"
+#include "resources/version.h"
 
 #include <QSettings>
 
@@ -37,6 +38,7 @@ const QString kConfigWindowMaximized = "Maximized";
 const bool kConfigWindowMaximizedDefault = false;
 const QRect kConfigDefaultWindowGeometry = QRect(0,10,800,600);
 
+
 MainWindow::MainWindow(QWidget *parent)
   : QMainWindow(parent),
     ui(new Ui::MainWindow),
@@ -47,6 +49,8 @@ MainWindow::MainWindow(QWidget *parent)
 
   LoadSettings();
   UpdateWidgetState();
+
+  this->setWindowTitle(windowTitle() + " " + kVersionString );
 
   ui->edit_widget->Clear(options_cache_->selection().size());
 

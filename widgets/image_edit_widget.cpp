@@ -72,6 +72,8 @@ void ImageEditWidget::mouseMoveEvent(QMouseEvent *event) {
     cursor_ = QRect(0,0,0,0);
   }
 
+  //setStatusTip(QString("Cursor x: %1 y: %2").arg(pos.x()).arg(pos.y()));
+
   ToolAction(pos);
   update();
 }

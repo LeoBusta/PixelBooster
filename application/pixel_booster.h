@@ -38,6 +38,8 @@ public:
   QWidget *main_window() const;
   GlobalOptions * options() const;
 
+  void SetStatusMessage(const QString &message);
+
   void Translate(QString language);
 private:
   GlobalOptions * options_;
