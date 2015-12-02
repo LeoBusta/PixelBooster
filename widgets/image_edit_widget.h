@@ -50,6 +50,9 @@ private:
   GlobalOptions * options_cache_;
 
   void ToolAction(const QPoint &pos);
+
+  void Fill(const QPoint &pos, const QColor &new_color);
+
 signals:
   void SendImage(QImage*);
 public slots:

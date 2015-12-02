@@ -26,7 +26,8 @@
 class QSettings;
 
 enum TOOL_ENUM : int{
-  TOOL_PENCIL = 1
+  TOOL_PENCIL = 1,
+  TOOL_FILL = 2
 };
 
 /*!

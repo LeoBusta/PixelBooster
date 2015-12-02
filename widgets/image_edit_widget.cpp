@@ -60,7 +60,7 @@ void ImageEditWidget::paintEvent(QPaintEvent *event) {
   painter.drawRect(cursor_);
 
   if(cursor_.isValid()) {
-  painter.drawPoint(cursor_.topLeft());
+    painter.drawPoint(cursor_.topLeft());
   }
 }
 
@@ -115,14 +115,55 @@ void ImageEditWidget::mouseReleaseEvent(QMouseEvent *event) {
 }
 
 void ImageEditWidget::ToolAction(const QPoint &pos) {
-  if(left_button_down_ && cursor_.isValid()){
-    int zoom = options_cache_->zoom();
-    QPoint img_pos = QPoint(pos.x()/zoom,pos.y()/zoom);
-    image_.setPixel(img_pos,pApp->options()->main_color().rgba());
-  }else if(right_button_down_ && cursor_.isValid()){
-    int zoom = options_cache_->zoom();
-    QPoint img_pos = QPoint(pos.x()/zoom,pos.y()/zoom);
-    pApp->main_window()->action_handler()->SetMainColor(image_.pixel(img_pos));
+  int zoom = options_cache_->zoom();
+  QPoint img_pos = QPoint(pos.x()/zoom,pos.y()/zoom);
+
+  switch (options_cache_->tool()) {
+  case TOOL_PENCIL:
+    if(left_button_down_ && cursor_.isValid()){
+      image_.setPixel(img_pos,options_cache_->main_color().rgba());
+    }else if(right_button_down_ && cursor_.isValid()){
+      pApp->main_window()->action_handler()->SetMainColor(image_.pixel(img_pos));
+    }
+    break;
+  case TOOL_FILL:
+    if(left_button_down_ && cursor_.isValid()){
+      Fill(img_pos, options_cache_->main_color());
+    }else if(right_button_down_ && cursor_.isValid()){
+      pApp->main_window()->action_handler()->SetMainColor(image_.pixel(img_pos));
+    }
+    break;
+  default:
+    break;
+  }
+}
+
+void ImageEditWidget::Fill(const QPoint &seed_pos, const QColor &color) {
+  QRgb new_color = color.rgba();
+  QRgb old_color = image_.pixel(seed_pos);
+  QList<QPoint> to_do_list = {seed_pos};
+
+  QVector<QPoint> expansion = {
+    QPoint(1,0),
+    QPoint(0,1),
+    QPoint(-1,0),
+    QPoint(0,-1)
+  };
+
+  image_.setPixel(seed_pos,new_color);
+
+  while(!to_do_list.isEmpty()){
+    //DEBUG_MSG(to_do_list.length());
+    QPoint target = to_do_list.takeFirst();
+
+    for(QPoint e : expansion){
+      QPoint new_target = target+e;
+      //DEBUG_MSG(new_target);
+      if(image_.rect().contains(new_target) && image_.pixel(new_target) == old_color){
+        to_do_list.push_back(new_target);
+        image_.setPixel(new_target,new_color);
+      }
+    }
   }
 }
 

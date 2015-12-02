@@ -118,8 +118,13 @@ void ActionHandler::SaveAs() const {
 }
 
 void ActionHandler::PencilToolPressed() const {
+  SwapTools(TOOL_PENCIL);
   options_cache_->set_tool(TOOL_PENCIL);
-  SetTool(TOOL_PENCIL);
+}
+
+void ActionHandler::FillToolPressed() const {
+  SwapTools(TOOL_FILL);
+  options_cache_->set_tool(TOOL_FILL);
 }
 
 void ActionHandler::About() const {
@@ -184,7 +189,7 @@ void ActionHandler::CreateImageCanvas(const QImage &image, const QString &file_n
   w->show();
 }
 
-void ActionHandler::SetTool(const int tool) const {
+void ActionHandler::SwapTools(const int tool) const {
   window_cache_->GetTool(options_cache_->tool())->setChecked(false);
   window_cache_->GetTool(tool)->setChecked(true);
 }

@@ -77,6 +77,9 @@ QAction *MainWindow::GetTool(const int tool) {
   case TOOL_PENCIL:
     return ui->actionPencil_Tool;
     break;
+  case TOOL_FILL:
+    return ui->actionFill_Tool;
+    break;
   default:
     return nullptr;
     break;
@@ -113,6 +116,7 @@ void MainWindow::ConnectActions() {
 
   // Tools
   QObject::connect(ui->actionPencil_Tool,SIGNAL(triggered()),action_handler_,SLOT(PencilToolPressed()));
+  QObject::connect(ui->actionFill_Tool,SIGNAL(triggered()),action_handler_,SLOT(FillToolPressed()));
 
   // Inverse communication
   QObject::connect(action_handler_,SIGNAL(UpdateEditArea()),ui->edit_widget,SLOT(UpdateWidget()));

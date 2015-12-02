@@ -44,6 +44,7 @@ public slots:
 
   // Tools
   void PencilToolPressed() const;
+  void FillToolPressed() const;
 
   // Interface Actions
   void About() const;
@@ -66,7 +67,7 @@ private:
   GlobalOptions * options_cache_;
   MainWindow * window_cache_;
 
-  void SetTool(const int tool) const;
+  void SwapTools(const int tool) const;
 
   void CreateImageCanvas(const QImage &image, const QString &file_name) const;
 };
