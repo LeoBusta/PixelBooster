@@ -227,7 +227,7 @@
           <x>0</x>
           <y>0</y>
           <width>100</width>
-          <height>207</height>
+          <height>208</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout">
@@ -465,7 +465,7 @@
   </action>
   <action name="actionSave_As">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="icon">
     <iconset resource="../resources/icons/icons.qrc">

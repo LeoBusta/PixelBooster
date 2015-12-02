@@ -47,6 +47,7 @@ private:
 
 private slots:
   void IndicateUnsavedChanges(bool unsaved);
+  void UpdatePath(QString new_path);
 };
 
 #endif // IMAGE_CANVAS_CONTAINER_H

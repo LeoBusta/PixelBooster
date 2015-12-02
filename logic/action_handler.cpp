@@ -38,6 +38,8 @@
 const QString kTxtSelectMainColor = "Select Main Color";
 const QString kTxtSelectAltColor = "Select Secondary Color";
 
+const QString kColorButtonStyle = "background-color: %1; border: 1px solid black;";
+
 ActionHandler::ActionHandler(QObject *parent)
   : QObject(parent),
     options_cache_(pApp->options()),
@@ -88,7 +90,7 @@ void ActionHandler::SaveFile() const {
     ImageCanvasWidget * w = c->GetCanvasWidget();
     if(!w->saved_state()){
       DEBUG_MSG("Saving image");
-      w->save_state();
+      w->Save();
     }
   }
 }
@@ -99,7 +101,18 @@ void ActionHandler::SaveAll() const {
   for(ImageCanvasWidget* w : *ImageCanvasWidget::open_canvas()){
     if(!w->saved_state()){
       DEBUG_MSG("Saving image");
-      w->save_state();
+      w->Save();
+    }
+  }
+}
+
+void ActionHandler::SaveAs() const {
+  ImageCanvasContainer *c = window_cache_->current_canvas_container();
+  if(nullptr != c){
+    ImageCanvasWidget * w = c->GetCanvasWidget();
+    if(!w->saved_state()){
+      DEBUG_MSG("Saving image");
+      w->SaveAs();
     }
   }
 }
@@ -132,20 +145,14 @@ void ActionHandler::Zoom(int zoom) const {
 
 void ActionHandler::OpenMainColorPick() const {
   QColor color = QColorDialog::getColor(options_cache_->main_color(),window_cache_,kTxtSelectMainColor,QColorDialog::ShowAlphaChannel);
-  options_cache_->set_main_color(color);
   QWidget * color_widget = dynamic_cast<QWidget*>(sender());
-  if(nullptr != color_widget){
-    color_widget->setStyleSheet(QString("background-color: %1;").arg(color.name()));
-  }
+  SetMainColor(color,color_widget);
 }
 
 void ActionHandler::OpenAltColorPick() const {
   QColor color = QColorDialog::getColor(options_cache_->alt_color(),window_cache_,kTxtSelectAltColor,QColorDialog::ShowAlphaChannel);
-  options_cache_->set_alt_color(color);
   QWidget * color_widget = dynamic_cast<QWidget*>(sender());
-  if(nullptr != color_widget){
-    color_widget->setStyleSheet(QString("background-color: %1;").arg(color.name()));
-  }
+  SetAltColor(color,color_widget);
 }
 
 void ActionHandler::TranslatePT_BR() const {
@@ -154,6 +161,20 @@ void ActionHandler::TranslatePT_BR() const {
 
 void ActionHandler::TranslateEN_US() const {
   pApp->Translate("en_us");
+}
+
+void ActionHandler::SetMainColor(const QColor &color, QWidget * color_widget) const {
+  options_cache_->set_main_color(color);
+  if(nullptr != color_widget){
+    color_widget->setStyleSheet(kColorButtonStyle.arg(color.name()));
+  }
+}
+
+void ActionHandler::SetAltColor(const QColor &color, QWidget * color_widget) const {
+  options_cache_->set_alt_color(color);
+  if(nullptr != color_widget){
+    color_widget->setStyleSheet(kColorButtonStyle.arg(color.name()));
+  }
 }
 
 void ActionHandler::CreateImageCanvas(const QImage &image, const QString &file_name) const {

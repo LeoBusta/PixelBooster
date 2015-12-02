@@ -32,6 +32,10 @@ const QString kStateZoomLevel = "ZoomLevel";
 const int kStateZoomLevelDefault = 0;
 const QString kStateTool = "Tool";
 const int kStateToolDefault = TOOL_PENCIL;
+const QString kStateColorMain = "MainColor";
+const QColor kStateColorMainDefault = QColor(Qt::white).name();
+const QString kStateColorAlt = "AltColor";
+const QColor kStateColorAltDefault = QColor(Qt::black).name();
 
 GlobalOptions::GlobalOptions():
   vertical_shift_(false),
@@ -133,6 +137,8 @@ void GlobalOptions::SaveState(QSettings * settings) const {
   settings->setValue(kStateTransparency,transparency_enabled_);
   settings->setValue(kStateZoomLevel,zoom_level_);
   settings->setValue(kStateTool,tool_);
+  settings->setValue(kStateColorMain,main_color_.name());
+  settings->setValue(kStateColorAlt,alt_color_.name());
 }
 
 void GlobalOptions::LoadState(QSettings * settings) {
@@ -143,6 +149,8 @@ void GlobalOptions::LoadState(QSettings * settings) {
   transparency_enabled_ = settings->value(kStateTransparency,kStateTransparencyDefault).toBool();
   set_zoom_level(settings->value(kStateZoomLevel,kStateZoomLevelDefault).toInt());
   set_tool((TOOL_ENUM)settings->value(kStateTool,kStateToolDefault).toInt());
+  main_color_ = QColor(settings->value(kStateColorMain).toString());
+  alt_color_ = QColor(settings->value(kStateColorAlt).toString());
 }
 
 void GlobalOptions::set_tool(const TOOL_ENUM tool) {

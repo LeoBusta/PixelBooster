@@ -40,6 +40,7 @@ public slots:
   void OpenFile() const;
   void SaveFile() const;
   void SaveAll() const;
+  void SaveAs() const;
 
   // Tools
   void PencilToolPressed() const;
@@ -51,6 +52,8 @@ public slots:
   void Zoom(int zoom) const;
   void OpenMainColorPick() const;
   void OpenAltColorPick() const;
+  void SetMainColor(const QColor &color, QWidget *color_widget) const;
+  void SetAltColor(const QColor &color, QWidget *color_widget) const;
 
   // Language Actions
   void TranslatePT_BR() const;

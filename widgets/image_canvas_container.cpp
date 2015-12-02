@@ -27,13 +27,17 @@ ImageCanvasContainer::ImageCanvasContainer(const QImage &image, const QString &f
   ui(new Ui::ImageCanvasContainer),
   file_name_(file_name){
   ui->setupUi(this);
+  QObject::connect(ui->image_canvas_widget_,SIGNAL(UnsavedChanges(bool)),this,SLOT(IndicateUnsavedChanges(bool)));
+  QObject::connect(ui->image_canvas_widget_,SIGNAL(PathChaged(QString)),this,SLOT(UpdatePath(QString)));
   ui->image_canvas_widget_->SetImage(image);
   if(!file_name.isEmpty()){
     this->setWindowTitle(file_name);
+    ui->image_canvas_widget_->set_image_path(file_name);
   }else{
-    this->setWindowTitle("New Image *");
+    this->setWindowTitle("New Image");
+    ui->image_canvas_widget_->set_image_path("");
+    ui->image_canvas_widget_->UnsaveState();
   }
-  QObject::connect(ui->image_canvas_widget_,SIGNAL(UnsavedChanges(bool)),this,SLOT(IndicateUnsavedChanges(bool)));
 }
 
 ImageCanvasContainer::~ImageCanvasContainer() {
@@ -64,4 +68,9 @@ void ImageCanvasContainer::IndicateUnsavedChanges(bool unsaved) {
   }
 
   this->setWindowTitle(name);
+}
+
+void ImageCanvasContainer::UpdatePath(QString new_path) {
+  file_name_ = new_path;
+  IndicateUnsavedChanges(!ui->image_canvas_widget_->saved_state());
 }

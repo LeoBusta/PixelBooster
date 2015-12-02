@@ -65,23 +65,41 @@ bool ImageCanvasWidget::saved_state() const {
   return saved_state_;
 }
 
-void ImageCanvasWidget::save_state() {
-  bool result = false;
-  if(image_path_.isEmpty()){
-    result = SaveAs();
-  }else{
-    result = image_.save(image_path_);
-  }
-  if(result == false){
-    return;
-  }
+void ImageCanvasWidget::SaveState() {
   saved_state_ = true;
   emit UnsavedChanges(!saved_state_);
 }
 
-bool ImageCanvasWidget::SaveAs() {
+void ImageCanvasWidget::Save() {
+  if(image_path_.isEmpty()){
+    SaveAs();
+  }else{
+    bool ok = image_.save(image_path_);
+    if(ok){
+      SaveState();
+    }
+  }
+}
+
+void ImageCanvasWidget::SaveAs() {
   QString output = QFileDialog::getSaveFileName();
-  return false;
+  if(!output.isEmpty()){
+    bool ok = image_.save(output);
+    if(ok){
+      image_path_ = output;
+      emit PathChaged(image_path_);
+      SaveState();
+    }
+  }
+}
+
+void ImageCanvasWidget::UnsaveState() {
+  saved_state_ = false;
+  emit UnsavedChanges(!saved_state_);
+}
+
+void ImageCanvasWidget::set_image_path(const QString &path) {
+  image_path_ = path;
 }
 
 void ImageCanvasWidget::paintEvent(QPaintEvent *event) {
@@ -125,8 +143,7 @@ void ImageCanvasWidget::mouseReleaseEvent(QMouseEvent *event) {
     options_cache_->UpdateCursorShift();
   }else if(event->button() == Qt::LeftButton){
     // Set image back to the canvas
-    saved_state_ = false;
-    emit UnsavedChanges(!saved_state_);
+    UnsaveState();
     emit RequestImage();
   }
 }

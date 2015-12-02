@@ -147,6 +147,8 @@ void MainWindow::LoadSettings() {
 void MainWindow::UpdateWidgetState() {
   ui->actionTransparency->setChecked(options_cache_->transparency_enabled());
   GetTool(options_cache_->tool())->setChecked(true);
+  action_handler_->SetMainColor(options_cache_->main_color(),ui->color_main_pushButton);
+  action_handler_->SetAltColor(options_cache_->alt_color(),ui->color_alt_pushButton);
 }
 
 void MainWindow::changeEvent(QEvent *event) {

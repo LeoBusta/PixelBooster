@@ -39,9 +39,13 @@ public:
   static QVector<ImageCanvasWidget*> * open_canvas();
 
   bool saved_state() const;
-  void save_state();
 
-  bool SaveAs();
+  void Save();
+  void SaveAs();
+
+  void UnsaveState();
+
+  void set_image_path(const QString &path);
 
 protected:
   virtual void paintEvent(QPaintEvent *event);
@@ -64,10 +68,13 @@ private:
 
   static QVector<ImageCanvasWidget*> open_canvas_;
 
+  void SaveState();
+
 signals:
   void SendImage(QImage*);
   void RequestImage();
   void UnsavedChanges(bool);
+  void PathChaged(QString);
 
 private slots:
   void ReceiveImage(QImage*image);
