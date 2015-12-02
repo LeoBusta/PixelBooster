@@ -22,6 +22,8 @@
 #include <QWidget>
 #include <QImage>
 
+class GlobalOptions;
+
 /*!
  * \brief The ImageEditWidget class
  */
@@ -44,6 +46,8 @@ private:
   QRect cursor_;
   bool left_button_down_;
   bool right_button_down_;
+
+  GlobalOptions * options_cache_;
 
   void ToolAction(const QPoint &pos);
 signals:

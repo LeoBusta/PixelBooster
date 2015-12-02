@@ -52,8 +52,8 @@ public slots:
   void Zoom(int zoom) const;
   void OpenMainColorPick() const;
   void OpenAltColorPick() const;
-  void SetMainColor(const QColor &color, QWidget *color_widget) const;
-  void SetAltColor(const QColor &color, QWidget *color_widget) const;
+  void SetMainColor(const QColor &color) const;
+  void SetAltColor(const QColor &color) const;
 
   // Language Actions
   void TranslatePT_BR() const;

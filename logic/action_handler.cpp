@@ -145,14 +145,16 @@ void ActionHandler::Zoom(int zoom) const {
 
 void ActionHandler::OpenMainColorPick() const {
   QColor color = QColorDialog::getColor(options_cache_->main_color(),window_cache_,kTxtSelectMainColor,QColorDialog::ShowAlphaChannel);
-  QWidget * color_widget = dynamic_cast<QWidget*>(sender());
-  SetMainColor(color,color_widget);
+  if(color.isValid()){
+    SetMainColor(color);
+  }
 }
 
 void ActionHandler::OpenAltColorPick() const {
   QColor color = QColorDialog::getColor(options_cache_->alt_color(),window_cache_,kTxtSelectAltColor,QColorDialog::ShowAlphaChannel);
-  QWidget * color_widget = dynamic_cast<QWidget*>(sender());
-  SetAltColor(color,color_widget);
+  if(color.isValid()){
+    SetAltColor(color);
+  }
 }
 
 void ActionHandler::TranslatePT_BR() const {
@@ -163,18 +165,14 @@ void ActionHandler::TranslateEN_US() const {
   pApp->Translate("en_us");
 }
 
-void ActionHandler::SetMainColor(const QColor &color, QWidget * color_widget) const {
+void ActionHandler::SetMainColor(const QColor &color) const {
   options_cache_->set_main_color(color);
-  if(nullptr != color_widget){
-    color_widget->setStyleSheet(kColorButtonStyle.arg(color.name()));
-  }
+  window_cache_->main_color_button()->setStyleSheet(kColorButtonStyle.arg(color.name()));
 }
 
-void ActionHandler::SetAltColor(const QColor &color, QWidget * color_widget) const {
+void ActionHandler::SetAltColor(const QColor &color) const {
   options_cache_->set_alt_color(color);
-  if(nullptr != color_widget){
-    color_widget->setStyleSheet(kColorButtonStyle.arg(color.name()));
-  }
+  window_cache_->alt_color_button()->setStyleSheet(kColorButtonStyle.arg(color.name()));
 }
 
 void ActionHandler::CreateImageCanvas(const QImage &image, const QString &file_name) const {

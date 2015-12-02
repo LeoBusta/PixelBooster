@@ -27,6 +27,11 @@ class ColorPaletteWidget : public QWidget
 public:
   explicit ColorPaletteWidget(QWidget *parent = 0);
 
+  virtual void paintEvent(QPaintEvent *event);
+
+  virtual void mousePressEvent(QMouseEvent *event);
+private:
+  QImage palette_;
 signals:
 
 public slots:

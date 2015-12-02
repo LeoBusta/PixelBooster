@@ -111,17 +111,19 @@ void ImageCanvasWidget::paintEvent(QPaintEvent *event) {
   if(active_){
     QRect selection = options_cache_->selection().adjusted(0,0,-1,-1);
 
-    painter.setPen(Qt::yellow);
-    painter.setBrush(Qt::NoBrush);
-    painter.drawRect(selection);
+    if(underMouse()){
+      painter.setPen(Qt::yellow);
+      painter.setBrush(Qt::NoBrush);
+      painter.drawRect(selection);
 
-    QVector<qreal> dashes = {2,2};
+      QVector<qreal> dashes = {2,2};
 
-    QPen pen;
-    pen.setColor(Qt::red);
-    pen.setDashPattern(dashes);
-    painter.setPen(pen);
-    painter.drawRect(selection);
+      QPen pen;
+      pen.setColor(Qt::red);
+      pen.setDashPattern(dashes);
+      painter.setPen(pen);
+      painter.drawRect(selection);
+    }
   }
 }
 
@@ -161,6 +163,10 @@ void ImageCanvasWidget::mouseMoveEvent(QMouseEvent *event) {
   }else{
     options_cache_->MoveSelection( current_cursor.center() );
   }
+  update();
+}
+
+void ImageCanvasWidget::leaveEvent(QEvent *event) {
   update();
 }
 

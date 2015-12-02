@@ -83,6 +83,18 @@ QAction *MainWindow::GetTool(const int tool) {
   }
 }
 
+ActionHandler *MainWindow::action_handler() const {
+  return action_handler_;
+}
+
+QWidget *MainWindow::main_color_button() const {
+  return ui->color_main_pushButton;
+}
+
+QWidget *MainWindow::alt_color_button() const {
+  return ui->color_alt_pushButton;
+}
+
 void MainWindow::ConnectActions() {
   // File Actions
   QObject::connect(ui->actionNew,SIGNAL(triggered(bool)),action_handler_,SLOT(NewFile()));
@@ -151,8 +163,8 @@ void MainWindow::LoadSettings() {
 void MainWindow::UpdateWidgetState() {
   ui->actionTransparency->setChecked(options_cache_->transparency_enabled());
   GetTool(options_cache_->tool())->setChecked(true);
-  action_handler_->SetMainColor(options_cache_->main_color(),ui->color_main_pushButton);
-  action_handler_->SetAltColor(options_cache_->alt_color(),ui->color_alt_pushButton);
+  action_handler_->SetMainColor(options_cache_->main_color());
+  action_handler_->SetAltColor(options_cache_->alt_color());
 }
 
 void MainWindow::changeEvent(QEvent *event) {

@@ -35,7 +35,7 @@ class PixelBooster : public QApplication
 public:
   PixelBooster(int argc, char *argv[]);
 
-  QWidget *main_window() const;
+  MainWindow *main_window() const;
   GlobalOptions * options() const;
 
   void SetStatusMessage(const QString &message);

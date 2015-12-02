@@ -226,8 +226,8 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>126</width>
-          <height>321</height>
+          <width>100</width>
+          <height>251</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout">
@@ -407,7 +407,7 @@
       </layout>
      </item>
      <item>
-      <widget class="QWidget" name="widget" native="true">
+      <widget class="ColorPaletteWidget" name="widget" native="true">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -544,6 +544,9 @@
    <property name="text">
     <string>Undo</string>
    </property>
+   <property name="statusTip">
+    <string>Soon!</string>
+   </property>
    <property name="shortcut">
     <string>Ctrl+Z</string>
    </property>
@@ -558,6 +561,9 @@
    </property>
    <property name="text">
     <string>Redo</string>
+   </property>
+   <property name="statusTip">
+    <string>Soon!</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Y</string>
@@ -574,6 +580,9 @@
    <property name="text">
     <string>Cut</string>
    </property>
+   <property name="statusTip">
+    <string>Soon!</string>
+   </property>
    <property name="shortcut">
     <string>Ctrl+X</string>
    </property>
@@ -588,6 +597,9 @@
    </property>
    <property name="text">
     <string>Copy</string>
+   </property>
+   <property name="statusTip">
+    <string>Soon!</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+C</string>
@@ -604,6 +616,9 @@
    <property name="text">
     <string>Paste</string>
    </property>
+   <property name="statusTip">
+    <string>Soon!</string>
+   </property>
    <property name="shortcut">
     <string>Ctrl+V</string>
    </property>
@@ -619,6 +634,9 @@
    <property name="text">
     <string>Delete</string>
    </property>
+   <property name="statusTip">
+    <string>Soon!</string>
+   </property>
   </action>
   <action name="actionSelect_All">
    <property name="enabled">
@@ -626,6 +644,9 @@
    </property>
    <property name="text">
     <string>Select All</string>
+   </property>
+   <property name="statusTip">
+    <string>Soon!</string>
    </property>
   </action>
   <action name="actionAdd_Text">
@@ -639,6 +660,9 @@
    <property name="text">
     <string>Add Text</string>
    </property>
+   <property name="statusTip">
+    <string>Soon!</string>
+   </property>
   </action>
   <action name="actionCreate_Shadow">
    <property name="enabled">
@@ -646,6 +670,9 @@
    </property>
    <property name="text">
     <string>Create Shadow</string>
+   </property>
+   <property name="statusTip">
+    <string>Soon!</string>
    </property>
   </action>
   <action name="actionTile_Size">
@@ -659,6 +686,9 @@
    <property name="text">
     <string>Tile Size</string>
    </property>
+   <property name="statusTip">
+    <string>Tile Size: Configure the size of the tile selection</string>
+   </property>
   </action>
   <action name="actionShow_Grid">
    <property name="enabled">
@@ -671,6 +701,9 @@
    <property name="text">
     <string>Show Grid</string>
    </property>
+   <property name="statusTip">
+    <string>Soon!</string>
+   </property>
   </action>
   <action name="actionShow_Divisions">
    <property name="enabled">
@@ -682,6 +715,9 @@
    </property>
    <property name="text">
     <string>Show Divisions</string>
+   </property>
+   <property name="statusTip">
+    <string>Soon!</string>
    </property>
   </action>
   <action name="actionImage_Size">
@@ -737,6 +773,9 @@
    <property name="text">
     <string>Load Palette</string>
    </property>
+   <property name="statusTip">
+    <string>Soon!</string>
+   </property>
   </action>
   <action name="actionSave_Palette">
    <property name="enabled">
@@ -744,6 +783,9 @@
    </property>
    <property name="text">
     <string>Save Palette</string>
+   </property>
+   <property name="statusTip">
+    <string>Soon!</string>
    </property>
   </action>
   <action name="actionEdit_Palette">
@@ -753,6 +795,9 @@
    <property name="text">
     <string>Edit Palette</string>
    </property>
+   <property name="statusTip">
+    <string>Soon!</string>
+   </property>
   </action>
   <action name="actionClear_Mask">
    <property name="enabled">
@@ -761,6 +806,9 @@
    <property name="text">
     <string>Clear Mask</string>
    </property>
+   <property name="statusTip">
+    <string>Soon!</string>
+   </property>
   </action>
   <action name="actionInvert_Mask">
    <property name="enabled">
@@ -768,6 +816,9 @@
    </property>
    <property name="text">
     <string>Invert Mask</string>
+   </property>
+   <property name="statusTip">
+    <string>Soon!</string>
    </property>
   </action>
   <action name="actionAuto_Mask">
@@ -786,6 +837,9 @@
    <property name="text">
     <string>PT_BR</string>
    </property>
+   <property name="statusTip">
+    <string>Sets the language to PT_BR</string>
+   </property>
   </action>
   <action name="actionEN_US">
    <property name="icon">
@@ -794,6 +848,9 @@
    </property>
    <property name="text">
     <string>EN_US</string>
+   </property>
+   <property name="statusTip">
+    <string>Sets the language to EN_US</string>
    </property>
   </action>
   <action name="actionAbout">
@@ -804,6 +861,9 @@
    <property name="text">
     <string>About</string>
    </property>
+   <property name="statusTip">
+    <string>Information about the software.</string>
+   </property>
   </action>
   <action name="actionManual">
    <property name="enabled">
@@ -811,6 +871,9 @@
    </property>
    <property name="text">
     <string>Instructions</string>
+   </property>
+   <property name="statusTip">
+    <string>Soon!</string>
    </property>
    <property name="shortcut">
     <string>F1</string>
@@ -827,6 +890,9 @@
    <property name="text">
     <string>Selection Tool</string>
    </property>
+   <property name="statusTip">
+    <string>Soon!</string>
+   </property>
   </action>
   <action name="actionZoom_Tool">
    <property name="enabled">
@@ -839,6 +905,9 @@
    <property name="text">
     <string>Zoom Tool</string>
    </property>
+   <property name="statusTip">
+    <string>Soon!</string>
+   </property>
   </action>
   <action name="actionFill_Tool">
    <property name="enabled">
@@ -850,6 +919,9 @@
    </property>
    <property name="text">
     <string>Fill Tool</string>
+   </property>
+   <property name="statusTip">
+    <string>Soon!</string>
    </property>
   </action>
   <action name="actionPencil_Tool">
@@ -866,6 +938,9 @@
    <property name="text">
     <string>Pencil Tool</string>
    </property>
+   <property name="statusTip">
+    <string>Soon!</string>
+   </property>
   </action>
   <action name="actionLine_Tool">
    <property name="enabled">
@@ -877,6 +952,9 @@
    </property>
    <property name="text">
     <string>Line Tool</string>
+   </property>
+   <property name="statusTip">
+    <string>Soon!</string>
    </property>
   </action>
   <action name="actionRectangle_Tool">
@@ -890,6 +968,9 @@
    <property name="text">
     <string>Rectangle Tool</string>
    </property>
+   <property name="statusTip">
+    <string>Soon!</string>
+   </property>
   </action>
   <action name="actionEllipse_Tool">
    <property name="enabled">
@@ -901,6 +982,9 @@
    </property>
    <property name="text">
     <string>Ellipse Tool</string>
+   </property>
+   <property name="statusTip">
+    <string>Soon!</string>
    </property>
   </action>
   <action name="actionCascade">
@@ -914,6 +998,9 @@
    <property name="text">
     <string>Cascade</string>
    </property>
+   <property name="statusTip">
+    <string>Soon!</string>
+   </property>
   </action>
   <action name="actionNormal_Size">
    <property name="enabled">
@@ -921,6 +1008,9 @@
    </property>
    <property name="text">
     <string>Normal Size</string>
+   </property>
+   <property name="statusTip">
+    <string>Soon!</string>
    </property>
   </action>
   <action name="actionTile_Subwindows">
@@ -931,6 +1021,9 @@
    <property name="text">
     <string>Tile Subwindows</string>
    </property>
+   <property name="statusTip">
+    <string>Soon!</string>
+   </property>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
@@ -939,6 +1032,12 @@
    <class>ImageEditWidget</class>
    <extends>QWidget</extends>
    <header>widgets/image_edit_widget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ColorPaletteWidget</class>
+   <extends>QWidget</extends>
+   <header>widgets/color_palette_widget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

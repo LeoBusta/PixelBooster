@@ -38,7 +38,7 @@ PixelBooster::PixelBooster(int argc, char * argv[])
   main_window_->show();
 }
 
-QWidget *PixelBooster::main_window() const {
+MainWindow *PixelBooster::main_window() const {
   return main_window_;
 }
 

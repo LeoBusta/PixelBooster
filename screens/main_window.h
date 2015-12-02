@@ -45,6 +45,10 @@ public:
   ImageCanvasContainer * current_canvas_container();
 
   QAction * GetTool(const int tool);
+
+  ActionHandler * action_handler() const;
+  QWidget * main_color_button() const;
+  QWidget * alt_color_button() const;
 private:
   Ui::MainWindow *ui;
   ActionHandler * action_handler_;

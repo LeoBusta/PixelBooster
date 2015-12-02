@@ -23,6 +23,8 @@
 
 #include "utils/debug.h"
 #include "application/pixel_booster.h"
+#include "logic/action_handler.h"
+#include "screens/main_window.h"
 
 ImageEditWidget::ImageEditWidget(QWidget *parent)
   : QWidget(parent),
@@ -30,6 +32,7 @@ ImageEditWidget::ImageEditWidget(QWidget *parent)
     right_button_down_(false) {
   setMouseTracking(true);
   image_ = QImage(0,0,QImage::Format_ARGB32_Premultiplied);
+  options_cache_ = pApp->options();
   this->setFixedSize(0,0);
 }
 
@@ -89,6 +92,7 @@ void ImageEditWidget::mousePressEvent(QMouseEvent *event) {
     left_button_down_ = true;
     break;
   case Qt::RightButton:
+    right_button_down_ = true;
     break;
   default:
     break;
@@ -103,6 +107,7 @@ void ImageEditWidget::mouseReleaseEvent(QMouseEvent *event) {
     left_button_down_ = false;
     break;
   case Qt::RightButton:
+    right_button_down_ = false;
     break;
   default:
     break;
@@ -111,9 +116,13 @@ void ImageEditWidget::mouseReleaseEvent(QMouseEvent *event) {
 
 void ImageEditWidget::ToolAction(const QPoint &pos) {
   if(left_button_down_ && cursor_.isValid()){
-    int zoom = pApp->options()->zoom();
+    int zoom = options_cache_->zoom();
     QPoint img_pos = QPoint(pos.x()/zoom,pos.y()/zoom);
     image_.setPixel(img_pos,pApp->options()->main_color().rgba());
+  }else if(right_button_down_ && cursor_.isValid()){
+    int zoom = options_cache_->zoom();
+    QPoint img_pos = QPoint(pos.x()/zoom,pos.y()/zoom);
+    pApp->main_window()->action_handler()->SetMainColor(image_.pixel(img_pos));
   }
 }
 
