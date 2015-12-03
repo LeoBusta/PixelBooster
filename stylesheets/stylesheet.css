@@ -33,7 +33,7 @@ a {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
-
+  
 @media screen and (min-width: 64em) {
   .btn {
     padding: 0.75rem 1rem; } }
@@ -50,6 +50,44 @@ a {
     padding: 0.75rem;
     font-size: 0.9rem; }
     .btn + .btn {
+      margin-top: 1rem;
+      margin-left: 0; } }
+  
+.btn2 {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(21, 153, 87, 0.7);
+  background-color: rgba(21, 153, 87, 0.08);
+  border-color: rgba(21, 153, 87, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+  .btn2 + .btn2 {
+    margin-left: 1rem; }
+
+.btn2:hover {
+  color: rgba(21, 153, 87, 0.8);
+  text-decoration: none;
+  background-color: rgba(21, 153, 87, 0.2);
+  border-color: rgba(21, 153, 87, 0.3); }
+
+@media screen and (min-width: 64em) {
+  .btn2 {
+    padding: 0.75rem 1rem; } }
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .btn2 {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem; } }
+
+@media screen and (max-width: 42em) {
+  .btn2 {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem; }
+    .btn2 + .btn2 {
       margin-top: 1rem;
       margin-left: 0; } }
 
